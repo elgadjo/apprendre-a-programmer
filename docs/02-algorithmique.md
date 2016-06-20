@@ -9,7 +9,7 @@ Un travail à vocation universelle
 
 Tu as vu dans le chapitre précédent que la programmation est l'art de mêler l'algorithmique à un ou plusieurs langages.
 
-L'algorithmique est juste une question de méthode (beaucoup) et de logique (un peu). Par conséquent, elle est _indépendante des langages_ de programmation et _indépendante des machines_ qui exécuteront le programme final. En revanche, le langage de programmation, lui, est lié au coté physique et matériel de la machine car il doit être compris et exécuté par cette dernière.
+L'algorithmique est une question de méthode (beaucoup) et de logique (un peu). Elle est _indépendante des langages_ de programmation et _indépendante des machines_ qui exécuteront le programme final. En revanche, le langage de programmation, lui, est lié au coté physique et matériel de la machine car il doit être compris et exécuté par cette dernière.
 
 On a l'habitude de distinguer deux types de langages : 
 
