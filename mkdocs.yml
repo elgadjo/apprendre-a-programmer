@@ -12,6 +12,9 @@ extra:
   palette:
     primary: 'deep purple'
     accent: 'orange'
+  i18n:
+    prev: 'Chapitre précédent'
+    next: 'Chapitre suivant'
 
 #author:
 #  github: 'elgadjo'

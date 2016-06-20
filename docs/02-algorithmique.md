@@ -7,18 +7,18 @@ Tu es toujours là ? Toujours motivée ? Trop bien ! Reprenons !
 Un travail à vocation universelle
 ---------------------------------
 
-Tu as vu dans le chapitre précédent que la programmation est l'art de mêler l'algorithmique à un ou plusieurs langages
+Tu as vu dans le chapitre précédent que la programmation est l'art de mêler l'algorithmique à un ou plusieurs langages.
 
 L'algorithmique est juste une question de méthode (beaucoup) et de logique (un peu). Par conséquent, elle est _indépendante des langages_ de programmation et _indépendante des machines_ qui exécuteront le programme final. En revanche, le langage de programmation, lui, est lié au coté physique et matériel de la machine car il doit être compris et exécuté par cette dernière.
 
 On a l'habitude de distinguer deux types de langages : 
 
-* les __langages bas niveau__ (ex: Assembleur, C ...) : ils permettent la manipulation des aspects matériels de la machine sur laquelle le programme est exécuté. Ce sont des langages terriblement terre à terre, qui nécessitent un micro-management de chaque chose : mémoire, périphériques, registre processeur, interruptions, réseau, etc. C'est à la fois fastidieux, mais c'est terriblement précis et puissant.
+* les __langages bas niveau__ (ex: Assembleur, C ...) : ils permettent la manipulation des aspects matériels de la machine sur laquelle le programme est exécuté. Ce sont des langages _terre à terre_, qui nécessitent un micro-management de chaque chose : mémoire, périphériques, registre processeur, interruptions, réseau, etc. C'est à la fois fastidieux, mais c'est terriblement précis et puissant.
 * les __langages de haut niveau__ (ex: Python, Javascript ...) : ils masquent le coté technique au profit d'une vision plus abstraite qui leur permettra plus facilement de manipuler des fichiers, des composants graphiques, des données, etc. Ces langages font confiance au système pour la gestion de la mémoire et du reste. Ils vont s'occuper essentiellement des aspects métiers.
 
 Haut et bas niveau n'ont pas de connotation péjorative et n'ont évidemment rien à voir avec les compétences techniques nécessaires à les programmer ! Il s'agit simplement d'une question d'efficacité sur un domaine particulier... et la facilité à gérer contraintes qui vont avec. On pourra toujours faire des choses de bas niveau avec un langage de haut niveau, ou des choses de haut niveau avec un langage de bas niveau. C'est juste _beaucoup_ moins pratique.
 
-En général, les langages bas niveau seront des langages compilés &mdash; car dépendants d'une machine spécifique &mdash; et les langages de haut niveau seront des langages interprétés. 
+En général, les langages de bas niveau sont des langages compilés &mdash; car dépendants d'une machine spécifique &mdash; alors que les langages de haut niveau sont souvent des langages interprétés. 
 
 
 Problèmes fondamentaux en algorithmique
@@ -38,7 +38,7 @@ Lorsqu'on parle de complexité, on utilise la notation __O(...)__ pour parler de
 
 * __O(log N)__ : l'algorithme est en temps logarithmique (c'est bien), il prends moins de temps. C'est très bien.
 
-* __O(N*N*..)__ : l'algorithme est en temps polynomial. Il prends un temps qui est le carré, le cube ou autre polynôme de la quantité de données manipulées. C'est pas terrible.
+* __O(N\*N\*..)__ : l'algorithme est en temps polynomial. Il prends un temps qui est le carré, le cube ou autre polynôme de la quantité de données manipulées. C'est pas terrible.
 
 * __O(exp(N))__ : l'algorithme est en temps exponentiel. C'est pire que tout : il y a de fortes chances que l'on n'obtienne pas les résultats dans un temps raisonnable (temps alloué au projet, vie humaine, âge de l'univers, etc.) ;-)
 
@@ -52,13 +52,13 @@ Enfin la __correction__ c'est pouvoir prouver qu'un algorithme répondre bien au
 
 Jusque là j'ai posé un peu le contexte : c'était un peu de culture générale et du vocabulaire. Normalement on n'abordera plus ces sujets, à moins que tu en aie envie.
 
-Si ça te botte toujours, au prochain chapitre on plongera dans les algorigrammes et on commencera à dessiner nos idées.
-
 - Est-ce que ça va jusque là ? 
 - En terme de volume, est ce que c'est trop long ? Trop court ?
 - Est-ce que tu as des questions ou des trucs que tu as envie de dire ? :-P
 
-Si tu veux la suite, envoie-moi un e-mail avec le texte __"JE VEUX LA SUITE !"__ :-)
+Si ça te botte toujours, au prochain chapitre on plongera dans les algorigrammes et on commencera à dessiner nos idées.
+
+Tu veux la suite ? Envoie-moi un e-mail avec le texte __"JE VEUX LA SUITE !"__ :-)
 
 
 
