@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>02. Généralités (suite) - Apprendre à programmer</title>
+      
+      
+      
+        <link rel="canonical" href="http://elgadjo.github.io/apprendre-a-programmer/02-algorithmique/">
+      
+      
+        <meta name="author" content="El Gadjo Perspicaz">
+      
+    
+    <meta property="og:url" content="http://elgadjo.github.io/apprendre-a-programmer/02-algorithmique/">
+    <meta property="og:title" content="Apprendre à programmer">
+    <meta property="og:image" content="http://elgadjo.github.io/apprendre-a-programmer/02-algorithmique//../">
+    <meta name="apple-mobile-web-app-title" content="Apprendre à programmer">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../None">
+    <link rel="icon" type="image/x-icon" href="../None">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/stylesheets/application-0dac3e5884.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-deep-purple palette-accent-orange">
+    
+      
+      
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+          </span>
+        
+        02. Généralités (suite)
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://github.com/elgadjo/apprendre-a-programmer" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>
+          Apprendre à programmer
+          <span class="version">
+            
+          </span>
+        </strong>
+        
+          <br>
+          elgadjo/apprendre-a-programmer
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            
+            <a href="https://github.com/elgadjo/apprendre-a-programmer/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/elgadjo/apprendre-a-programmer/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Accueil" href="..">
+      Accueil
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="01. Généralités" href="../01-generalites/">
+      01. Généralités
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="02. Généralités (suite)" href="./">
+      02. Généralités (suite)
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Un travail à vocation universelle" href="#un-travail-a-vocation-universelle">
+                Un travail à vocation universelle
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Problèmes fondamentaux en algorithmique" href="#problemes-fondamentaux-en-algorithmique">
+                Problèmes fondamentaux en algorithmique
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="À suivre ?" href="#a-suivre">
+                À suivre ?
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="generalites-suite">﻿Généralités (suite)<a class="headerlink" href="#generalites-suite" title="Permanent link">#</a></h1>
+<p>Tu es toujours là ? Toujours motivée ? Trop bien ! Reprenons ! </p>
+<h2 id="un-travail-a-vocation-universelle">Un travail à vocation universelle<a class="headerlink" href="#un-travail-a-vocation-universelle" title="Permanent link">#</a></h2>
+<p>Tu as vu dans le chapitre précédent que la programmation est l'art de mêler l'algorithmique à un ou plusieurs langages</p>
+<p>L'algorithmique est juste une question de méthode (beaucoup) et de logique (un peu). Par conséquent, elle est <em>indépendante des langages</em> de programmation et <em>indépendante des machines</em> qui exécuteront le programme final. En revanche, le langage de programmation, lui, est lié au coté physique et matériel de la machine car il doit être compris et exécuté par cette dernière.</p>
+<p>On a l'habitude de distinguer deux types de langages : </p>
+<ul>
+<li>les <strong>langages bas niveau</strong> (ex: Assembleur, C ...) : ils permettent la manipulation des aspects matériels de la machine sur laquelle le programme est exécuté. Ce sont des langages terriblement terre à terre, qui nécessitent un micro-management de chaque chose : mémoire, périphériques, registre processeur, interruptions, réseau, etc. C'est à la fois fastidieux, mais c'est terriblement précis et puissant.</li>
+<li>les <strong>langages de haut niveau</strong> (ex: Python, Javascript ...) : ils masquent le coté technique au profit d'une vision plus abstraite qui leur permettra plus facilement de manipuler des fichiers, des composants graphiques, des données, etc. Ces langages font confiance au système pour la gestion de la mémoire et du reste et vont s'occuper essentiellement des aspects métiers.</li>
+</ul>
+<p>Haut et bas niveau n'ont pas de connotation péjorative et n'ont évidemment rien à voir avec les compétences techniques nécessaires à les programmer ! Il s'agit simplement d'une question d'efficacité sur un domaine particulier... et la facilité à gérer contraintes qui vont avec. On pourra toujours faire des choses de bas niveau avec un langage de haut niveau, ou des choses de haut niveau avec un langage de bas niveau. C'est juste <em>beaucoup</em> moins pratique.</p>
+<p>En général, les langages bas niveau seront des langages compilés &mdash; car dépendants d'une machine spécifique &mdash; et les langages de haut niveau seront des langages interprétés. </p>
+<h2 id="problemes-fondamentaux-en-algorithmique">Problèmes fondamentaux en algorithmique<a class="headerlink" href="#problemes-fondamentaux-en-algorithmique" title="Permanent link">#</a></h2>
+<p>Programmer, c'est comme résoudre un casse tête. C'est un peu un défi qui nécessite d'inventer une solution face à un problème ou une situation donnée. Reste à le faire bien. Lorsqu'on programme, à un moment ou un autre, on se posera des questions sur la <strong>calculabilité</strong>, la <strong>complexité</strong> ou la <strong>correction</strong> de l'algorithme que l'on est en train de concevoir.</p>
+<p>La <strong>calculabilité</strong> est la capacité à calculer un résultat ou une solution : Pour une tâche donnée, existe-t-il un algorithme qui la résolve ? Existe-t-il des tâches pour lesquelles il n'existe aucun algorithme ? Comment savoir si l'on est dans l'un ou l'autre des cas ?</p>
+<p>La <strong>complexité</strong> est lie le nombre d'opérations exécutées par l'algorithme à la taille ou la quantité des données qu'il manipule. C'est donc une question de performance et d'optimisation : en combien de temps un algorithme va-t-il atteindre le résultat prévu ? De quel espace (mémoire) a-t-il besoin pour faire son travail ? </p>
+<p>Lorsqu'on parle de complexité, on utilise la notation <strong>O(...)</strong> pour parler des différence de complexité d'un algorithme. Voici les principaux cas :</p>
+<ul>
+<li>
+<p><strong>O(1)</strong> : l'algorithme en temps constant. Il prends toujour le même temps quel que soit la taille ou la quantité de données qu'il manipule. C'est excellent !</p>
+</li>
+<li>
+<p><strong>O(N)</strong> : l'algorithme en temps linéaire (c'est bof). Il prends un temps proportionnel à la quantité de données manipulées. C'est moyen.</p>
+</li>
+<li>
+<p><strong>O(log N)</strong> : l'algorithme est en temps logarithmique (c'est bien), il prends moins de temps. C'est très bien.</p>
+</li>
+<li>
+<p><strong>O(N<em>N</em>..)</strong> : l'algorithme est en temps polynomial. Il prends un temps qui est le carré, le cube ou autre polynôme de la quantité de données manipulées. C'est pas terrible.</p>
+</li>
+<li>
+<p><strong>O(exp(N))</strong> : l'algorithme est en temps exponentiel. C'est pire que tout : il y a de fortes chances que l'on n'obtienne pas les résultats dans un temps raisonnable (temps alloué au projet, vie humaine, âge de l'univers, etc.) ;-)</p>
+</li>
+</ul>
+<p>Enfin la <strong>correction</strong> c'est pouvoir prouver qu'un algorithme répondre bien au besoin pour lequel il a été conçu... et c'est loin d'être évident.</p>
+<h2 id="a-suivre">À suivre ?<a class="headerlink" href="#a-suivre" title="Permanent link">#</a></h2>
+<p>Jusque là j'ai posé un peu le contexte : c'était un peu de culture générale et du vocabulaire. Normalement on n'abordera plus ces sujets, à moins que tu en aie envie.</p>
+<p>Si ça te botte toujours, au prochain chapitre on plongera dans les algorigrammes et on commencera à dessiner nos idées.</p>
+<ul>
+<li>Est-ce que ça va jusque là ? </li>
+<li>En terme de volume, est ce que c'est trop long ? Trop court ?</li>
+<li>Est-ce que tu as des questions ou des trucs que tu as envie de dire ? :-P</li>
+</ul>
+<p>Si tu veux la suite, envoie-moi un e-mail avec le texte <strong>"JE VEUX LA SUITE !"</strong> :-)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Programmer peut entraîner de graves déformations comportementales.</strong>
+En cas d'apparition des symptômes suivants : impossibilité de résister aux défis, envie de dialoguer avec son écran, veillée tardive, recherches compulsives sur StackOverflow, réflexion nocturne sur un bug et apparition d'une solution au matin, dire à quelqu'un qu'on arrive et arriver 1h après, essayer d'automatiser la moindre tâche... alors il est trop tard, tu es foutue ;-)</p>
+</div>
+          <aside class="copyright" role="note">
+            
+              Copyright (c) 2016 El Gadjo Perspicaz &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../01-generalites/" title="01. Généralités">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                01. Généralités
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '..';
+      var repo_id  = 'elgadjo/apprendre-a-programmer';
+    </script>
+    <script src="../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>
