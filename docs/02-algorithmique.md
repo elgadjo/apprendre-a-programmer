@@ -14,7 +14,7 @@ L'algorithmique est juste une question de méthode (beaucoup) et de logique (un 
 On a l'habitude de distinguer deux types de langages : 
 
 * les __langages bas niveau__ (ex: Assembleur, C ...) : ils permettent la manipulation des aspects matériels de la machine sur laquelle le programme est exécuté. Ce sont des langages terriblement terre à terre, qui nécessitent un micro-management de chaque chose : mémoire, périphériques, registre processeur, interruptions, réseau, etc. C'est à la fois fastidieux, mais c'est terriblement précis et puissant.
-* les __langages de haut niveau__ (ex: Python, Javascript ...) : ils masquent le coté technique au profit d'une vision plus abstraite qui leur permettra plus facilement de manipuler des fichiers, des composants graphiques, des données, etc. Ces langages font confiance au système pour la gestion de la mémoire et du reste et vont s'occuper essentiellement des aspects métiers.
+* les __langages de haut niveau__ (ex: Python, Javascript ...) : ils masquent le coté technique au profit d'une vision plus abstraite qui leur permettra plus facilement de manipuler des fichiers, des composants graphiques, des données, etc. Ces langages font confiance au système pour la gestion de la mémoire et du reste. Ils vont s'occuper essentiellement des aspects métiers.
 
 Haut et bas niveau n'ont pas de connotation péjorative et n'ont évidemment rien à voir avec les compétences techniques nécessaires à les programmer ! Il s'agit simplement d'une question d'efficacité sur un domaine particulier... et la facilité à gérer contraintes qui vont avec. On pourra toujours faire des choses de bas niveau avec un langage de haut niveau, ou des choses de haut niveau avec un langage de bas niveau. C'est juste _beaucoup_ moins pratique.
 
