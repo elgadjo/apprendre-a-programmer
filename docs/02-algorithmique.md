@@ -63,6 +63,6 @@ Si tu veux la suite, envoie-moi un e-mail avec le texte __"JE VEUX LA SUITE !"__
 
 
 !!! note
-    __Programmer peut entraîner de graves déformations comportementales.__
+    __Programmer peut entraîner de graves troubles comportementaux.__
     En cas d'apparition des symptômes suivants : impossibilité de résister aux défis, envie de dialoguer avec son écran, veillée tardive, recherches compulsives sur StackOverflow, réflexion nocturne sur un bug et apparition d'une solution au matin, dire à quelqu'un qu'on arrive et arriver 1h après, essayer d'automatiser la moindre tâche... alors il est trop tard, tu es foutue ;-)
 
