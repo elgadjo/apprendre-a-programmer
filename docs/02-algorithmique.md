@@ -50,19 +50,19 @@ Enfin la __correction__ c'est pouvoir prouver qu'un algorithme répondre bien au
 À suivre ?
 ----------
 
-Jusque là j'ai posé un peu le contexte : c'était un peu de culture générale et du vocabulaire. Normalement on n'abordera plus ces sujets, à moins que tu en aie envie.
+Bon. Jusque là j'ai essayé de poser le contexte, un peu de culture générale et du vocabulaire. Normalement on n'abordera plus ces sujets (à moins que ta curiosité ne prenne le dessus).
+
+Au prochain chapitre on plongera dans les algorigrammes et on commencera à dessiner nos idées.
 
 - Est-ce que ça va jusque là ? 
 - En terme de volume, est ce que c'est trop long ? Trop court ?
 - Est-ce que tu as des questions ou des trucs que tu as envie de dire ? :-P
 
-Si ça te botte toujours, au prochain chapitre on plongera dans les algorigrammes et on commencera à dessiner nos idées.
 
-Tu veux la suite ? Envoie-moi un e-mail avec le texte __"JE VEUX LA SUITE !"__ :-)
-
+Ça te botte toujours ? Tu veux la suite ? Envoie-moi un e-mail avec le texte __"JE VEUX LA SUITE !"__ :-)
 
 
-!!! note
-    __Programmer peut entraîner de graves troubles comportementaux.__
-    En cas d'apparition des symptômes suivants : impossibilité de résister aux défis, envie de dialoguer avec son écran, veillée tardive, recherches compulsives sur StackOverflow, réflexion nocturne sur un bug et apparition d'une solution au matin, dire à quelqu'un qu'on arrive et arriver 1h après, essayer d'automatiser la moindre tâche... alors il est trop tard, tu es foutue ;-)
+
+!!! warning "Programmer peut entraîner de graves troubles de la vie sociale"
+    __En cas d'apparition des symptômes suivants :__ impossibilité de résister aux défis logiques, envie de dialoguer avec son programme, veillée tardive devant son écran, recherche compulsive sur StackOverflow, réflexions nocturne sur un bug, parler d'un bug à ses proches, dire à quelqu'un qu'on arrive et arriver 1h après, essayer d'automatiser la moindre tâche... n'essaye _pas_ de consulter un spécialiste, il est trop tard, tu êtes foutue ! ;-)
 
