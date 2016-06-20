@@ -1,5 +1,21 @@
 site_name: Apprendre à programmer
 theme: 'material'
+site_author: 'El Gadjo'
+site_url: 'http://elgadjo.github.io/apprendre-a-programmer'
+
+copyright: 'Copyright (c) 2016 El Gadjo'
+
+repo_name: 'GitHub'
+repo_url: 'https://github.com/elgadjo/apprendre-a-programmer'
+
+extra:
+  palette:
+    primary: 'deep purple'
+    accent: 'orange'
+
+author:
+  github: 'elgadjo'
+  twitter: 'elgadjo'
 
 # Extensions
 markdown_extensions:
@@ -7,3 +23,7 @@ markdown_extensions:
   - admonition
   - toc:
       permalink: '#'
+
+pages: 
+- 'Accueil': index.md
+- 'Ch. 01 : Généralités': 01-generalites.md
