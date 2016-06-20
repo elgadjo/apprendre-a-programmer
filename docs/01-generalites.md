@@ -1,21 +1,23 @@
-﻿Apprendre à coder
------------------
+﻿Généralités
+===========
 
-Alors donc tu veux apprendre à programmer ?
+Quelques définitions
+--------------------
+
+Bon, donc tu veux _vraiment_ apprendre à programmer ?
 
 Dans « programmer » il est important de distinguer deux aspects : 
 __l'algorithmique__ et les __langages__ de programmation. 
 
 __L'algorithmique__ est un peu l'équivalent de la logique pour formuler des idées là ou les __langages__ se basent chacun sur une syntaxe et une grammaire permettant de les véhiculer et se faire comprendre. 
-
 Évidemment, on ne peut pas formuler d'idées sans mots, et utiliser des mots sans idées ne fonctionne pas très bien non plus...
 
-Pour re-situer dans le contexte : l'objectif de l'informatique, c'est obtenir de la machine qu'elle effectue un travail à notre place (pour le meilleur et pour le pire...). Mais alors, comment lui expliquer comment elle doit s'y prendre ? Comment lui dire ? Comment lui apprendre ? Comment s'assurer qu'elle fait ce travail ? Et si on y arrive... fera-t-elle ce travail aussi bien que nous ? Mieux que nous ?
+Re-situons tout ça dans le contexte : l'objectif de l'informatique, c'est obtenir de la machine qu'elle effectue un travail à notre place (pour le meilleur et pour le pire...). Mais alors, comment lui expliquer comment elle doit s'y prendre ? Comment lui dire ? Comment lui apprendre ? Comment s'assurer qu'elle fait ce travail ? Et si on y arrive... fera-t-elle ce travail aussi bien que nous ? Mieux que nous ?
 
 Bref. Dans ce qui suit, je vais donc te faire une introduction à la programmation en plusieurs étapes : 
 
 - d'abord nous ferons des dessins, 
-- ensuite nous en utilisant le langage parlé, en français, pour décrire nos idées,
+- ensuite nous utiliserons une forme de français minimaliste pour décrire nos idées,
 - ensuite nous utiliserons JavaScript pour communiquer ces idées à l'ordinateur.
 
 Pourquoi Javascript ? Parce que : 
@@ -38,11 +40,9 @@ Sans le savoir tu en as déjà utilisé :
 
 Dans tout ces cas là, tu as suivi un plan, un guide de montage, une recette. Tu étais dans une posture d'éxecution, qui t'a permis de "suivre" le travail imaginé par quelqu'un d'autre afin de le reproduire.
 
-Cependant, ceux qui ont conçu cette caserne de pompier, cette étagère BILLY&copy; IKEA&trade;, ce gateau... comment ont-il procédé ? Quelle était la démarche qui leur a permis, tout d'abord d'inventer un objet répondant à leur besoin, ensuite de décomposer leur idée, et enfin d'expliquer les étapes nécessaire à sa réalisation ?
+Cependant, ceux qui ont conçu cette caserne de pompier, cette étagère BILLY&copy; IKEA&trade;, ce gateau... comment ont-il procédé ? Quelle était la démarche qui leur a permis, tout d'abord _d'inventer_ un objet répondant à leur besoin, ensuite de _décomposer_ leur idée, et enfin _d'expliquer_ les étapes nécessaire à sa réalisation ?
 
-Au départ on avait des composants ou des ingrédients éparses,  ils ont été assemblés dans un certain ordre et d'une certaine façon, afin d'obtenir un résultat souhaité. 
-
-Cette démarche de résolution de problèmes et cette méthodologie pour les décomposer en étapes simples, c'est ce qu'en informatique on appele l'algorithmique. Evidemment ça peut s'appliquer à bien d'autres sujets !
+Au départ on avait des composants ou des ingrédients éparses,  ils ont été assemblés dans un certain ordre et d'une certaine façon, afin d'obtenir un résultat souhaité. Cette démarche de résolution de problèmes et cette méthodologie pour les décomposer en étapes simples, c'est ce qu'en informatique on appelle l'algorithmique. Évidemment ça peut s'appliquer à bien d'autres sujets !
 
 
 Une question d'écriture et de représentations
@@ -80,7 +80,7 @@ Avec cette technique, on obtient une vitesse de fonctionnement raisonnable, une 
 Bref. Lorsque l'on programme, on écrit donc en général du __code source__, dans un langage de programmation. Mais rien n'empêche de faire un diagramme pour se fixer les idées ! Ça arrive même aux meilleurs professionels après plusieurs décénies de pratique.
 
 
-A suivre ?
+À suivre ?
 ----------
 
 Avant de continuer, j'ai besoin d'en savoir plus sur toi ! Déjà parce que je suis curieux (eh oui !) et parce que ça me permettra d'adapter sur-mesure la suite du cours :
@@ -89,5 +89,5 @@ Avant de continuer, j'ai besoin d'en savoir plus sur toi ! Déjà parce que je 
 - comment est-ce que tu imagines le fait de coder ? 
 - qu'est ce que tu imagines que cela peut t'apporter ?
 
-Bref. Si tu veux la suite, envoie un mail à [el.gadjo.perspicaz@gmail.com](mailto:el.gadjo.perspicaz@gmail.com) avec le texte __"JE VEUX LA SUITE !"__ dedans :-)
+Bref. Si tu veux la suite, envoie-moi un email avec le texte __"JE VEUX LA SUITE !"__ dedans :-)
 
