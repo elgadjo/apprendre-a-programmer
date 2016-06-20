@@ -32,16 +32,15 @@ La __complexité__ est lie le nombre d'opérations exécutées par l'algorithme 
 
 Lorsqu'on parle de complexité, on utilise la notation __O(...)__ pour parler des différence de complexité d'un algorithme. Voici les principaux cas :
 
-* __O(1)__ : l'algorithme en temps constant. Il prends toujour le même temps quel que soit la taille ou la quantité de données qu'il manipule. C'est excellent !
+* __O(1)__ : l'algorithme en temps constant. C'est excellent ! Il prends toujours le même temps quel que soit la taille ou la quantité de données qu'il manipule.
 
-* __O(N)__ : l'algorithme en temps linéaire (c'est bof). Il prends un temps proportionnel à la quantité de données manipulées. C'est moyen.
+* __O(N)__ : l'algorithme en temps linéaire. C'est moyen. Il prends un temps proportionnel à la quantité de données manipulées.
 
-* __O(log N)__ : l'algorithme est en temps logarithmique (c'est bien), il prends moins de temps. C'est très bien.
+* __O(log N)__ : l'algorithme est en temps logarithmique. C'est très bien ! Il prends moins de temps qu'un parcours complet des données.
 
-* __O(N\*N\*..)__ : l'algorithme est en temps polynomial. Il prends un temps qui est le carré, le cube ou autre polynôme de la quantité de données manipulées. C'est pas terrible.
+* __O(N\*N\*..)__ : l'algorithme est en temps polynomial. C'est pas terrible. Il prends un temps qui est le carré, le cube ou autre polynôme de la quantité de données manipulées.
 
-* __O(exp(N))__ : l'algorithme est en temps exponentiel. C'est pire que tout : il y a de fortes chances que l'on n'obtienne pas les résultats dans un temps raisonnable (temps alloué au projet, vie humaine, âge de l'univers, etc.) ;-)
-
+* __O(exp(N))__ : l'algorithme est en temps exponentiel. C'est pire que tout ! Il y a de fortes chances que l'on n'obtienne pas les résultats dans un temps raisonnable (temps alloué au projet, vie humaine, âge de l'univers, etc.) ;-(
 
 
 Enfin la __correction__ c'est pouvoir prouver qu'un algorithme répondre bien au besoin pour lequel il a été conçu... et c'est loin d'être évident.
