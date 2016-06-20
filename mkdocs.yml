@@ -1,9 +1,10 @@
 site_name: Apprendre à programmer
 theme: 'material'
-site_author: 'El Gadjo'
+site_author: 'El Gadjo Perspicaz'
 site_url: 'http://elgadjo.github.io/apprendre-a-programmer'
+site_email: 'el.gadjo.perspicaz@gmail.com'
 
-copyright: 'Copyright (c) 2016 El Gadjo'
+copyright: 'Copyright (c) 2016 El Gadjo Perspicaz'
 
 repo_name: 'GitHub'
 repo_url: 'https://github.com/elgadjo/apprendre-a-programmer'
@@ -26,4 +27,5 @@ markdown_extensions:
 
 pages: 
 - 'Accueil': index.md
-- 'Ch. 01 : Généralités': 01-generalites.md
+- '01. Généralités': 01-generalites.md
+- '02. Généralités (suite)': 02-algorithmique.md
