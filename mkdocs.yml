@@ -1,0 +1,9 @@
+site_name: Apprendre à programmer
+theme: 'material'
+
+# Extensions
+markdown_extensions:
+  - codehilite(css_class=code)
+  - admonition
+  - toc:
+      permalink: '#'
