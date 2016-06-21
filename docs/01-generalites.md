@@ -44,6 +44,10 @@ Cependant, ceux qui ont conçu cette caserne de pompier, cette étagère BILLY&c
 
 Au départ on avait des composants ou des ingrédients éparses,  ils ont été assemblés dans un certain ordre et d'une certaine façon, afin d'obtenir un résultat souhaité. Cette démarche de résolution de problèmes et cette méthodologie pour les décomposer en étapes simples, c'est ce qu'en informatique on appelle l'algorithmique. Évidemment ça peut s'appliquer à bien d'autres sujets !
 
+> Le lapin Blanc mit ses lunettes. <br/>
+> &mdash; « S'il plait à votre majesté, demanda-t-il, par où dois-je commencer? » <br/>
+> &mdash; « Commencez par le commencement, dit d'un ton emprunt de gravité, le Roi. » <br/>
+> <em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em>
 
 Une question d'écriture et de représentations
 ---------------------------------------------
@@ -78,6 +82,9 @@ C'est là qu'est apparu le __byte-code__. Le byte-code, c'est du code machine po
 Avec cette technique, on obtient une vitesse de fonctionnement raisonnable, une compatibilité avec toutes les machines qui possèdent un interpréteur bytecode et aucune façon de remonter au code source de départ ! C'est la stratégie utilisée par Java ou .NET . 
 
 Bref. Lorsque l'on programme, on écrit donc en général du __code source__, dans un langage de programmation. Mais rien n'empêche de faire un diagramme pour se fixer les idées ! Ça arrive même aux meilleurs professionnels après plusieurs décénies de pratique.
+
+> « Je crains bien de ne pouvoir m'expliquer moi-même... car je ne suis pas moi-même, vous comprenez. » <br/>
+> <em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em>
 
 
 À suivre ?

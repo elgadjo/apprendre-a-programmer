@@ -3,7 +3,6 @@
 
 Tu es toujours là ? Toujours motivée ? Trop bien ! Reprenons ! 
 
-
 Un travail à vocation universelle
 ---------------------------------
 
@@ -19,6 +18,10 @@ On va donc distinguer deux types de langages :
 Haut et bas niveau n'ont pas de connotation péjorative et n'ont évidemment rien à voir avec les compétences techniques nécessaires à les programmer ! Il s'agit simplement d'une question d'efficacité sur un domaine particulier... et la facilité à gérer contraintes qui vont avec. On pourra toujours faire des choses de bas niveau avec un langage de haut niveau, ou des choses de haut niveau avec un langage de bas niveau. C'est juste _beaucoup_ moins pratique.
 
 En général, les langages de bas niveau sont des langages compilés &mdash; car dépendants d'une machine spécifique &mdash; alors que les langages de haut niveau sont souvent des langages interprétés. 
+
+> La Reine avait une seule méthode pour résoudre toutes les difficultés, petites ou grosses.<br/>
+> &mdash; « Qu'on lui coupe la tête ! » dit-elle sans même lever les yeux. <br/>
+> <em>Lewis Caroll, Alice au pays des merveilles</em>
 
 
 Problèmes fondamentaux en algorithmique
@@ -45,6 +48,12 @@ Lorsqu'on parle de complexité, on utilise la notation __O(...)__ pour parler de
 
 Enfin la __correction__ c'est pouvoir prouver qu'un algorithme répondre bien au besoin pour lequel il a été conçu... et c'est loin d'être évident !
 
+> « &mdash; Voudriez-vous me dire, s'il vous plaît, par où je dois m'en aller d'ici ? <br/>
+> &mdash; Cela dépend beaucoup de l'endroit où tu veux aller. <br/>
+> &mdash; Peu m'importe l'endroit... <br/>
+> &mdash; En ce cas, peu importe la route que tu prendras.  <br/>
+> &mdash; ... pourvu que j'arrive quelque part », ajouta Alice en guise d'explication. <br/>
+> &mdash; « Oh, tu ne manqueras pas d'arriver quelque part, si tu marches assez longtemps. »<br/>
 
 À suivre ?
 ----------
