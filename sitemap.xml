@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://elgadjo.github.io/apprendre-a-programmer/</loc>
-     <lastmod>2016-06-20</lastmod>
+     <lastmod>2016-06-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>http://elgadjo.github.io/apprendre-a-programmer/01-generalites/</loc>
-     <lastmod>2016-06-20</lastmod>
+     <lastmod>2016-06-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +20,15 @@
     
     <url>
      <loc>http://elgadjo.github.io/apprendre-a-programmer/02-algorithmique/</loc>
-     <lastmod>2016-06-20</lastmod>
+     <lastmod>2016-06-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://elgadjo.github.io/apprendre-a-programmer/03-algorigrammes/</loc>
+     <lastmod>2016-06-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
