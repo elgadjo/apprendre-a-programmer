@@ -1,15 +1,20 @@
 Algorigrammes (suite)
 =====================
 
-Instructions
-------------
+Les instructions (= les briques)
+--------------------------------
 
-__Entrées - sorties__
+Voila enfin les briques de base de tout programme.
 
-__Variables__
+### Le début - La fin
 
-__Tests conditionnels__
+### Les entrées - sorties
 
-__Boucles__
+### Les variables
 
-__Sous-programme__
+### Les tests conditionnels
+
+### Les boucles
+
+### Les sous-programme
+

@@ -6,7 +6,7 @@ T'ai-je dit que nous allons dessiner ? Oui ? Alors, viens dessiner ! Prépare un
 
 Dans les prochains chapitres, nous allons dessiner des petites briques : chacune d'entre elle servira à faire une petite chose simple (et un peu bête), mais en posant ces briques sur d'autres briques nous pourrons exprimer des choses de plus en plus malines et fantastiques ! (oui-oui !)
 
-Mais dans un premier temps il faut que je te présente les petites briques...
+Mais dans un premier temps, je vais te présenter la vue d'ensemble !
 
 
 Définition
@@ -83,6 +83,7 @@ En informatique, il s'agira de rentre présentable, agréable, claires et utiles
 > Alice regarda tout autour de la table, mais il n’y avait que du thé. « Je ne vois pas de vin, » fit-elle observer. <br/>
 > « Il n’y en a pas, » dit le Lièvre. <br/>
 > <em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em>
+
 
 
 À suivre ?

@@ -16,6 +16,8 @@ extra:
     prev: 'Chapitre précédent'
     next: 'Chapitre suivant'
 
+extra_css: [extra.css]
+
 #author:
 #  github: 'elgadjo'
 #  twitter: 'elgadjo'
@@ -31,3 +33,4 @@ pages:
 - 'Accueil': index.md
 - '01. Généralités': 01-generalites.md
 - '02. Généralités (suite)': 02-algorithmique.md
+- '03. Algorigrammes' : 03-algorigrammes.md
