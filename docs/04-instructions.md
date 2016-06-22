@@ -10,7 +10,7 @@ Les instructions
 
 Les __instructions__ sont les briques élémentaires de tout programme. Elle représentent les actions que _sait faire_ un ordinateur. Comme tu le constatera, il n'y en a pas beaucoup ! 
 
-En fait les ordinateurs sont assez limités ! Programmer c'est un peu comme parler à un enfant de 8 ans atteint du [syndrome de Down](https://fr.wikipedia.org/wiki/Trisomie_21)... ça nécessite de bien tout expliquer. Et s'il arrive qu'il ne comprenne pas, ce n'est pas de sa faute puisque c'est sa condition, il est comme ça. Il n'y peut rien. L'erreur de communication viendra forcément du donneur d'explications qui a été trop rapide ou trop imprécis dans sa demande par rapport aux capacités de l'enfant handicapé.
+En fait les ordinateurs sont assez limités ! Programmer est un peu comme parler à un enfant de 8 ans atteint du [syndrome de Down](https://fr.wikipedia.org/wiki/Trisomie_21)... ça nécessite de bien tout expliquer... et s'il arrive qu'il ne comprenne pas, ce n'est pas de sa faute puisque c'est sa condition, il est comme ça. Il n'y peut rien. L'erreur de communication viendra forcément du donneur d'explications qui aura été trop rapide ou trop imprécis dans sa demande par rapport aux capacités de l'enfant handicapé.
 
 Cela pourrait donner la situation imaginaire suivante : 
 
@@ -28,7 +28,7 @@ Cela pourrait donner la situation imaginaire suivante :
 
 Tu verras que communiquer avec un ordinateur, c'est pareil : ça consiste essentiellement à décomposer tes idées en actions et en idées plus simples, puis à les décomposer encore et encore... jusqu'à les réduire à un ensemble de ces instructions toutes bêtes.
 
-Je sais que dit comme ça, c'est encore un peu abstrait. Il donc est temps de passer à de vrais exemples concrets et te présenter enfin les __instructions__ !
+Je sais que dit ainsi, c'est encore un peu abstrait. Il donc est temps de passer à des exemples concrets et te présenter enfin les __instructions__ !
 
 
 ### Le début du programme
@@ -44,7 +44,7 @@ Ensuite on suivra les flèches, dans l'ordre, pour passer d'une instruction à l
 
 C'est l'endroit ou se termine le programme. L'ordinateur ne fait plus rien dans notre programme une fois arrivé à ce point. 
 
-Pour des raisons de clarté, on essaiera d'avoir une seule fin représentée dans notre algorigramme. Cependant il pourra y avoir flèches arrivant à la fin du programme.
+Pour des raisons de clarté, on essaiera d'avoir une seule fin représentée dans notre algorigramme. Cependant il pourra y avoir plusieurs flèches arrivant à la fin du programme.
 
 ![début](04-instructions/fin.png)
 
@@ -82,7 +82,7 @@ On remarque que la flèche _vient_ de la bulle.
 
 Ce sont des petites cases mémoire dont le contenu peut _être modifié_ (et donc varier). 
 
-Plus précisément c'est le nom que l'on va donner à _une case_ ou _un groupe de cases_ dans la mémoire de l'ordinateur...
+Plus précisément c'est le nom que l'on va donner à _une case_ ou _un groupe de cases_ dans la mémoire de l'ordinateur... C'est comme une étiquette sur un bagage.
 
 ![une variable c'est une étiquette](04-instructions/variable-etiquette.png)
 
@@ -101,12 +101,12 @@ Il est possible d'assigner des valeurs depuis le programme lui-même, ou bien de
 
 Ensuite, pour une variable donnée, on pourra aussi __lire sa valeur__ : c'est à dire lire le contenu de la case mémoire désignée par l'étiquette. On pourra utiliser cette valeur pour l'envoyer vers une __sortie__, ou pour faire une opération utilisant la valeur et produire un résultat.
 
-On peut même utiliser cette variable, faire une opération et enfin stocker le résultat dans cette même variable ! Avec ce type d'instructions, on lit le coté droit de la flèche avant le coté gauche : on lit les valeurs et on fait le calcul, on bientient un résultat et la variable (l'étiquette) désigne ensuite ce résultat.
 
 | Exemple 6. Lecture d'une variable : on affiche son contenu à l'écran |
 |-----------------------------------------------------|
 | ![exemple-6](04-instructions/variable-vers-sortie.png) |
 
+On peut même utiliser cette variable, faire une opération et enfin stocker le résultat dans cette même variable ! Avec ce type d'instructions, on lit le coté droit de la flèche avant le coté gauche : on lit les valeurs et on fait le calcul, on bientient un résultat et la variable (l'étiquette) désigne ensuite ce résultat.
 
 | Exemple 7. Lecture d'une variable, on fait un calcul et on le stocke sous le même nom |
 |-----------------------------------------------------|
@@ -123,8 +123,8 @@ On peut même utiliser cette variable, faire une opération et enfin stocker le 
 ----------
 
 Nous avons posé les bases. Mais que va-t-on faire de ces quelques petites
-instructions de rien du tout ?  J'ai comme l'impression qu'il nous manque un
-petit quelque chose... mais quoi ? Tu le sauras au prochain épisode !
+instructions de rien du tout ?  J'ai comme l'intuition qu'il nous manque un
+petit quelque chose... mais quoi ? Nous le saurons au prochain épisode !
 
 * Alors, quelles sont tes impressions jusque là ?
 * Le contenu commence à s'étoffer... est-ce que tu as des questions ?
