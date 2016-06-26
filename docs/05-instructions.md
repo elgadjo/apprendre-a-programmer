@@ -2,10 +2,6 @@
 Algorigrammes (partie 3)
 ========================
 
-Quand la population immobile est rivée sur un
-rectangle vert aux petits bonshommes courrants, quand elle est nerveuse à l'idée de que son équipe rate un premier but, mais que le reste lui échappe... une courageuse s'affaire dans la chaleur d'un dimanche, pour préparer, sensibiliser, éduquer, sauver notre planète et améliorer notre avenir à tous. Ouf, merci, je suis (un peu) rassuré ;-)
-
-
 Reprenons tout doucement notre chemin après ce laborieux weekend ;-)
 
 > « C'est bien engagé coté Irlandais... 
