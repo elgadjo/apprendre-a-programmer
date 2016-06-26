@@ -431,7 +431,7 @@ Et là, j'ai instinctivement répondu « VRAI ! »...<br/>
 <li>Si la condition vaut <code>FAUX</code>, on suivra la flèche <em>notée par un cercle</em> ou une croix (à droite dans l'illustration ci-dessous).</li>
 </ul>
 <p>Les branches d'un test conditionel peuvent contenir autant d'instructions que l'on souhaite et elle peuvent être de tout les types possibles (on peut tres bien mettre un test conditionel dans un test conditionnel dans un test conditionnel si on veut...).</p>
-<p>Même si ce n'est pas obligatoire sur le papier (puisqu'on peut dessiner comme on veut), les branches d'un test conditionnel finissent toujours par se rejoidre dans un vrai programme : après les branches, on a soit sur une suite commune d'instructions, soit les branches pointent directement sur la fin du programme.</p>
+<p>Même si ce n'est pas obligatoire sur le papier (puisqu'on peut dessiner comme on veut), les branches d'un test conditionnel finissent toujours par se rejoidre dans un vrai programme : après les branches, on a soit une suite commune d'instructions, soit les branches pointent directement sur la fin du programme.</p>
 <p>Remarque également qu'avec l'instruction de <strong>test conditionnel</strong> les deux flèches de chemin partent <em>vers le bas</em> du programme.</p>
 <p><img alt="x" src="../05-instructions/instruction-test.png" /></p>
 <h4 id="exemple-51-le-videur-de-base">Exemple 5.1. Le videur de base<a class="headerlink" href="#exemple-51-le-videur-de-base" title="Permanent link">#</a></h4>
@@ -452,10 +452,10 @@ Si son nom est <code>"Hippolite"</code> et que son mot de passe est <code>"Genev
 Calcule l'age qu'il aura l'année prochaine et stocke le résultat dans la variable <code>age</code> (la même). Ensuite affiche-lui le message <code>"L'année prochaine, tu auras XX ans"</code> (avec XX remplacé par son âge prochain).</p>
 </div>
 <h3 id="les-boucles">Les boucles<a class="headerlink" href="#les-boucles" title="Permanent link">#</a></h3>
-<p>Les <strong>boucles</strong> sont très semblables aux <strong>test conditionnels</strong>. La différence ? Les boucles possède un chemin qui part <em>vers l'arrière</em> du programme. Elle sont les seules instructions à avoir la possibilité de faire cela.</p>
+<p>Les <strong>boucles</strong> sont très semblables aux <strong>test conditionnels</strong>. La différence ? Les boucles possèdent un chemin qui part <em>vers l'arrière</em> du programme. Elle sont les seules instructions à avoir la possibilité de faire cela.</p>
 <p>Comme l'une des flèche part vers l'arrière, il y a toute une partie du code qui sera répétée entre la flèche qui remonte et la condition de la boucle, on appelle cette partie le <strong>corps de la boucle</strong>. </p>
 <p>As-tu déjà vu un programme <em>freezer</em> ? ou bien un logiciel dont la fenêtre ne répond plus ? Eh bien c'est une boucle infinie dans le programe ! C'est pour cela qu'il est <em>vital</em> de correctement définir la condition d'une boucle, car c'est elle qui permettra de continuer ou d'arrêter (et sortir) de la boucle. On parlera dans ce cas de  <strong>condition de continuation</strong> ou de <strong>condition d'arrêt</strong> (l'un étant l'inverse de l'autre).</p>
-<p>Lorsque tu feras des boucles, fais attention à ce que le <strong>corps de la boucle</strong> contienne bien des instructions qui influent sur <strong>la condition de continuation</strong>, sinon c'est que la boucle n'est influencée qu'une fois pour toutes par quelque chose d'antérieur... et c'est une boucle infinie garantie.</p>
+<p>Lorsque tu feras des boucles, fais bien attention à ce que le <strong>corps de la boucle</strong> contienne bien des instructions qui influent sur <strong>la condition de continuation</strong>, sinon c'est que la boucle n'est influencée qu'une fois pour toutes par quelque chose d'antérieur... et c'est une boucle infinie garantie.</p>
 <p><img alt="x" src="../05-instructions/instruction-boucle.png" /></p>
 <h4 id="exemple-53-afficher-les-chiffres-de-1-a-10">Exemple 5.3. Afficher les chiffres de 1 à 10<a class="headerlink" href="#exemple-53-afficher-les-chiffres-de-1-a-10" title="Permanent link">#</a></h4>
 <p>Dans l'exemple qui suit, il s'agit d'afficher tous les chiffres de 1 à 10, sans faire nous même l'affichage de toutes les valeurs intermédiaires ! D'accord, ça ne serait pas trop difficile pour 1 à 10, mais imagine de 1 à 100... ou de 1 à 1000 ! C'est là qu'il faut être astucieux ! </p>
@@ -471,7 +471,8 @@ Calcule l'age qu'il aura l'année prochaine et stocke le résultat dans la varia
 </div>
 <div class="admonition note">
 <p class="admonition-title">Exercice 5.d</p>
-<p><strong>Sans dessiner</strong> l'algorigramme, comment ferais-tu pour adapter le videur de base (exemple 5.1) afin qu'il ne laisse entrer que 300 visiteurs dans la boite de nuit ?</p>
+<p><strong>Sans dessiner</strong> l'algorigramme, comment ferais-tu pour adapter le videur de base (exemple 5.1) afin qu'il ne laisse entrer que 300 visiteurs dans la boite de nuit ?
+Que faudrait-il ajouter ?</p>
 </div>
 <h2 id="a-suivre">À suivre ?<a class="headerlink" href="#a-suivre" title="Permanent link">#</a></h2>
 <p>Ouf, cette fois-ci c'était un peu plus costaud ! Nous allons donc prendre le temps de bien assimiler tout ça avant d'enchainer vers la derniere notion qui reste... puis vers du vrai code.</p>
