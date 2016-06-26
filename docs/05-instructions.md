@@ -74,8 +74,8 @@ Elle est vraie si l'une des deux valeurs de départ (A, B) est vraie.
 | A    | B    | A ou B |
 |------|------|--------|
 | VRAI | VRAI | VRAI   |
-| VRAI | FAUX | FAUX   |
-| FAUX | VRAI | FAUX   |
+| VRAI | FAUX | VRAI   |
+| FAUX | VRAI | VRAI   |
 | FAUX | FAUX | FAUX   |
 
 ### L'exclusion mutuelle (... XOR ...)
@@ -95,9 +95,9 @@ Les opérateurs de l'algèbre booléenne ont tout un ensemble de propriétés co
 Si cela t'intéresse, je te renvoie à [la page Wikipedia](https://fr.wikipedia.org/wiki/Alg%C3%A8bre_de_Boole_%28logique%29#Propri.C3.A9t.C3.A9s_des_op.C3.A9rateurs), mais nous y reviendrons de toute façon lorsque nous en aurons besoin dans quelques chapitres.
 
 
-> L'autre soir, le serveur m'a demandé : <br/>
+> L'autre dimanche, le serveur m'a demandé : <br/>
 > « Vous voulez du carot'cake ou de la tarte au citron ? » <br/>
-> Et là, j'ai instinctivement répondu « VRAI ! »...
+> Et là, j'ai instinctivement répondu « VRAI ! »...<br/>
 > <em>Déformation professionelle n°5</em>
 
 Les instructions conditionnelles
@@ -109,13 +109,14 @@ Les __instructions conditionnelles__ sont des instructions qui offrent plusieurs
 ### Les tests conditionnels
 
 
-Les __tests conditionnels__ sont des instructions qui possèdent deux branches et servent à vérifier une condition :
+Les __tests conditionnels__ sont des instructions qui possèdent deux branches et servent à orienter le programme en fonction d'une condition :
+
 * Si la condition vaut ``VRAI``, on suivra le chemin de la flèche normale (à gauche dans l'illustration ci-dessous),
-* Si la condition vaut ``FAUX``, on suivra la flèche notée par un cercle ou une croix (à droite dans l'illustration ci-dessous).
+* Si la condition vaut ``FAUX``, on suivra la flèche _notée par un cercle_ ou une croix (à droite dans l'illustration ci-dessous).
 
-En général, les branches d'un test conditionel peuvent contenir autant d'instruction que l'on veut et elle peuvent être de tout les types possibles (on peut tres bien mettre un test conditionel dans un test conditionnel dans un test conditionnel si on veut...).
+Les branches d'un test conditionel peuvent contenir autant d'instructions que l'on souhaite et elle peuvent être de tout les types possibles (on peut tres bien mettre un test conditionel dans un test conditionnel dans un test conditionnel si on veut...).
 
-Même si ce n'est pas obligatoire sur le papier (puisqu'on peut dessiner comme on veut), les branches d'un test conditionnel finissent toujours par se rejoidre dans un vrai programme : après les branches, on a soit sur une suite commune d'instructions, soit les branches pointent directement sur la fin du programme.
+Même si ce n'est pas obligatoire sur le papier (puisqu'on peut dessiner comme on veut), les branches d'un test conditionnel finissent toujours par se rejoidre dans un vrai programme : après les branches, on a soit une suite commune d'instructions, soit les branches pointent directement sur la fin du programme.
 
 Remarque également qu'avec l'instruction de __test conditionnel__ les deux flèches de chemin partent _vers le bas_ du programme.
 
@@ -148,13 +149,13 @@ Cela donnerait l'algorigramme suivant :
 ### Les boucles
 
 
-Les __boucles__ sont très semblables aux __test conditionnels__. La différence ? Les boucles possède un chemin qui part _vers l'arrière_ du programme. Elle sont les seules instructions à avoir la possibilité de faire cela.
+Les __boucles__ sont très semblables aux __test conditionnels__. La différence ? Les boucles possèdent un chemin qui part _vers l'arrière_ du programme. Elle sont les seules instructions à avoir la possibilité de faire cela.
 
 Comme l'une des flèche part vers l'arrière, il y a toute une partie du code qui sera répétée entre la flèche qui remonte et la condition de la boucle, on appelle cette partie le __corps de la boucle__. 
 
 As-tu déjà vu un programme _freezer_ ? ou bien un logiciel dont la fenêtre ne répond plus ? Eh bien c'est une boucle infinie dans le programe ! C'est pour cela qu'il est _vital_ de correctement définir la condition d'une boucle, car c'est elle qui permettra de continuer ou d'arrêter (et sortir) de la boucle. On parlera dans ce cas de  __condition de continuation__ ou de __condition d'arrêt__ (l'un étant l'inverse de l'autre).
 
-Lorsque tu feras des boucles, fais attention à ce que le __corps de la boucle__ contienne bien des instructions qui influent sur __la condition de continuation__, sinon c'est que la boucle n'est influencée qu'une fois pour toutes par quelque chose d'antérieur... et c'est une boucle infinie garantie.
+Lorsque tu feras des boucles, fais bien attention à ce que le __corps de la boucle__ contienne bien des instructions qui influent sur __la condition de continuation__, sinon c'est que la boucle n'est influencée qu'une fois pour toutes par quelque chose d'antérieur... et c'est une boucle infinie garantie.
 
 ![x](05-instructions/instruction-boucle.png)
 
@@ -180,20 +181,16 @@ Presque le même exemple qu'au dessus : on utilise également un compteur, sauf 
     
 !!! note "Exercice 5.d"
     __Sans dessiner__ l'algorigramme, comment ferais-tu pour adapter le videur de base (exemple 5.1) afin qu'il ne laisse entrer que 300 visiteurs dans la boite de nuit ?
-
+    Que faudrait-il ajouter ?
 
 À suivre ?
 ----------
 
 Ouf, cette fois-ci c'était un peu plus costaud ! Nous allons donc prendre le temps de bien assimiler tout ça avant d'enchainer vers la derniere notion qui reste... puis vers du vrai code.
 
-Donc au prochain numéro, je te propose :
+Pour le prochain numéro, je te propose de voir en détail les solutions des exercices, et je vais aussi en profiter pour te présenter une démarche d'analyse permettant de partir d'un problème (ou d'un énoncé) et de construire un programme.
 
-* de voir en détail les solutions des exercices,
-* et je vais en profiter pour te présenter une démarche d'analyse permettant de partir d'un problème (ou d'un énoncé) et de construire un programme.
+Si le coeur t'en dis, j'attends impatiemment ton e-mail avec :
 
-J'attends impatiemment ton e-mail avec :
-
-* un photo de tes exercices (à la main sur papier),
-* un petit message qui dit "__JE VEUX LA SUITE !__" ;-)
-
+* une __photo de tes exercices__ (à la main sur papier),
+* un __petit message qui m'incite à écrire la suite__ :-)
