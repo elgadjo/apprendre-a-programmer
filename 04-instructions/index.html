@@ -232,6 +232,15 @@
   </li>
 
           
+            
+  <li>
+    <a class="" title="05. Algorigrammes (partie 3)" href="../05-instructions/">
+      05. Algorigrammes (partie 3)
+    </a>
+    
+  </li>
+
+          
         </ul>
         
       </div>
@@ -247,7 +256,7 @@
 <p>C'est fois c'est la bonne, on dessine !</p>
 <h2 id="les-instructions">Les instructions<a class="headerlink" href="#les-instructions" title="Permanent link">#</a></h2>
 <p>Les <strong>instructions</strong> sont les briques élémentaires de tout programme. Elle représentent les actions que <em>sait faire</em> un ordinateur. Comme tu le constatera, il n'y en a pas beaucoup ! </p>
-<p>En fait les ordinateurs sont assez limités ! Programmer c'est un peu comme parler à un enfant de 8 ans atteint du <a href="https://fr.wikipedia.org/wiki/Trisomie_21">syndrome de Down</a>... ça nécessite de bien tout expliquer. Et s'il arrive qu'il ne comprenne pas, ce n'est pas de sa faute puisque c'est sa condition, il est comme ça. Il n'y peut rien. L'erreur de communication viendra forcément du donneur d'explications qui a été trop rapide ou trop imprécis dans sa demande par rapport aux capacités de l'enfant handicapé.</p>
+<p>En fait les ordinateurs sont assez limités ! Programmer est un peu comme parler à un enfant de 8 ans atteint du <a href="https://fr.wikipedia.org/wiki/Trisomie_21">syndrome de Down</a>... ça nécessite de bien tout expliquer... et s'il arrive qu'il ne comprenne pas, ce n'est pas de sa faute puisque c'est sa condition, il est comme ça. Il n'y peut rien. L'erreur de communication viendra forcément du donneur d'explications qui aura été trop rapide ou trop imprécis dans sa demande par rapport aux capacités de l'enfant handicapé.</p>
 <p>Cela pourrait donner la situation imaginaire suivante : </p>
 <blockquote>
 <p>« Dis petit, tu peux m'aider à peindre ce mur ? <br/>
@@ -263,14 +272,14 @@ Il prends le pinceau et reste immobile devant moi, l'air béat. <br/>
 &ndash; « Oui, bon, c'est mieux..., mais tu oublies la peinture là... »</p>
 </blockquote>
 <p>Tu verras que communiquer avec un ordinateur, c'est pareil : ça consiste essentiellement à décomposer tes idées en actions et en idées plus simples, puis à les décomposer encore et encore... jusqu'à les réduire à un ensemble de ces instructions toutes bêtes.</p>
-<p>Je sais que dit comme ça, c'est encore un peu abstrait. Il donc est temps de passer à de vrais exemples concrets et te présenter enfin les <strong>instructions</strong> !</p>
+<p>Je sais que dit ainsi, c'est encore un peu abstrait. Il donc est temps de passer à des exemples concrets et te présenter enfin les <strong>instructions</strong> !</p>
 <h3 id="le-debut-du-programme">Le début du programme<a class="headerlink" href="#le-debut-du-programme" title="Permanent link">#</a></h3>
 <p>Comme son nom l'indique, c'est là où l'ordinateur va commencer l'exécution de notre programme.
 Ensuite on suivra les flèches, dans l'ordre, pour passer d'une instruction à l'autre.</p>
 <p><img alt="début" src="../04-instructions/debut.png" /></p>
 <h3 id="la-fin-du-programme">La fin du programme<a class="headerlink" href="#la-fin-du-programme" title="Permanent link">#</a></h3>
 <p>C'est l'endroit ou se termine le programme. L'ordinateur ne fait plus rien dans notre programme une fois arrivé à ce point. </p>
-<p>Pour des raisons de clarté, on essaiera d'avoir une seule fin représentée dans notre algorigramme. Cependant il pourra y avoir flèches arrivant à la fin du programme.</p>
+<p>Pour des raisons de clarté, on essaiera d'avoir une seule fin représentée dans notre algorigramme. Cependant il pourra y avoir plusieurs flèches arrivant à la fin du programme.</p>
 <p><img alt="début" src="../04-instructions/fin.png" /></p>
 <h3 id="les-sorties">Les sorties<a class="headerlink" href="#les-sorties" title="Permanent link">#</a></h3>
 <p>C'est le premier moyen qu'un programe peut utiliser pour interagir avec son environnement. Plus précisément un programme pourra utiliser une <strong>sortie</strong> pour <em>transmettre de l'information vers l'extérieur</em>. On pourra donc utiliser tout périphérique branché à notre ordinateur (écran, imprimante, réseau, enceintes, etc.)</p>
@@ -318,7 +327,7 @@ Ensuite on suivra les flèches, dans l'ordre, pour passer d'une instruction à l
 </table>
 <h3 id="les-variables">Les variables<a class="headerlink" href="#les-variables" title="Permanent link">#</a></h3>
 <p>Ce sont des petites cases mémoire dont le contenu peut <em>être modifié</em> (et donc varier). </p>
-<p>Plus précisément c'est le nom que l'on va donner à <em>une case</em> ou <em>un groupe de cases</em> dans la mémoire de l'ordinateur...</p>
+<p>Plus précisément c'est le nom que l'on va donner à <em>une case</em> ou <em>un groupe de cases</em> dans la mémoire de l'ordinateur... C'est comme une étiquette sur un bagage.</p>
 <p><img alt="une variable c'est une étiquette" src="../04-instructions/variable-etiquette.png" /></p>
 <p>Tout d'abord, pour une variable donnée, on pourra lui <strong>assigner une valeur</strong> : c'est à dire mettre une valeur dans la case désignée par l'étiquette. 
 Par exemple, dans l'illustration ci-dessus on voit le résultat en mémoire après l'assignation de la valeur <code>18</code> dans la variable <code>age</code>.</p>
@@ -348,7 +357,6 @@ Par exemple, dans l'illustration ci-dessus on voit le résultat en mémoire apr�
 </tbody>
 </table>
 <p>Ensuite, pour une variable donnée, on pourra aussi <strong>lire sa valeur</strong> : c'est à dire lire le contenu de la case mémoire désignée par l'étiquette. On pourra utiliser cette valeur pour l'envoyer vers une <strong>sortie</strong>, ou pour faire une opération utilisant la valeur et produire un résultat.</p>
-<p>On peut même utiliser cette variable, faire une opération et enfin stocker le résultat dans cette même variable ! Avec ce type d'instructions, on lit le coté droit de la flèche avant le coté gauche : on lit les valeurs et on fait le calcul, on bientient un résultat et la variable (l'étiquette) désigne ensuite ce résultat.</p>
 <table>
 <thead>
 <tr>
@@ -361,6 +369,7 @@ Par exemple, dans l'illustration ci-dessus on voit le résultat en mémoire apr�
 </tr>
 </tbody>
 </table>
+<p>On peut même utiliser cette variable, faire une opération et enfin stocker le résultat dans cette même variable ! Avec ce type d'instructions, on lit le coté droit de la flèche avant le coté gauche : on lit les valeurs et on fait le calcul, on bientient un résultat et la variable (l'étiquette) désigne ensuite ce résultat.</p>
 <table>
 <thead>
 <tr>
@@ -382,8 +391,8 @@ Alice trouva cela très étrange et s'approcha pour les observer de plus près.
 </blockquote>
 <h2 id="a-suivre">À suivre ?<a class="headerlink" href="#a-suivre" title="Permanent link">#</a></h2>
 <p>Nous avons posé les bases. Mais que va-t-on faire de ces quelques petites
-instructions de rien du tout ?  J'ai comme l'impression qu'il nous manque un
-petit quelque chose... mais quoi ? Tu le sauras au prochain épisode !</p>
+instructions de rien du tout ?  J'ai comme l'intuition qu'il nous manque un
+petit quelque chose... mais quoi ? Nous le saurons au prochain épisode !</p>
 <ul>
 <li>Alors, quelles sont tes impressions jusque là ?</li>
 <li>Le contenu commence à s'étoffer... est-ce que tu as des questions ?</li>
@@ -428,6 +437,22 @@ petit quelque chose... mais quoi ? Tu le sauras au prochain épisode !</p>
       
     </div>
     <div class="next">
+      
+        <a href="../05-instructions/" title="05. Algorigrammes (partie 3)">
+          <span class="direction">
+            Chapitre suivant
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                05. Algorigrammes (partie 3)
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
       
     </div>
   </nav>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>05. Algorigrammes (partie 3) - Apprendre à programmer</title>
+      
+      
+      
+        <link rel="canonical" href="http://elgadjo.github.io/apprendre-a-programmer/05-instructions/">
+      
+      
+        <meta name="author" content="El Gadjo Ridículo">
+      
+    
+    <meta property="og:url" content="http://elgadjo.github.io/apprendre-a-programmer/05-instructions/">
+    <meta property="og:title" content="Apprendre à programmer">
+    <meta property="og:image" content="http://elgadjo.github.io/apprendre-a-programmer/05-instructions//../">
+    <meta name="apple-mobile-web-app-title" content="Apprendre à programmer">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../None">
+    <link rel="icon" type="image/x-icon" href="../None">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/stylesheets/application-0dac3e5884.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-deep-purple palette-accent-orange">
+    
+      
+      
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+          </span>
+        
+        05. Algorigrammes (partie 3)
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://github.com/elgadjo/apprendre-a-programmer" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>
+          Apprendre à programmer
+          <span class="version">
+            
+          </span>
+        </strong>
+        
+          <br>
+          elgadjo/apprendre-a-programmer
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            
+            <a href="https://github.com/elgadjo/apprendre-a-programmer/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/elgadjo/apprendre-a-programmer/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Accueil" href="..">
+      Accueil
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="01. Généralités" href="../01-generalites/">
+      01. Généralités
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="02. Généralités (partie 2)" href="../02-algorithmique/">
+      02. Généralités (partie 2)
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="03. Algorigrammes" href="../03-algorigrammes/">
+      03. Algorigrammes
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="04. Algorigrammes (partie 2)" href="../04-instructions/">
+      04. Algorigrammes (partie 2)
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="05. Algorigrammes (partie 3)" href="./">
+      05. Algorigrammes (partie 3)
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Retour sur les instructions" href="#retour-sur-les-instructions">
+                Retour sur les instructions
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Les expressions booléeennes" href="#les-expressions-booleeennes">
+                Les expressions booléeennes
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Les instructions conditionnelles" href="#les-instructions-conditionnelles">
+                Les instructions conditionnelles
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="À suivre ?" href="#a-suivre">
+                À suivre ?
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="algorigrammes-partie-3">Algorigrammes (partie 3)<a class="headerlink" href="#algorigrammes-partie-3" title="Permanent link">#</a></h1>
+<p>Quand la population immobile est rivée sur un
+rectangle vert aux petits bonshommes courrants, quand elle est nerveuse à l'idée de que son équipe rate un premier but, mais que le reste lui échappe... une courageuse s'affaire dans la chaleur d'un dimanche, pour préparer, sensibiliser, éduquer, sauver notre planète et améliorer notre avenir à tous. Ouf, merci, je suis (un peu) rassuré ;-)</p>
+<p>Reprenons tout doucement notre chemin après ce laborieux weekend ;-)</p>
+<blockquote>
+<p>« C'est bien engagé coté Irlandais... 
+balle récupérée par Murphy... 
+par Hendrick... Drogba... 
+et oui, elle a été contrée ! » <br/>
+<em>Euro 2016, France-Irlande (2-1)</em></p>
+</blockquote>
+<h2 id="retour-sur-les-instructions">Retour sur les instructions<a class="headerlink" href="#retour-sur-les-instructions" title="Permanent link">#</a></h2>
+<p>Dans le chapitre précédent, je te présentais les quelques  <strong>instructions</strong> de base d'un programme : le début, la fin, les entrées, les sorties, les variables.</p>
+<p>Voyons un premier algorigramme qui assemble toutes ces briques vues jusque là :</p>
+<p><img alt="x" src="../05-instructions/exemple1-demande-nom-salutation.png" /></p>
+<p>Alors, comment interpréter cela ? C'est très simple :</p>
+<ol>
+<li>on démarre sur le rond noir (début), </li>
+<li>on suit la flèche,</li>
+<li>on arrive sur une instruction de sortie, qui prends le texte <code>"Quel est ton nom"</code> et qui l'affiche sur le périphérique <code>Ecran</code>,</li>
+<li>on suite la flèche,</li>
+<li>on tombe sur une instruction d'entrée, c'est à dire que le programme attend que l'utilisateur tape quelque chose, cela peut être n'importe quoi (par exemple : <code>"Anatole"</code>). Lorsqu'il valide, le resultat est enregistré dans la variable (c'est à dire une case mémoire pointée par une étiquette) que l'on choisit d'appeller <code>nom</code>,</li>
+<li>on suit la flèche,</li>
+<li>on arrive sur une nouvelle sortie qui prends le texte <code>"Bonjour "</code> et qui lui ajoute la variable <code>nom</code> (c'est à dire le contenu de la case mémoire pointé par l'équiquette). On obtient donc en mémoire le texte <code>"Bonjour Anatole"</code> qui part alors vers le périphérique <code>Écran</code>.</li>
+<li>on suit la flèche,</li>
+<li>on arrive sur le rond cerclé, c'est donc la fin du programe.</li>
+</ol>
+<p>Whaou. Nous sommes donc capables de demander un nom à l'utilisateur et de le saluer ! Pas mal pour un premier programme, non ?</p>
+<p>Les instructions que nous avons vues jusque là permettent de faire bien des choses, mais elle ont un toutes gros inconvénient : elle ne permetttent la conception que des programes <em>totalement linéaires</em>, quelle que soient les valeurs des variables ou les entrées du programme.</p>
+<p>Pour améliorer cela, il faudrait être capable d'exprimer des conditions, et de faire des choix... et c'est là qu'interviennent les <strong>expressions booléennes</strong> et les <strong>instructions conditionnelles</strong>.</p>
+<h2 id="les-expressions-booleeennes">Les expressions booléeennes<a class="headerlink" href="#les-expressions-booleeennes" title="Permanent link">#</a></h2>
+<p>Les <strong>expressions booléennes</strong> sont des affirmations dont le résultat est soit <code>VRAI</code>, soit <code>FAUX</code>. Cela peut être une comparaison, une formule, ou le résultat d'un sous-programme (on en parlera plus tard de ce dernier point). Ce sont elles que nous allons utiliser comme conditions pour décider de la suite de notre programme.</p>
+<p>On appelle <code>VRAI</code> et <code>FAUX</code> des <em>valeurs booléennes</em>. Sur la base de ces valeurs on peut définir quelques opérations logiques :</p>
+<h3 id="la-negation-non">La négation (NON ...)<a class="headerlink" href="#la-negation-non" title="Permanent link">#</a></h3>
+<p>Elle inverse la valeur de départ (ici A).</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>non A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VRAI</td>
+<td>FAUX</td>
+</tr>
+<tr>
+<td>FAUX</td>
+<td>VRAI</td>
+</tr>
+</tbody>
+</table>
+<h3 id="conjonction-et">Conjonction (... ET ...)<a class="headerlink" href="#conjonction-et" title="Permanent link">#</a></h3>
+<p>Elle n'est vraie que si les deux valeurs de départ (A, B) sont toutes deux vraies.</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A et B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VRAI</td>
+<td>VRAI</td>
+<td>VRAI</td>
+</tr>
+<tr>
+<td>VRAI</td>
+<td>FAUX</td>
+<td>FAUX</td>
+</tr>
+<tr>
+<td>FAUX</td>
+<td>VRAI</td>
+<td>FAUX</td>
+</tr>
+<tr>
+<td>FAUX</td>
+<td>FAUX</td>
+<td>FAUX</td>
+</tr>
+</tbody>
+</table>
+<h3 id="disjonction-ou">Disjonction (... OU ...)<a class="headerlink" href="#disjonction-ou" title="Permanent link">#</a></h3>
+<p>Elle est vraie si l'une des deux valeurs de départ (A, B) est vraie.</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A ou B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VRAI</td>
+<td>VRAI</td>
+<td>VRAI</td>
+</tr>
+<tr>
+<td>VRAI</td>
+<td>FAUX</td>
+<td>FAUX</td>
+</tr>
+<tr>
+<td>FAUX</td>
+<td>VRAI</td>
+<td>FAUX</td>
+</tr>
+<tr>
+<td>FAUX</td>
+<td>FAUX</td>
+<td>FAUX</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lexclusion-mutuelle-xor">L'exclusion mutuelle (... XOR ...)<a class="headerlink" href="#lexclusion-mutuelle-xor" title="Permanent link">#</a></h3>
+<p>Elle n'est vraie que si les deux valeurs (A, B) sont différentes.</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A xor B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VRAI</td>
+<td>VRAI</td>
+<td>FAUX</td>
+</tr>
+<tr>
+<td>VRAI</td>
+<td>FAUX</td>
+<td>VRAI</td>
+</tr>
+<tr>
+<td>FAUX</td>
+<td>VRAI</td>
+<td>VRAI</td>
+</tr>
+<tr>
+<td>FAUX</td>
+<td>FAUX</td>
+<td>FAUX</td>
+</tr>
+</tbody>
+</table>
+<h3 id="proprietes-des-operateurs">Propriétés des opérateurs<a class="headerlink" href="#proprietes-des-operateurs" title="Permanent link">#</a></h3>
+<p>Les opérateurs de l'algèbre booléenne ont tout un ensemble de propriétés comme les opérateurs des mathématiques : <em>commutativité</em>, <em>distributivité</em>, etc. 
+Si cela t'intéresse, je te renvoie à <a href="https://fr.wikipedia.org/wiki/Alg%C3%A8bre_de_Boole_%28logique%29#Propri.C3.A9t.C3.A9s_des_op.C3.A9rateurs">la page Wikipedia</a>, mais nous y reviendrons de toute façon lorsque nous en aurons besoin dans quelques chapitres.</p>
+<blockquote>
+<p>L'autre soir, le serveur m'a demandé : <br/>
+« Vous voulez du carot'cake ou de la tarte au citron ? » <br/>
+Et là, j'ai instinctivement répondu « VRAI ! »...
+<em>Déformation professionelle n°5</em></p>
+</blockquote>
+<h2 id="les-instructions-conditionnelles">Les instructions conditionnelles<a class="headerlink" href="#les-instructions-conditionnelles" title="Permanent link">#</a></h2>
+<p>Les <strong>instructions conditionnelles</strong> sont des instructions qui offrent plusieurs chemins possibles pour le programme à partir d'une même instruction. Pour cela elle permettant également de prendre des décisions sur le chemin à prendre en fonction de certaines conditions.</p>
+<h3 id="les-tests-conditionnels">Les tests conditionnels<a class="headerlink" href="#les-tests-conditionnels" title="Permanent link">#</a></h3>
+<p>Les <strong>tests conditionnels</strong> sont des instructions qui possèdent deux branches et servent à vérifier une condition :
+<em> Si la condition vaut <code>VRAI</code>, on suivra le chemin de la flèche normale (à gauche dans l'illustration ci-dessous),
+</em> Si la condition vaut <code>FAUX</code>, on suivra la flèche notée par un cercle ou une croix (à droite dans l'illustration ci-dessous).</p>
+<p>En général, les branches d'un test conditionel peuvent contenir autant d'instruction que l'on veut et elle peuvent être de tout les types possibles (on peut tres bien mettre un test conditionel dans un test conditionnel dans un test conditionnel si on veut...).</p>
+<p>Même si ce n'est pas obligatoire sur le papier (puisqu'on peut dessiner comme on veut), les branches d'un test conditionnel finissent toujours par se rejoidre dans un vrai programme : après les branches, on a soit sur une suite commune d'instructions, soit les branches pointent directement sur la fin du programme.</p>
+<p>Remarque également qu'avec l'instruction de <strong>test conditionnel</strong> les deux flèches de chemin partent <em>vers le bas</em> du programme.</p>
+<p><img alt="x" src="../05-instructions/instruction-test.png" /></p>
+<h4 id="exemple-51-le-videur-de-base">Exemple 5.1. Le videur de base<a class="headerlink" href="#exemple-51-le-videur-de-base" title="Permanent link">#</a></h4>
+<p>Pour illustrer mes propos sur les tests conditionnels, prenons un exemple que tu as sûrement déjà vécu : le videur à l'entrée de la boite de nuit. Son rôle est simple: il vérifie l'age de la personne qui se présente à l'entrée, et ne laisse passer que les adultes dans la boite de nuit. S'il était un programme, son travail ressemblerait à cela :</p>
+<p><img alt="x" src="../05-instructions/exemple-videur-base.png" /></p>
+<h4 id="exemple-52-le-videur-sexiste">Exemple 5.2. Le videur sexiste<a class="headerlink" href="#exemple-52-le-videur-sexiste" title="Permanent link">#</a></h4>
+<p>Comme beaucoup de videurs, il arrive que celui-ci soit sexiste : après avoir vérifié l'age, il laisse automatiquement passer les filles (ne me demande pas pourquoi...), en revanche, un mec devra obligatoirement être accompagné pour passer !</p>
+<p>Cela donnerait l'algorigramme suivant :</p>
+<p><img alt="x" src="../05-instructions/exemple-videur-sexiste.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Exercice 5.a</p>
+<p><strong>Dessine un programme</strong> qui demande à l'utilisateur de taper son nom et son mot de passe au clavier.
+Si son nom est <code>"Hippolite"</code> et que son mot de passe est <code>"Genevieve2012"</code> alors on le programme lui affiche à l'écran le message <code>"Accès autorisé"</code>, sinon le programme lui affiche <code>"Accès refusé"</code>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Exercice 5.b</p>
+<p><strong>Dessine un programme</strong> qui demande à l'utilisateur de taper son age et le stocke dans la variable <code>age</code>.
+Calcule l'age qu'il aura l'année prochaine et stocke le résultat dans la variable <code>age</code> (la même). Ensuite affiche-lui le message <code>"L'année prochaine, tu auras XX ans"</code> (avec XX remplacé par son âge prochain).</p>
+</div>
+<h3 id="les-boucles">Les boucles<a class="headerlink" href="#les-boucles" title="Permanent link">#</a></h3>
+<p>Les <strong>boucles</strong> sont très semblables aux <strong>test conditionnels</strong>. La différence ? Les boucles possède un chemin qui part <em>vers l'arrière</em> du programme. Elle sont les seules instructions à avoir la possibilité de faire cela.</p>
+<p>Comme l'une des flèche part vers l'arrière, il y a toute une partie du code qui sera répétée entre la flèche qui remonte et la condition de la boucle, on appelle cette partie le <strong>corps de la boucle</strong>. </p>
+<p>As-tu déjà vu un programme <em>freezer</em> ? ou bien un logiciel dont la fenêtre ne répond plus ? Eh bien c'est une boucle infinie dans le programe ! C'est pour cela qu'il est <em>vital</em> de correctement définir la condition d'une boucle, car c'est elle qui permettra de continuer ou d'arrêter (et sortir) de la boucle. On parlera dans ce cas de  <strong>condition de continuation</strong> ou de <strong>condition d'arrêt</strong> (l'un étant l'inverse de l'autre).</p>
+<p>Lorsque tu feras des boucles, fais attention à ce que le <strong>corps de la boucle</strong> contienne bien des instructions qui influent sur <strong>la condition de continuation</strong>, sinon c'est que la boucle n'est influencée qu'une fois pour toutes par quelque chose d'antérieur... et c'est une boucle infinie garantie.</p>
+<p><img alt="x" src="../05-instructions/instruction-boucle.png" /></p>
+<h4 id="exemple-53-afficher-les-chiffres-de-1-a-10">Exemple 5.3. Afficher les chiffres de 1 à 10<a class="headerlink" href="#exemple-53-afficher-les-chiffres-de-1-a-10" title="Permanent link">#</a></h4>
+<p>Dans l'exemple qui suit, il s'agit d'afficher tous les chiffres de 1 à 10, sans faire nous même l'affichage de toutes les valeurs intermédiaires ! D'accord, ça ne serait pas trop difficile pour 1 à 10, mais imagine de 1 à 100... ou de 1 à 1000 ! C'est là qu'il faut être astucieux ! </p>
+<p>Pour cela, nous utilisons un <code>compteur</code> : c'est à dire une variable que nous allons charger de savoir à quel tour nous en sommes tout au long du programme. Pour cela il faut l'initialiser correctement au début, puis la mettre à jour à chaque tour de boucle (en ajoutant 1 à la variable). Et comme elle sert justement à <em>compter</em>, on l'utilise également pour afficher le numéro du tour actuel.</p>
+<p>Notre condition de boucle vérifie à chaque tour que le compteur  <strong>ne dépasse pas 10</strong> et PAF (!), ça donne bien la suite des nombres de 1 à 10 !</p>
+<p><img alt="x" src="../05-instructions/exemple-compteur-1a10.png" /></p>
+<h4 id="exemple-54-afficher-les-chiffres-de-10-a-1-a-lenvers">Exemple 5.4. Afficher les chiffres de 10 à 1 (à l'envers)<a class="headerlink" href="#exemple-54-afficher-les-chiffres-de-10-a-1-a-lenvers" title="Permanent link">#</a></h4>
+<p>Presque le même exemple qu'au dessus : on utilise également un compteur, sauf que cette fois-ci nous allons l'initialiser à la valeur la plus grande au début puis compter en arrière, en retirant 1 à la variable chaque tour !</p>
+<p><img alt="x" src="../05-instructions/exemple-compteur-10a1.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Exercice 5.c</p>
+<p>Sur la base de l'exemple 5.3, <strong>dessiner un algorigramme</strong> qui compte de 0 à 10, de deux en deux (et qui affiche donc 0..2..4..6..8..10).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Exercice 5.d</p>
+<p><strong>Sans dessiner</strong> l'algorigramme, comment ferais-tu pour adapter le videur de base (exemple 5.1) afin qu'il ne laisse entrer que 300 visiteurs dans la boite de nuit ?</p>
+</div>
+<h2 id="a-suivre">À suivre ?<a class="headerlink" href="#a-suivre" title="Permanent link">#</a></h2>
+<p>Ouf, cette fois-ci c'était un peu plus costaud ! Nous allons donc prendre le temps de bien assimiler tout ça avant d'enchainer vers la derniere notion qui reste... puis vers du vrai code.</p>
+<p>Donc au prochain numéro, je te propose :</p>
+<ul>
+<li>de voir en détail les solutions des exercices,</li>
+<li>et je vais en profiter pour te présenter une démarche d'analyse permettant de partir d'un problème (ou d'un énoncé) et de construire un programme.</li>
+</ul>
+<p>J'attends impatiemment ton e-mail avec :</p>
+<ul>
+<li>un photo de tes exercices (à la main sur papier),</li>
+<li>un petit message qui dit "<strong>JE VEUX LA SUITE !</strong>" ;-)</li>
+</ul>
+          <aside class="copyright" role="note">
+            
+              Copyright (c) 2016 El Gadjo Ridículo &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../04-instructions/" title="04. Algorigrammes (partie 2)">
+          <span class="direction">
+            Chapitre précédent
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                04. Algorigrammes (partie 2)
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '..';
+      var repo_id  = 'elgadjo/apprendre-a-programmer';
+    </script>
+    <script src="../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>
