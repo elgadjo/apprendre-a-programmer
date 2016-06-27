@@ -24,6 +24,7 @@ extra_css: [extra.css]
 
 # Extensions
 markdown_extensions:
+  - footnotes
   - codehilite(css_class=code)
   - admonition
   - toc:
@@ -33,6 +34,7 @@ pages:
 - 'Accueil': index.md
 - '01. Généralités': 01-generalites.md
 - '02. Généralités (partie 2)': 02-algorithmique.md
-- '03. Algorigrammes' : 03-algorigrammes.md
-- '04. Algorigrammes (partie 2)' : 04-instructions.md
-- '05. Algorigrammes (partie 3)' : 05-instructions.md
+- '03. Algorigrammes I' : 03-algorigrammes.md
+- '04. Algorigrammes II' : 04-instructions.md
+- '05. Algorigrammes III' : 05-instructions.md
+- '06. Algorigrammes IV' : 06-instructions.md
