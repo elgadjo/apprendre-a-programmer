@@ -32,9 +32,9 @@ markdown_extensions:
 
 pages: 
 - 'Accueil': index.md
-- '01. Généralités': 01-generalites.md
-- '02. Généralités (partie 2)': 02-algorithmique.md
-- '03. Algorigrammes I' : 03-algorigrammes.md
-- '04. Algorigrammes II' : 04-instructions.md
-- '05. Algorigrammes III' : 05-instructions.md
-- '06. Algorigrammes IV' : 06-instructions.md
+- 'Généralités I': 01-generalites.md
+- 'Généralités II': 02-generalites.md
+- 'Algorigrammes I' : 03-algorigrammes.md
+- 'Algorigrammes II' : 04-algorigrammes.md
+- 'Algorigrammes III' : 05-algorigrammes.md
+- 'Algorigrammes IV' : 06-algorigrammes.md
