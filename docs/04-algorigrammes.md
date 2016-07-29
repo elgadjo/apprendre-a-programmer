@@ -116,7 +116,7 @@ On peut même utiliser cette variable, faire une opération et enfin stocker le 
 > Un gros rosier se dressait près de l'entrée du jardin.
 > Les fleurs qu'il portait étaient blanches mais il y avait 
 > trois jardiniers qui s'activaient à les peindre en rouge.
-> Alice trouva cela très étrange et s'approcha pour les observer de plus près.
+> Alice trouva cela très étrange et s'approcha pour les observer de plus près. <br/>
 > <em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em>
 
 À suivre ?

@@ -12,6 +12,7 @@ extra:
   palette:
     primary: 'deep purple'
     accent: 'orange'
+    neutral: 'deep purple'
   i18n:
     prev: 'Chapitre précédent'
     next: 'Chapitre suivant'

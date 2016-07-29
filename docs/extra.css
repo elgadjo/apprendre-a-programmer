@@ -1,4 +1,9 @@
 
+.admonition {
+	background: rgba(126, 87, 194, 0.7);
+	background: rgba(80,80,80, 0.8);
+}
+
 blockquote {
     box-sizing: border-box;
     width: 100%;

@@ -87,8 +87,7 @@ Bref. Lorsque l'on programme, on écrit donc en général du __code source__, da
 > <em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em>
 
 
-À suivre ?
-----------
+## À suivre ?
 
 Avant de continuer, j'ai besoin d'en savoir plus sur toi ! Déjà parce que je suis curieux (eh oui !) et parce que ça me permettra d'adapter sur-mesure la suite du cours :
 
