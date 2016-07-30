@@ -170,6 +170,12 @@ Commentaires sur ta solution :
 À suivre ?
 ----------
 
-La prochaine fois, on reprends le cours ! Et on remarquera que les algorigrammes nécessitent énormément de place sur le papier (même pour des programmes simples), on va commencer à voir du vrai code...  tu veux écrire du __vrai code__ ?
+La prochaine fois, on reprends le cours ! Et on remarquera que les algorigrammes nécessitent énormément de place sur le papier (même pour des programmes simples), on va commencer à voir du vrai code...  
+
+Alors...
+
+* Ça te plait toujours ?
+* Tu veux écrire du __vrai code__ ?
 
 Si oui, envoie un e-mail et __demande la suiiiiiiiite__ :-)
+
