@@ -1,7 +1,19 @@
 
 .admonition {
 	background: rgba(126, 87, 194, 0.7);
-	background: rgba(80,80,80, 0.8);
+	background: rgba(80,80,80, 0.7);
+}
+.admonition a {
+	color: rgba(255, 145, 0, 1) !important;
+}
+.admonition a:hover {
+	color: rgba(126, 87, 194, 0.7) !important; 
+}
+
+.admonition.warning {
+	/* background: rgba(255, 145, 0, 1); */
+	/* background: rgba(229, 130, 0, 1); */
+	background: rgba(126, 87, 194, 0.7); 
 }
 
 blockquote {
