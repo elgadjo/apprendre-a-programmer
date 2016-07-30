@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Algorigrammes II - Apprendre à programmer</title>
+      
+      
+      
+        <link rel="canonical" href="http://elgadjo.github.io/apprendre-a-programmer/04-algorigrammes/">
+      
+      
+        <meta name="author" content="El Gadjo Ridículo">
+      
+    
+    <meta property="og:url" content="http://elgadjo.github.io/apprendre-a-programmer/04-algorigrammes/">
+    <meta property="og:title" content="Apprendre à programmer">
+    <meta property="og:image" content="http://elgadjo.github.io/apprendre-a-programmer/04-algorigrammes//../">
+    <meta name="apple-mobile-web-app-title" content="Apprendre à programmer">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../None">
+    <link rel="icon" type="image/x-icon" href="../None">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/stylesheets/application-0dac3e5884.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-deep-purple palette-accent-orange">
+    
+      
+      
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+          </span>
+        
+        Algorigrammes II
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://github.com/elgadjo/apprendre-a-programmer" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>
+          Apprendre à programmer
+          <span class="version">
+            
+          </span>
+        </strong>
+        
+          <br>
+          elgadjo/apprendre-a-programmer
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            
+            <a href="https://github.com/elgadjo/apprendre-a-programmer/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/elgadjo/apprendre-a-programmer/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Accueil" href="..">
+      Accueil
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Généralités I" href="../01-generalites/">
+      Généralités I
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Généralités II" href="../02-generalites/">
+      Généralités II
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Algorigrammes I" href="../03-algorigrammes/">
+      Algorigrammes I
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="Algorigrammes II" href="./">
+      Algorigrammes II
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Les instructions" href="#les-instructions">
+                Les instructions
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="À suivre ?" href="#a-suivre">
+                À suivre ?
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Algorigrammes III" href="../05-algorigrammes/">
+      Algorigrammes III
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Algorigrammes IV" href="../06-algorigrammes/">
+      Algorigrammes IV
+    </a>
+    
+  </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="algorigrammes-partie-2">Algorigrammes (partie 2)<a class="headerlink" href="#algorigrammes-partie-2" title="Permanent link">#</a></h1>
+<p>Est-tu bien reposée ? Prête à reprendre ? As tu bien ton stylo-feutre-licorne toujours à la main ? Et ta feuille impatiente ? </p>
+<p>C'est fois c'est la bonne, on dessine !</p>
+<h2 id="les-instructions">Les instructions<a class="headerlink" href="#les-instructions" title="Permanent link">#</a></h2>
+<p>Les <strong>instructions</strong> sont les briques élémentaires de tout programme. Elle représentent les actions que <em>sait faire</em> un ordinateur. Comme tu le constatera, il n'y en a pas beaucoup ! </p>
+<p>En fait les ordinateurs sont assez limités ! Programmer est un peu comme parler à un enfant de 8 ans atteint du <a href="https://fr.wikipedia.org/wiki/Trisomie_21">syndrome de Down</a>... ça nécessite de bien tout expliquer... et s'il arrive qu'il ne comprenne pas, ce n'est pas de sa faute puisque c'est sa condition, il est comme ça. Il n'y peut rien. L'erreur de communication viendra forcément du donneur d'explications qui aura été trop rapide ou trop imprécis dans sa demande par rapport aux capacités de l'enfant handicapé.</p>
+<p>Cela pourrait donner la situation imaginaire suivante : </p>
+<blockquote>
+<p>« Dis petit, tu peux m'aider à peindre ce mur ? <br/>
+&ndash; Moi aider ! Aider.. comment ? » demanda le petit trisomique, l'air perdu.<br/>
+&ndash; Mais avec un pinceau ! <br/>
+&ndash; Ah pinceau !... C'est quoi pinceau ? </br>
+« Cette chose là ! » dis-je en lui tendant l'objet <br/>
+Il prends le pinceau et reste immobile devant moi, l'air béat. <br/>
+« Hmm. Tu fais quoi là ? <br/>
+&ndash; Je peint, comme toi as dit... », me réponds-t-il. <br/>
+« Mais non ! » craquais-je, « il faut faire des mouvements de bas en haut, comme ça ! ». <br/>
+À peine eu-je fini ma phrase qu'il se mit à singer mes mouvements... <br/>
+&ndash; « Oui, bon, c'est mieux..., mais tu oublies la peinture là... »</p>
+</blockquote>
+<p>Tu verras que communiquer avec un ordinateur, c'est pareil : ça consiste essentiellement à décomposer tes idées en actions et en idées plus simples, puis à les décomposer encore et encore... jusqu'à les réduire à un ensemble de ces instructions toutes bêtes.</p>
+<p>Je sais que dit ainsi, c'est encore un peu abstrait. Il donc est temps de passer à des exemples concrets et te présenter enfin les <strong>instructions</strong> !</p>
+<h3 id="le-debut-du-programme">Le début du programme<a class="headerlink" href="#le-debut-du-programme" title="Permanent link">#</a></h3>
+<p>Comme son nom l'indique, c'est là où l'ordinateur va commencer l'exécution de notre programme.
+Ensuite on suivra les flèches, dans l'ordre, pour passer d'une instruction à l'autre.</p>
+<p><img alt="début" src="../04-instructions/debut.png" /></p>
+<h3 id="la-fin-du-programme">La fin du programme<a class="headerlink" href="#la-fin-du-programme" title="Permanent link">#</a></h3>
+<p>C'est l'endroit ou se termine le programme. L'ordinateur ne fait plus rien dans notre programme une fois arrivé à ce point. </p>
+<p>Pour des raisons de clarté, on essaiera d'avoir une seule fin représentée dans notre algorigramme. Cependant il pourra y avoir plusieurs flèches arrivant à la fin du programme.</p>
+<p><img alt="début" src="../04-instructions/fin.png" /></p>
+<h3 id="les-sorties">Les sorties<a class="headerlink" href="#les-sorties" title="Permanent link">#</a></h3>
+<p>C'est le premier moyen qu'un programe peut utiliser pour interagir avec son environnement. Plus précisément un programme pourra utiliser une <strong>sortie</strong> pour <em>transmettre de l'information vers l'extérieur</em>. On pourra donc utiliser tout périphérique branché à notre ordinateur (écran, imprimante, réseau, enceintes, etc.)</p>
+<p>On dessine l'information que l'on souhaite transmettre dans la case inclinée <em>à gauche</em> et le support sur lequel on va la transmettre dans la bulle <em>à droite</em>.</p>
+<p>On remarque aussi que la flèche <em>va vers</em> la bulle.</p>
+<table>
+<thead>
+<tr>
+<th>Exemple 1. Afficher un texte à l'écran</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="début" src="../04-instructions/sortie-ecran.png" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Exemple 2. Envoyer un long texte sur l'imprimante</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="début" src="../04-instructions/sortie-imprimante.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="les-entrees">Les entrées<a class="headerlink" href="#les-entrees" title="Permanent link">#</a></h3>
+<p>C'est le second moyen de communiquer avec l'environnement extérieur à un programme. Avec une <strong>entrée</strong> on pourra <em>recevoir de l'information</em> provenant de l'extérieur.</p>
+<p>On dessine l'information que l'on souhaite recevoir dans la case inclinée <em>à gauche</em> et le support sur lequel on va la recevoir dans la bulle <em>à droite</em>. </p>
+<p>On remarque que la flèche <em>vient</em> de la bulle.</p>
+<table>
+<thead>
+<tr>
+<th>Exemple 3. Envoyer un long texte sur l'imprimante</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="début" src="../04-instructions/entree-clavier.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="les-variables">Les variables<a class="headerlink" href="#les-variables" title="Permanent link">#</a></h3>
+<p>Ce sont des petites cases mémoire dont le contenu peut <em>être modifié</em> (et donc varier). </p>
+<p>Plus précisément c'est le nom que l'on va donner à <em>une case</em> ou <em>un groupe de cases</em> dans la mémoire de l'ordinateur... C'est comme une étiquette sur un bagage.</p>
+<p><img alt="une variable c'est une étiquette" src="../04-instructions/variable-etiquette.png" /></p>
+<p>Tout d'abord, pour une variable donnée, on pourra lui <strong>assigner une valeur</strong> : c'est à dire mettre une valeur dans la case désignée par l'étiquette. 
+Par exemple, dans l'illustration ci-dessus on voit le résultat en mémoire après l'assignation de la valeur <code>18</code> dans la variable <code>age</code>.</p>
+<p>Il est possible d'assigner des valeurs depuis le programme lui-même, ou bien depuis une source d'information extérieure ! C'est là qu'interviennent les <strong>entrées</strong> dont je te parlais plus haut.</p>
+<table>
+<thead>
+<tr>
+<th>Exemple 4. Assignation depuis le programme lui-même</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="x" src="../04-instructions/variable-depuis-programme.png" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Exemple 5. Assignation depuis une entrée</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="x" src="../04-instructions/variable-depuis-entree.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>Ensuite, pour une variable donnée, on pourra aussi <strong>lire sa valeur</strong> : c'est à dire lire le contenu de la case mémoire désignée par l'étiquette. On pourra utiliser cette valeur pour l'envoyer vers une <strong>sortie</strong>, ou pour faire une opération utilisant la valeur et produire un résultat.</p>
+<table>
+<thead>
+<tr>
+<th>Exemple 6. Lecture d'une variable : on affiche son contenu à l'écran</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="exemple-6" src="../04-instructions/variable-vers-sortie.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>On peut même utiliser cette variable, faire une opération et enfin stocker le résultat dans cette même variable ! Avec ce type d'instructions, on lit le coté droit de la flèche avant le coté gauche : on lit les valeurs et on fait le calcul, on bientient un résultat et la variable (l'étiquette) désigne ensuite ce résultat.</p>
+<table>
+<thead>
+<tr>
+<th>Exemple 7. Lecture d'une variable, on fait un calcul et on le stocke sous le même nom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="exemple-6" src="../04-instructions/variable-vers-programme.png" /></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Un gros rosier se dressait près de l'entrée du jardin.
+Les fleurs qu'il portait étaient blanches mais il y avait 
+trois jardiniers qui s'activaient à les peindre en rouge.
+Alice trouva cela très étrange et s'approcha pour les observer de plus près. <br/>
+<em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em></p>
+</blockquote>
+<h2 id="a-suivre">À suivre ?<a class="headerlink" href="#a-suivre" title="Permanent link">#</a></h2>
+<p>Nous avons posé les bases. Mais que va-t-on faire de ces quelques petites
+instructions de rien du tout ?  J'ai comme l'intuition qu'il nous manque un
+petit quelque chose... mais quoi ? Nous le saurons au prochain épisode !</p>
+<ul>
+<li>Alors, quelles sont tes impressions jusque là ?</li>
+<li>Le contenu commence à s'étoffer... est-ce que tu as des questions ?</li>
+<li>Est-ce que ça fait écho à des choses que tu avais déjà vu ?</li>
+<li>Est-ce que ça te plait ?</li>
+<li>Est-ce que ça te dirais un pique-nique un de ces jours (oups, je m'égarre...)</li>
+</ul>
+<p>Bref. Si tel est ton désir, j'attends ton e-mail avec le texte <strong>"JE VEUX LA SUITE !"</strong>  :-)</p>
+          <aside class="copyright" role="note">
+            
+              Copyright (c) 2016 El Gadjo Ridículo &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../03-algorigrammes/" title="Algorigrammes I">
+          <span class="direction">
+            Chapitre précédent
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Algorigrammes I
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../05-algorigrammes/" title="Algorigrammes III">
+          <span class="direction">
+            Chapitre suivant
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Algorigrammes III
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '..';
+      var repo_id  = 'elgadjo/apprendre-a-programmer';
+    </script>
+    <script src="../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>

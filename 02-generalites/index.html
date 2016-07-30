@@ -9,19 +9,19 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>Algorigrammes I - Apprendre à programmer</title>
+        <title>Généralités II - Apprendre à programmer</title>
       
       
       
-        <link rel="canonical" href="http://elgadjo.github.io/apprendre-a-programmer/03-algorigrammes/">
+        <link rel="canonical" href="http://elgadjo.github.io/apprendre-a-programmer/02-generalites/">
       
       
         <meta name="author" content="El Gadjo Ridículo">
       
     
-    <meta property="og:url" content="http://elgadjo.github.io/apprendre-a-programmer/03-algorigrammes/">
+    <meta property="og:url" content="http://elgadjo.github.io/apprendre-a-programmer/02-generalites/">
     <meta property="og:title" content="Apprendre à programmer">
-    <meta property="og:image" content="http://elgadjo.github.io/apprendre-a-programmer/03-algorigrammes//../">
+    <meta property="og:image" content="http://elgadjo.github.io/apprendre-a-programmer/02-generalites//../">
     <meta name="apple-mobile-web-app-title" content="Apprendre à programmer">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -98,7 +98,7 @@
             
           </span>
         
-        Algorigrammes I
+        Généralités II
       </div>
     </div>
     
@@ -186,17 +186,8 @@
           
             
   <li>
-    <a class="" title="Généralités II" href="../02-generalites/">
+    <a class="current" title="Généralités II" href="./">
       Généralités II
-    </a>
-    
-  </li>
-
-          
-            
-  <li>
-    <a class="current" title="Algorigrammes I" href="./">
-      Algorigrammes I
     </a>
     
       
@@ -206,14 +197,14 @@
         <ul>
           
             <li class="anchor">
-              <a title="Définition" href="#definition">
-                Définition
+              <a title="Un travail à vocation universelle" href="#un-travail-a-vocation-universelle">
+                Un travail à vocation universelle
               </a>
             </li>
           
             <li class="anchor">
-              <a title="Structure d'un programme" href="#structure-dun-programme">
-                Structure d'un programme
+              <a title="Problèmes fondamentaux en algorithmique" href="#problemes-fondamentaux-en-algorithmique">
+                Problèmes fondamentaux en algorithmique
               </a>
             </li>
           
@@ -225,6 +216,15 @@
           
         </ul>
       
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Algorigrammes I" href="../03-algorigrammes/">
+      Algorigrammes I
+    </a>
     
   </li>
 
@@ -266,51 +266,67 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="algorigrammes">﻿Algorigrammes<a class="headerlink" href="#algorigrammes" title="Permanent link">#</a></h1>
-<p>T'ai-je dit que nous allons dessiner ? Oui ? Alors, viens dessiner ! Prépare un stylo, feutre, crayon... et des feuilles de papier !</p>
-<p>Dans les prochains chapitres, nous allons dessiner des petites briques : chacune d'entre elle servira à faire une petite chose simple (et un peu bête), mais en posant ces briques sur d'autres briques nous pourrons exprimer des choses de plus en plus malines et fantastiques ! (oui-oui !)</p>
-<p>Mais dans un premier temps, je vais te présenter la vue d'ensemble !</p>
-<h2 id="definition">Définition<a class="headerlink" href="#definition" title="Permanent link">#</a></h2>
-<p><strong>Algorigramme</strong> : Algori(thme) + (dia)gramme</p>
-<p>Il s'agit du nom de ce genre de dessins : c'est la représentation graphique de l'enchaînement des <em>opérations</em> et des <em>décisions</em> effectuées par un programme d'ordinateur. C'est l'ensemble de ces enchainements qui donne une utilité et un sens au programme.</p>
-<p>Exemple d'algorigramme:</p>
-<p><img alt="Algorigramme muet" src="../03-algorigrammes/exemple-anonyme.png" /></p>
-<p>Dans cet algorigramme, j'ai volontairement masqué les intitulés des cases car c'est la forme dans son ensemble que je veux te montrer (mais sois rassurée, nous le retrouverons bientôt, car c'est l'un des prochains exercices).</p>
-<p>Comme tu peux le voir ici, il y a un début, puis des étapes qui se suivent sans choix, des étapes qui se suivent avec des choix, des étapes qui inter-agissent avec des patates sur les cotés, et aussi une fin.</p>
+          <h1 id="generalites-suite">﻿Généralités (suite)<a class="headerlink" href="#generalites-suite" title="Permanent link">#</a></h1>
+<p>Tu es toujours là ? Toujours motivée ? Trop bien ! Reprenons ! </p>
+<h2 id="un-travail-a-vocation-universelle">Un travail à vocation universelle<a class="headerlink" href="#un-travail-a-vocation-universelle" title="Permanent link">#</a></h2>
+<p>Tu as vu dans le chapitre précédent que la programmation est l'art de mêler l'algorithmique à un ou plusieurs langages.</p>
+<p>L'algorithmique est une question de méthode (beaucoup) et de logique (un peu). Elle est <em>indépendante des langages</em> de programmation et <em>indépendante des machines</em> qui exécuteront le programme final. En revanche, le langage de programmation, lui, est lié au coté physique et matériel de la machine car il doit être compris et exécuté par cette dernière.</p>
+<p>On va donc distinguer deux types de langages : </p>
+<ul>
+<li>les <strong>langages bas niveau</strong> (ex: Assembleur, C ...) : ils permettent la manipulation des aspects matériels de la machine sur laquelle le programme est exécuté. Ce sont des langages <em>terre à terre</em>, qui nécessitent un micro-management de chaque chose : mémoire, périphériques, registre processeur, interruptions, réseau, etc. C'est à la fois fastidieux, mais c'est terriblement précis et puissant.</li>
+<li>les <strong>langages de haut niveau</strong> (ex: Python, Javascript ...) : ils masquent le coté technique au profit d'une vision plus abstraite qui leur permettra plus facilement de manipuler des fichiers, des composants graphiques, des données, etc. Ces langages font confiance au système pour la gestion de la mémoire et du reste. Ils vont s'occuper essentiellement des aspects métiers.</li>
+</ul>
+<p>Haut et bas niveau n'ont pas de connotation péjorative et n'ont évidemment rien à voir avec les compétences techniques nécessaires à les programmer ! Il s'agit simplement d'une question d'efficacité sur un domaine particulier... et la facilité à gérer contraintes qui vont avec. On pourra toujours faire des choses de bas niveau avec un langage de haut niveau, ou des choses de haut niveau avec un langage de bas niveau. C'est juste <em>beaucoup</em> moins pratique.</p>
+<p>En général, les langages de bas niveau sont des langages compilés &mdash; car dépendants d'une machine spécifique &mdash; alors que les langages de haut niveau sont souvent des langages interprétés. </p>
 <blockquote>
-<p>« Mais alors, dit Alice, si le monde n'a absolument aucun sens, qui nous empêche d'en inventer un ? » <br/>
-<em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em></p>
+<p>La Reine avait une seule méthode pour résoudre toutes les difficultés, petites ou grosses.<br/>
+&mdash; « Qu'on lui coupe la tête ! » dit-elle sans même lever les yeux. <br/>
+<em>Lewis Caroll, Alice au pays des merveilles</em></p>
 </blockquote>
-<h2 id="structure-dun-programme">Structure d'un programme<a class="headerlink" href="#structure-dun-programme" title="Permanent link">#</a></h2>
-<p>Un programme informatique suit en général une structure calquée sur la suite des phases suivantes, dans l'ordre : <strong>déclarations</strong>, <strong>initialisations</strong>, <strong>programme principal</strong>, <strong>gestion des erreurs</strong>, <strong>sortie</strong>.</p>
-<h3 id="phase-1-declaration">Phase 1 : Déclaration<a class="headerlink" href="#phase-1-declaration" title="Permanent link">#</a></h3>
-<p>Comme dans une recette de cuisine, il s'agit de l'endroit ou l'on va annoncer ce dont on a besoin. </p>
-<p>Par exemple, pour la recette d'une omette, on dira « vous avez besoin de 3 oeufs, d'un oignon, de persil, d'une pincée de sel et de poivre... ». Ainsi le cuisiner va pouvoir vérifier qu'il a bien tout ce dont il a besoin pour exécuter la recette et préparer les éléenrs nécessaires sur le plan de traval.</p>
-<p>Dans un programme informatique il s'agira de faire l'inventaire des informations que l'on va chercher à manipuler et surtout éviter de sortir une nouvelle information de notre chapeau en cours de route.</p>
-<p>On verra par la suite (pseudo-code, code source, etc.) que cette partie est essentielle pour deux choses : d'abord pour que le programmeur puisse rester cohérent tout au long de la mise en oeuvre de son idée, ainsi qu'à l'ordinateur pour puisse préparer la mémoire qui permettra de faire fonctionner le programme.</p>
-<h3 id="phase-2-initialisation">Phase 2 : Initialisation<a class="headerlink" href="#phase-2-initialisation" title="Permanent link">#</a></h3>
-<p>C'est là qu'on prépare nos ingrédents !</p>
-<p>C'est bien de savoir qu'on aura besoin de 3 oeufs et d'un oignon, mais peut-être faut-il les préparer ? mieux les préparer sur le plan de travail, ou bien aller les chercher dans le réfrigérateur au moment ou l'on en a besoin ? </p>
-<p>Naturellement, pour un travail efficace, on préfèrera sortir les ingrédients à l'avance et peser les bonnes quantités avant de suivre les étapes de la recette.</p>
-<h3 id="phase-3-programme-principal">Phase 3 : Programme principal<a class="headerlink" href="#phase-3-programme-principal" title="Permanent link">#</a></h3>
-<p>C'est la suite d'étapes qui constitue le corps de la recette, c'est là qu'on mélange, qu'on touille, qu'on fait tout ce qui doit être fait afin de transformer les ingrédients en une délicieuse préparation !</p>
-<p>Dans un programme informatique, c'est là que l'on organisera les données entre elles, que l'on fera des calculs et qu'on l'on transformera les informations de départ en quelque chose d'utile.</p>
-<h3 id="phase-4-gestion-des-erreurs">Phase 4 : Gestion des erreurs<a class="headerlink" href="#phase-4-gestion-des-erreurs" title="Permanent link">#</a></h3>
-<p>En cuisine, il arrive qu'il y ait des ratés. Parfois il suffit d'un instant d'inattention et c'est trop cuit, parfois c'est mal exécuté, parfois c'est les ingrédients...</p>
-<p>Dans un ordinateur aussi, ça arrive. Au début ce sera souvent la faute d'un programme mal conçu. On verra aussi que les interractions avec les données ne se passent pas toujours comme prévu... et parfois c'est aussi l'utilisateur qui ne se comporte pas comme prévu (ou il le fait exprès le fourbe !). </p>
-<p>Bref. Il faut anticiper les cas d'erreurs et essayer des les gérer le mieux possible. À minima, dire à l'utilisateur (ou aux autres programmes) qu'il y a une probleme... l'important c'est de communiquer ;-)</p>
-<h3 id="phase-5-sorties">Phase 5 : Sortie(s)<a class="headerlink" href="#phase-5-sorties" title="Permanent link">#</a></h3>
-<p>Dans une recette, cela correspond au moment ou l'on retire le plat du feu, que l'on nappe les sauces ou que l'on dresse le plat.</p>
-<p>En informatique, il s'agira de rentre présentable, agréable, claires et utiles les informations transformées : le plus souvent il s'agirant d'afficher quelque chose, de produire un fichier ou de transmettre une information.</p>
+<h2 id="problemes-fondamentaux-en-algorithmique">Problèmes fondamentaux en algorithmique<a class="headerlink" href="#problemes-fondamentaux-en-algorithmique" title="Permanent link">#</a></h2>
+<p>Programmer, c'est comme résoudre un casse tête. C'est un peu un défi qui nécessite d'inventer une solution face à un problème ou une situation donnée. Reste à le faire bien. Lorsqu'on programme, à un moment ou un autre, on se posera des questions sur la <strong>calculabilité</strong>, la <strong>complexité</strong> ou la <strong>correction</strong> de l'algorithme que l'on est en train de concevoir.</p>
+<p>La <strong>calculabilité</strong> est la capacité à calculer un résultat ou une solution : Pour une tâche donnée, existe-t-il un algorithme qui la résolve ? Existe-t-il des tâches pour lesquelles il n'existe aucun algorithme ? Comment savoir si l'on est dans l'un ou l'autre des cas ?</p>
+<p>La <strong>complexité</strong> lie le nombre d'opérations exécutées par l'algorithme à la taille ou la quantité des données qu'il manipule. C'est donc une question de performance et d'optimisation : en combien de temps un algorithme va-t-il atteindre le résultat prévu ? De quel espace (mémoire) a-t-il besoin pour faire son travail ? </p>
+<p>Lorsqu'on parle de complexité, on utilise la notation <strong>O(...)</strong> pour parler des différence de complexité d'un algorithme. Voici les principaux cas :</p>
+<ul>
+<li>
+<p><strong>O(1)</strong> : l'algorithme en temps constant. C'est excellent ! Il prends toujours le même temps quelle que soit la taille ou la quantité de données qu'il manipule.</p>
+</li>
+<li>
+<p><strong>O(N)</strong> : l'algorithme en temps linéaire. C'est moyen. Il prends un temps proportionnel à la quantité de données manipulées.</p>
+</li>
+<li>
+<p><strong>O(log N)</strong> : l'algorithme est en temps logarithmique. C'est très bien ! Il prends moins de temps qu'un parcours complet des données.</p>
+</li>
+<li>
+<p><strong>O(N*N*..)</strong> : l'algorithme est en temps polynomial. C'est pas terrible. Il prends un temps qui est le carré, le cube ou autre polynôme de la quantité de données manipulées.</p>
+</li>
+<li>
+<p><strong>O(exp(N))</strong> : l'algorithme est en temps exponentiel. C'est pire que tout ! Il y a de fortes chances que l'on n'obtienne pas les résultats dans un temps raisonnable (temps alloué au projet, vie humaine, âge de l'univers, etc.) ;-(</p>
+</li>
+</ul>
+<p>Enfin la <strong>correction</strong> c'est pouvoir prouver qu'un algorithme répondre bien au besoin pour lequel il a été conçu... et c'est loin d'être évident !</p>
 <blockquote>
-<p>« Prenez donc du vin, » dit le Lièvre d’un ton engageant. <br/>
-Alice regarda tout autour de la table, mais il n’y avait que du thé. « Je ne vois pas de vin, » fit-elle observer. <br/>
-« Il n’y en a pas, » dit le Lièvre. <br/>
-<em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em></p>
+<p>« &mdash; Voudriez-vous me dire, s'il vous plaît, par où je dois m'en aller d'ici ? <br/>
+&mdash; Cela dépend beaucoup de l'endroit où tu veux aller. <br/>
+&mdash; Peu m'importe l'endroit... <br/>
+&mdash; En ce cas, peu importe la route que tu prendras.  <br/>
+&mdash; ... pourvu que j'arrive quelque part », ajouta Alice en guise d'explication. <br/>
+&mdash; « Oh, tu ne manqueras pas d'arriver quelque part, si tu marches assez longtemps. »<br/></p>
 </blockquote>
 <h2 id="a-suivre">À suivre ?<a class="headerlink" href="#a-suivre" title="Permanent link">#</a></h2>
-<p>Ça y est, on atteint le vif du sujet. Je viens bientôt te dévoiler l... ah non !... shuuut !... je ne peux rien dire jusqu'au prochain chapitre ! :-P</p>
-<p>Tu veux la suite ? Envoie-moi un e-mail avec le texte <strong>"JE VEUX LA SUITE !"</strong> accompagné d'<strong>UN DESSIN</strong> (fait main) :-)</p>
+<p>Ouf. Jusque là j'ai essayé de poser le contexte, un peu de culture générale et du vocabulaire. Normalement on n'abordera plus ces sujets (à moins que ta curiosité ne prenne le dessus... et que je me laisse faire).</p>
+<p>Au prochain chapitre on plongera dans les algorigrammes et on commencera à dessiner nos idées.</p>
+<ul>
+<li>Est-ce que ça va jusque là ? </li>
+<li>En terme de volume, est ce que c'est trop long ? Trop court ?</li>
+<li>Est-ce que tu as des questions ou des trucs que tu as envie de dire ? :-P</li>
+</ul>
+<p>Ça te botte toujours ? Tu veux la suite ? Envoie-moi un e-mail avec le texte <strong>"JE VEUX LA SUITE !"</strong> :-)</p>
+<div class="admonition warning">
+<p class="admonition-title">Programmer peut entraîner de graves troubles de la vie sociale</p>
+<p><strong>En cas d'apparition des symptômes suivants :</strong> impossibilité de résister aux défis logiques, envie de dialoguer avec son programme, veillée tardive devant son écran, recherche compulsive sur StackOverflow, réflexions nocturne sur un bug, parler d'un bug à ses proches, dire à quelqu'un qu'on arrive et arriver 1h après, essayer d'automatiser la moindre tâche... n'essaye <em>pas</em> de consulter un spécialiste, il est trop tard, tu êtes foutue ! ;-)</p>
+</div>
           <aside class="copyright" role="note">
             
               Copyright (c) 2016 El Gadjo Ridículo &ndash;
@@ -329,7 +345,7 @@ Alice regarda tout autour de la table, mais il n’y avait que du thé. « Je ne
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href="../02-generalites/" title="Généralités II">
+        <a href="../01-generalites/" title="Généralités I">
           <span class="direction">
             Chapitre précédent
           </span>
@@ -339,7 +355,7 @@ Alice regarda tout autour de la table, mais il n’y avait que du thé. « Je ne
             </div>
             <div class="stretch">
               <div class="title">
-                Généralités II
+                Généralités I
               </div>
             </div>
           </div>
@@ -348,14 +364,14 @@ Alice regarda tout autour de la table, mais il n’y avait que du thé. « Je ne
     </div>
     <div class="next">
       
-        <a href="../04-algorigrammes/" title="Algorigrammes II">
+        <a href="../03-algorigrammes/" title="Algorigrammes I">
           <span class="direction">
             Chapitre suivant
           </span>
           <div class="page">
             <div class="stretch">
               <div class="title">
-                Algorigrammes II
+                Algorigrammes I
               </div>
             </div>
             <div class="button button-next" role="button" aria-label="Next">
