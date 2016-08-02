@@ -33,9 +33,12 @@ markdown_extensions:
 
 pages: 
 - 'Accueil': index.md
-- 'Généralités I': 01-generalites.md
-- 'Généralités II': 02-generalites.md
-- 'Algorigrammes I' : 03-algorigrammes.md
-- 'Algorigrammes II' : 04-algorigrammes.md
-- 'Algorigrammes III' : 05-algorigrammes.md
-- 'Algorigrammes IV' : 06-algorigrammes.md
+- 'Généralités':
+    - 'Généralités I': 01-generalites.md
+    - 'Généralités II': 02-generalites.md
+- 'Algorigrammes':
+    - 'Algorigrammes I': 03-algorigrammes.md
+    - 'Algorigrammes II': 04-algorigrammes.md
+    - 'Algorigrammes III': 05-algorigrammes.md
+    - 'Algorigrammes IV': 06-algorigrammes.md
+    - 'Algorigrammes V': 07-algorigrammes.md
