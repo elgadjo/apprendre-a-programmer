@@ -115,6 +115,7 @@ On peut décrire la préparation d'un dîner comme un programme avec des instruc
 
 ![x](algorigrammes/exemple-sous-programme.png)
 
+
 ### Vocabulaire et définitions
 
 Dans le monde du développement, il finalement est assez rare de parler de sous-programmes,
