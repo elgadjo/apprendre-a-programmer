@@ -111,7 +111,7 @@ Dans un algorigramme, __un instruction rectangulaire avec deux barres de chaque 
 
 #### Exemple 7.2. L'algorigramme du dîner romantique
 
-On peut décrire la préparation d'un dîner comme un programme avec des instructions de "haut niveau". Chacune de ces instructions correspond en fait à un sous-programme dans lequel on peut zoomer... pour découvrir d'autres instructions, et ainsi de suite.
+On peut décrire la préparation d'un dîner comme un programme avec des instructions où chacune de ces instructions correspond en fait à un sous-programme ! Il suffit de zoomer... pour découvrir d'autres instructions, et ainsi de suite.
 
 ![x](algorigrammes/exemple-sous-programme.png)
 
