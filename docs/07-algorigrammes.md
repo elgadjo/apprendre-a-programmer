@@ -2,18 +2,20 @@
 Algorigrammes (partie 5)
 ==============================
 
-Super ! Quelle motivation ! Alors, cette fois on passe aux choses sérieuses !
+Super ! Quelle motivation ! Trop bien ! 
 
-As-tu as remarqué que nos algorigrammes prennent _beaucoup_ d'espace à dessiner ?  Juste avec deux ou trois conditions, ça devient déjà le bazar à lire et à écrire ! On va donc organiser... et simplifier tout ça.
+Ok, cette fois on passe aux choses sérieuses ! La dernière fois je te disais vouloir commencer du _vrai code_ dans ce chapitre mais là je me rends compte qu'il nous manque encore une notion super importante avant de continuer... donc ça sera pour la prochaine fois ! Suspense :-)
+
+Tu as remarqué que nos algorigrammes prennent _beaucoup_ d'espace à dessiner ?  Juste avec deux ou trois conditions, ça devient déjà le bazar à lire et à écrire ! On va donc voir un _truc_ pour simplifier tout ça.
 
 Sous-programmes, fonctions et procédures
 --------------------
 
-### La métaphore de la recette (encore)
+### La métaphore de la recette (encore !)
 
 Il y a quelques pages, nous avions défini un programme comme un ensemble d'ingrédients et d'étapes nécessaires pour réaliser un objectif. Un peu comme une recette de cuisine finalement. 
 
-Avec cette définition, nous pouvons dire qu'__un sous-programme est une deuxième recette__ de cuisine, __mentionnée dans la première__ recette et __dont le résultat est utilisé__ par la première recette.
+Avec cette définition, nous pouvons dire qu'un sous-programme est une deuxième recette de cuisine, mentionnée dans la première recette et dont le résultat est utilisé par la première recette.
 
 
 #### Exemple 7.1. Le gratin et la béchamel
@@ -44,8 +46,8 @@ Préparation :
    Mélangez puis retirez du feu.
 ~~~
 
-En supposant toutes les actions correctement menées, on peut dire que cette recette __produit un résultat__ : la béchamel (sans blague !)
-et ce résultat __dépend uniquement des ingrédients de départ__.
+En supposant toutes les actions correctement menées, on peut dire que cette recette produit un résultat : la béchamel (sans blague !)
+et ce résultat dépend uniquement des ingrédients de départ.
 
 C'est ok jusque là ? On continue avec l'autre recette :
 
@@ -82,7 +84,7 @@ On peut y noter que :
 * On a supposé connu l'action ``réaliser la béchamel`` à l'étape n°2
 * Cette recette dépend des ingrédients de départ
 * Cette recette dépend également de 
-  __la transformation d'une partie des ingrédients par la recette de la béchamel__
+  la transformation d'une partie des ingrédients par la recette de la béchamel
 
 ### Recettes et première approximation
 
@@ -93,12 +95,12 @@ quelques pages de notre livre pour aller à la recette ̀``Béchamel``.
 
 On peut en déduire que : 
 
-* __"Recette de la Béchamel" est un sous-programme__ du programme 
+* "Recette de la Béchamel" est un __sous-programme__ du programme 
     principal "Gratin" 
-* __Il suffit de fournir les bons ingrédients__ à la recette de la béchamel (types & quantités) pour réaliser une béchamel
-* __Elle peut être utilisée indépendamment__ de la recette du du gratin, pour réaliser d'autres recettes (ex: pour faire des [aubergines façon "papoutsakia"](http://www.fashioncooking.fr/2012/06/melitzanes-papoutsakia-aubergines-farcies-grecques/)) ! 
+* Il suffit de fournir les bons ingrédients à la recette de la béchamel (types & quantités) pour réaliser une béchamel
+* Elle peut être __utilisée indépendamment__ de la recette du du gratin, pour réaliser d'autres recettes (ex: pour faire des [aubergines façon "papoutsakia"](http://www.fashioncooking.fr/2012/06/melitzanes-papoutsakia-aubergines-farcies-grecques/)) ! 
 
-#### Exemple 7.2. L'algorigramme romantique
+### L'instruction "sous-programme"
 
 Dans un algorigramme, __un instruction rectangulaire avec deux barres de chaque coté représente l'utilisation d'un sous-programme__ :
 
@@ -106,6 +108,10 @@ Dans un algorigramme, __un instruction rectangulaire avec deux barres de chaque 
 2. .. on suit les flèches et on exécute ce qui doit etre exécuté
 3. ...jusqu'à terminer le sous-programme
 4. ...ce qui nous amène à l'instruction que l'on avait quittée dans le programme principal !
+
+#### Exemple 7.2. L'algorigramme du dîner romantique
+
+On peut décrire la préparation d'un dîner comme un programme avec des instructions de "haut niveau". Chacune de ces instructions correspond en fait à un sous-programme dans lequel on peut zoomer... pour découvrir d'autres instructions, et ainsi de suite.
 
 ![x](algorigrammes/exemple-sous-programme.png)
 
@@ -117,7 +123,7 @@ on parlera plutôt de __fonctions__ ou de __procédures__. Même s'il est fréqu
 * __Une fonction fabrique un résultat__ qui sera utilisée par le programme  principal
 * __Une procédure ne produit pas de résultat mais réalise des actions__ à effet de bord (ex: afficher une fenêtre, envoyer des données sur le réseau, etc.)
 
-Dans ces deux types de sous-programmes, il faut distinguer deux moments importants : leur __déclaration__ et leur __appel__ .
+Dans ces sous-programmes, il faut distinguer deux moments importants : leur __déclaration__ et leur __appel__ .
 
 * __La déclaration__ ou la __définition__ d'un programme, c'est quand on écrit &mdash; ou qu'on dessine &mdash; les instructions qui le composent.
 
@@ -125,53 +131,41 @@ Dans ces deux types de sous-programmes, il faut distinguer deux moments importan
 
 On ne peut _appeller_ un sous-programme que s'il a été préalablement défini  &mdash; évidemment !
 
+On parlera désormais de __programme appelant__ (le programme principal) et de __programme appelé__ (le sous-programme), puisqu'un sous-programme peut lui-même appeler un autre sous-sous-programme.
+
+
 ### Utilisation et fonctionnement
 
-Que se passe-t-il lorsqu'un programme appelle une sous-programme ? En fait il y a 3 étapes : 
+Que se passe-t-il lorsqu'un programme appelle un sous-programme ? En fait il y a 3 étapes : 
 
-* __Passage de paramètres :__ certaines données du programme principal sont transférées au sous-programme (ex: dans notre recette principale, on utilise une partie des ingrédients pour la sous-recette)
-* __Réalisation des étapes__ (c'est la préparation de la sous-recette)
-* __La valeur de retour :__ lorsque la préparation est terminée on peut se 
+* __Passage de paramètres :__ certaines données du programme appelant sont transférées au sous-programme appelé (ex: dans notre recette principale, on envoie une partie des ingrédients à la préparation de la sous-recette)
+* __Réalisation des étapes__ (ex: c'est la préparation de la sous-recette)
+* __La valeur de retour :__ lorsque la préparation est terminée c'est le résultat qui est transféré vers le programme appelant (ex: la béchamel, produite par la recette)
 
+Ces trois étapes sont importantes, parce que __le programme appelant et le programme appelé vivent dans des espaces mémoires différents__. Leurs variables sont comme dans des mondes parallèles : il peut y avoir une variable nommée ``age`` (par exemple) dans chacun de ces deux mondes, mais ces deux variables ``age`` ne désigneront pas la même case mémoire, elle n'auront pas la même vie (puisqu'elle suivront des programmes différents) et n'auront donc pas forcément les mêmes valeurs.
 
-FIXME: * Passage par valeur (on copie la valeur de la variable ... dans la variable y)
-FIXME: * Passage par référence (on fait pointer la valeur 
+Du coup c'est un peu comme dans les films de science fiction : pour communiquer entre ces deux mondes parallèles (appelant & appelé), il faut ouvrir une une brèche, mais elle ne dure pas longtemps. 
 
+Alors un coup on ouvre la brèche et on envoie des choses (les paramètres) et un coup on ouvre la brèche et on reçoit (le résultat). Mais de part et d'autre de cette brèche, une fois celle-ci refermée, il n'y a plus aucun moyen de savoir ce qui se passe de l'autre coté ! 
 
-!!! note: 
-    FIXME: eprendre l'exemple du videur avec 300 visites, avec l'appel à une fonction
-
-### Exemple 7.2. Le videur sexiste avec maximum 300 visiteurs
+Pourquoi on fait tout ça ? C'est à cause du fonctionnement des processerus, mais... patience ! On reviendra là dessus un peu plus tard, en parlant de la _pile_ et du _tas_ ! :-)
 
 
 > Il venait de se passer tant de choses bizarres, qu'elle en arrivait à penser que fort peu de choses étaient vraiment impossibles <br>
 > <em>Lewis Caroll, Alice au pays des merveilles</em>
 
 
-
-Des algorigrammes au pseudo-code
----------------------------------------------------
-
-DEBUT FIN => BEGIN .. END
-
-INSTRUCTIONS => INSTRUCTIONS
-
-IF THEN 
-
-WHILE
-
-TANTQUE
-
-
 À suivre ?
 ----------
 
-La prochaine fois, on reprends le cours ! Et on remarquera que les algorigrammes nécessitent énormément de place sur le papier (même pour des programmes simples), on va commencer à voir du vrai code...  
+Ça y est, nous avons fini les algorigrammes ! Et nous avons également fini l'essentiel de la partie théorique !
+Les subtilités qui restent concernent l'écriture du code, les types de variables et les structures de données.
 
-Alors...
+Il reste donc à voir comment on fait tout ça "en vrai" !
+Donc la prochaine fois... on reprends les exercices !
 
-* Ça te plait toujours ?
-* Tu veux écrire du __vrai code__ ?
+* Tu en penses quoi jusque là ?
+* Tu veux la suite ?
 
-Si oui, envoie un e-mail et __demande la suiiiiiiiite__ :-)
+Si oui, envoie un e-mail et __demande tu-sais-quoi à tu-sais-qui__ :-)
 
