@@ -7,6 +7,7 @@ copyright: 'Copyright (c) 2016 El Gadjo Ridículo'
 
 repo_name: 'GitHub'
 repo_url: 'https://github.com/elgadjo/apprendre-a-programmer'
+site_favicon: favicon.ico
 
 extra:
   palette:
