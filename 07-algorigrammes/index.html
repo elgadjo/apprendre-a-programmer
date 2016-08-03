@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Algorigrammes V - Apprendre à programmer</title>
+      
+      
+      
+        <link rel="canonical" href="http://elgadjo.github.io/apprendre-a-programmer/07-algorigrammes/">
+      
+      
+        <meta name="author" content="El Gadjo Ridículo">
+      
+    
+    <meta property="og:url" content="http://elgadjo.github.io/apprendre-a-programmer/07-algorigrammes/">
+    <meta property="og:title" content="Apprendre à programmer">
+    <meta property="og:image" content="http://elgadjo.github.io/apprendre-a-programmer/07-algorigrammes//../">
+    <meta name="apple-mobile-web-app-title" content="Apprendre à programmer">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/stylesheets/application-0dac3e5884.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-deep-purple palette-accent-orange">
+    
+      
+      
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                Algorigrammes <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        Algorigrammes V
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://github.com/elgadjo/apprendre-a-programmer" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>
+          Apprendre à programmer
+          <span class="version">
+            
+          </span>
+        </strong>
+        
+          <br>
+          elgadjo/apprendre-a-programmer
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            
+            <a href="https://github.com/elgadjo/apprendre-a-programmer/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/elgadjo/apprendre-a-programmer/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Accueil" href="..">
+      Accueil
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Généralités</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Généralités I" href="../01-generalites/">
+      Généralités I
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Généralités II" href="../02-generalites/">
+      Généralités II
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Algorigrammes</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Algorigrammes I" href="../03-algorigrammes/">
+      Algorigrammes I
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Algorigrammes II" href="../04-algorigrammes/">
+      Algorigrammes II
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Algorigrammes III" href="../05-algorigrammes/">
+      Algorigrammes III
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Algorigrammes IV" href="../06-algorigrammes/">
+      Algorigrammes IV
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="current" title="Algorigrammes V" href="./">
+      Algorigrammes V
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Sous-programmes, fonctions et procédures" href="#sous-programmes-fonctions-et-procedures">
+                Sous-programmes, fonctions et procédures
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="À suivre ?" href="#a-suivre">
+                À suivre ?
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="algorigrammes-partie-5">Algorigrammes (partie 5)<a class="headerlink" href="#algorigrammes-partie-5" title="Permanent link">#</a></h1>
+<p>Super ! Quelle motivation ! Trop bien ! </p>
+<p>Ok, cette fois on passe aux choses sérieuses ! La dernière fois je te disais vouloir commencer du <em>vrai code</em> dans ce chapitre mais là je me rends compte qu'il nous manque encore une notion super importante avant de continuer... donc ça sera pour la prochaine fois ! Suspense :-)</p>
+<p>Tu as remarqué que nos algorigrammes prennent <em>beaucoup</em> d'espace à dessiner ?  Juste avec deux ou trois conditions, ça devient déjà le bazar à lire et à écrire ! On va donc voir un <em>truc</em> pour simplifier tout ça.</p>
+<h2 id="sous-programmes-fonctions-et-procedures">Sous-programmes, fonctions et procédures<a class="headerlink" href="#sous-programmes-fonctions-et-procedures" title="Permanent link">#</a></h2>
+<h3 id="la-metaphore-de-la-recette-encore">La métaphore de la recette (encore !)<a class="headerlink" href="#la-metaphore-de-la-recette-encore" title="Permanent link">#</a></h3>
+<p>Il y a quelques pages, nous avions défini un programme comme un ensemble d'ingrédients et d'étapes nécessaires pour réaliser un objectif. Un peu comme une recette de cuisine finalement. </p>
+<p>Avec cette définition, nous pouvons dire qu'un sous-programme est une deuxième recette de cuisine, mentionnée dans la première recette et dont le résultat est utilisé par la première recette.</p>
+<h4 id="exemple-71-le-gratin-et-la-bechamel">Exemple 7.1. Le gratin et la béchamel<a class="headerlink" href="#exemple-71-le-gratin-et-la-bechamel" title="Permanent link">#</a></h4>
+<p>Voyons les deux recettes suivantes : d'abord la béchamel...</p>
+<div class="code"><pre><span></span><span class="gh">Recette de la béchamel</span>
+<span class="gh">======================</span>
+
+Ingrédients (pour 4 personnes) : 40 g de beurre,
+   40 g de farine,  1/2 L de lait,  1 pincée de
+   muscade râpée, sel, poivre.
+
+Préparation :
+
+<span class="m">1.</span> Dans une casserole sur feu vif, faites fondre
+   le beurre jusqu&#39;à ce qu&#39;il soit mousseux. 
+<span class="m">2.</span> Versez d&#39;un coup la farine et mélangez vivement
+   avec une spatule en bois, jusqu&#39;à ce que le
+   mélange soit homogène et commence à dorer
+   légèrement. 
+<span class="m">3.</span> Versez alors le lait et fouettez pour détruire
+   les éventuels grumeaux. Baissez le feu et
+   continuez de mélanger en continu jusqu&#39;à ce que
+   la béchamel épaississe. 
+<span class="m">4.</span> Salez, poivrez, ajoutez la noix de muscade.
+   Mélangez puis retirez du feu.
+</pre></div>
+
+
+<p>En supposant toutes les actions correctement menées, on peut dire que cette recette produit un résultat : la béchamel (sans blague !)
+et ce résultat dépend uniquement des ingrédients de départ.</p>
+<p>C'est ok jusque là ? On continue avec l'autre recette :</p>
+<div class="code"><pre><span></span><span class="gh">Recette du gratin dauphinois</span>
+<span class="gh">============================</span>
+
+Ingrédients (pour 4 personnes) :  1 kg de pommes
+   de terre, 60 g de beurre, 40 g de farine, 150 g de
+   fromage râpé, 1/2 L de lait, 1 pincée de muscade
+   râpée, sel, poivre.
+
+<span class="m">1.</span> Lavez et pelez les pommes de terre. Plongez-les
+   dans un grand volume d&#39;eau froide et portez à
+   ébullition. Cuisez 15 à 20 min.
+<span class="m">2.</span> Pendant ce temps, réalisez la béchamel.
+<span class="m">3.</span> Préchauffez votre four à 200°C (th.6-7).
+   Lorsqu&#39;elles sont cuites, égouttez les pommes
+   de terre et coupez les en rondelles d&#39;environ 5
+   mm d&#39;épaisseur. Répartissez-les dans le plat en
+   salant et poivrant régulièrement. Versez dessus
+   la béchamel et lissez-la de façon à ce 
+   qu&#39;elle se répartisse partout. 
+4 Parsemez le fromage râpé, et enfournez pour
+   20 min. Servez bien chaud, décoré de brins de
+   persil et accompagné d&#39;une grosse salade verte.
+</pre></div>
+
+
+<p>La recette du gratin est plus intéressante que la précédente. 
+On peut y noter que :</p>
+<ul>
+<li>Cette recette produit un résultat : la gratin dauphinois. Ce résultat 
+  intègre de la béchamel.</li>
+<li>On a supposé connu l'action <code>réaliser la béchamel</code> à l'étape n°2</li>
+<li>Cette recette dépend des ingrédients de départ</li>
+<li>Cette recette dépend également de 
+  la transformation d'une partie des ingrédients par la recette de la béchamel</li>
+</ul>
+<h3 id="recettes-et-premiere-approximation">Recettes et première approximation<a class="headerlink" href="#recettes-et-premiere-approximation" title="Permanent link">#</a></h3>
+<p>Si nous étions entrain de cuisiner en suivant minutieusement un livre de recettes, au moment de l'instruction <code>réaliser la béchamel</code> nous aurions tourné
+quelques pages de notre livre pour aller à la recette ̀<code>Béchamel</code>. </p>
+<p>À partir de là nous aurions suivi les ingrédients et les instructions de cette nouvelle page comme s'il s'agissait de notre recette principale.</p>
+<p>On peut en déduire que : </p>
+<ul>
+<li>"Recette de la Béchamel" est un <strong>sous-programme</strong> du programme 
+    principal "Gratin" </li>
+<li>Il suffit de fournir les bons ingrédients à la recette de la béchamel (types &amp; quantités) pour réaliser une béchamel</li>
+<li>Elle peut être <strong>utilisée indépendamment</strong> de la recette du du gratin, pour réaliser d'autres recettes (ex: pour faire des <a href="http://www.fashioncooking.fr/2012/06/melitzanes-papoutsakia-aubergines-farcies-grecques/">aubergines façon "papoutsakia"</a>) ! </li>
+</ul>
+<h3 id="linstruction-sous-programme">L'instruction "sous-programme"<a class="headerlink" href="#linstruction-sous-programme" title="Permanent link">#</a></h3>
+<p>Dans un algorigramme, <strong>un instruction rectangulaire avec deux barres de chaque coté représente l'utilisation d'un sous-programme</strong> :</p>
+<ol>
+<li>À l'arrivée dans une instruction <em>double-barrée</em>, on "saute" dans le sous-programme concerné</li>
+<li>.. on suit les flèches et on exécute ce qui doit etre exécuté</li>
+<li>...jusqu'à terminer le sous-programme</li>
+<li>...ce qui nous amène à l'instruction que l'on avait quittée dans le programme principal !</li>
+</ol>
+<h4 id="exemple-72-lalgorigramme-du-diner-romantique">Exemple 7.2. L'algorigramme du dîner romantique<a class="headerlink" href="#exemple-72-lalgorigramme-du-diner-romantique" title="Permanent link">#</a></h4>
+<p>On peut décrire la préparation d'un dîner comme un programme avec des instructions de "haut niveau". Chacune de ces instructions correspond en fait à un sous-programme dans lequel on peut zoomer... pour découvrir d'autres instructions, et ainsi de suite.</p>
+<p><img alt="x" src="../algorigrammes/exemple-sous-programme.png" /></p>
+<h3 id="vocabulaire-et-definitions">Vocabulaire et définitions<a class="headerlink" href="#vocabulaire-et-definitions" title="Permanent link">#</a></h3>
+<p>Dans le monde du développement, il finalement est assez rare de parler de sous-programmes,
+on parlera plutôt de <strong>fonctions</strong> ou de <strong>procédures</strong>. Même s'il est fréquent de confondre les deux.</p>
+<ul>
+<li><strong>Une fonction fabrique un résultat</strong> qui sera utilisée par le programme  principal</li>
+<li><strong>Une procédure ne produit pas de résultat mais réalise des actions</strong> à effet de bord (ex: afficher une fenêtre, envoyer des données sur le réseau, etc.)</li>
+</ul>
+<p>Dans ces sous-programmes, il faut distinguer deux moments importants : leur <strong>déclaration</strong> et leur <strong>appel</strong> .</p>
+<ul>
+<li>
+<p><strong>La déclaration</strong> ou la <strong>définition</strong> d'un programme, c'est quand on écrit &mdash; ou qu'on dessine &mdash; les instructions qui le composent.</p>
+</li>
+<li>
+<p><strong>L'appel</strong> , c'est lorsqu'on fait référence à un programme existant à partir d'un autre, pour l'utiliser.</p>
+</li>
+</ul>
+<p>On ne peut <em>appeller</em> un sous-programme que s'il a été préalablement défini  &mdash; évidemment !</p>
+<p>On parlera désormais de <strong>programme appelant</strong> (le programme principal) et de <strong>programme appelé</strong> (le sous-programme), puisqu'un sous-programme peut lui-même appeler un autre sous-sous-programme.</p>
+<h3 id="utilisation-et-fonctionnement">Utilisation et fonctionnement<a class="headerlink" href="#utilisation-et-fonctionnement" title="Permanent link">#</a></h3>
+<p>Que se passe-t-il lorsqu'un programme appelle un sous-programme ? En fait il y a 3 étapes : </p>
+<ul>
+<li><strong>Passage de paramètres :</strong> certaines données du programme appelant sont transférées au sous-programme appelé (ex: dans notre recette principale, on envoie une partie des ingrédients à la préparation de la sous-recette)</li>
+<li><strong>Réalisation des étapes</strong> (ex: c'est la préparation de la sous-recette)</li>
+<li><strong>La valeur de retour :</strong> lorsque la préparation est terminée c'est le résultat qui est transféré vers le programme appelant (ex: la béchamel, produite par la recette)</li>
+</ul>
+<p>Ces trois étapes sont importantes, parce que <strong>le programme appelant et le programme appelé vivent dans des espaces mémoires différents</strong>. Leurs variables sont comme dans des mondes parallèles : il peut y avoir une variable nommée <code>age</code> (par exemple) dans chacun de ces deux mondes, mais ces deux variables <code>age</code> ne désigneront pas la même case mémoire, elle n'auront pas la même vie (puisqu'elle suivront des programmes différents) et n'auront donc pas forcément les mêmes valeurs.</p>
+<p>Du coup c'est un peu comme dans les films de science fiction : pour communiquer entre ces deux mondes parallèles (appelant &amp; appelé), il faut ouvrir une une brèche, mais elle ne dure pas longtemps. </p>
+<p>Alors un coup on ouvre la brèche et on envoie des choses (les paramètres) et un coup on ouvre la brèche et on reçoit (le résultat). Mais de part et d'autre de cette brèche, une fois celle-ci refermée, il n'y a plus aucun moyen de savoir ce qui se passe de l'autre coté ! </p>
+<p>Pourquoi on fait tout ça ? C'est à cause du fonctionnement des processerus, mais... patience ! On reviendra là dessus un peu plus tard, en parlant de la <em>pile</em> et du <em>tas</em> ! :-)</p>
+<blockquote>
+<p>Il venait de se passer tant de choses bizarres, qu'elle en arrivait à penser que fort peu de choses étaient vraiment impossibles <br>
+<em>Lewis Caroll, Alice au pays des merveilles</em></p>
+</blockquote>
+<h2 id="a-suivre">À suivre ?<a class="headerlink" href="#a-suivre" title="Permanent link">#</a></h2>
+<p>Ça y est, nous avons fini les algorigrammes ! Et nous avons également fini l'essentiel de la partie théorique !
+Les subtilités qui restent concernent l'écriture du code, les types de variables et les structures de données.</p>
+<p>Il reste donc à voir comment on fait tout ça "en vrai" !
+Donc la prochaine fois... on reprends les exercices !</p>
+<ul>
+<li>Tu en penses quoi jusque là ?</li>
+<li>Tu veux la suite ?</li>
+</ul>
+<p>Si oui, envoie un e-mail et <strong>demande tu-sais-quoi à tu-sais-qui</strong> :-)</p>
+          <aside class="copyright" role="note">
+            
+              Copyright (c) 2016 El Gadjo Ridículo &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../06-algorigrammes/" title="Algorigrammes IV">
+          <span class="direction">
+            Chapitre précédent
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Algorigrammes IV
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '..';
+      var repo_id  = 'elgadjo/apprendre-a-programmer';
+    </script>
+    <script src="../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>
