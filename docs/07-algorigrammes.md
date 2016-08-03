@@ -148,7 +148,7 @@ Du coup c'est un peu comme dans les films de science fiction : pour communiquer 
 
 Alors un coup on ouvre la brèche et on envoie des choses (les paramètres) et un coup on ouvre la brèche et on reçoit (le résultat). Mais de part et d'autre de cette brèche, une fois celle-ci refermée, il n'y a plus aucun moyen de savoir ce qui se passe de l'autre coté ! 
 
-Pourquoi on fait tout ça ? C'est à cause du fonctionnement des processerus, mais... patience ! On reviendra là dessus un peu plus tard, en parlant de la _pile_ et du _tas_ ! :-)
+Pourquoi on fait tout ça ? Haha... patience ! C'est à cause des processeurs ! On reviendra là dessus un peu plus tard, en parlant de la _pile_ et du _tas_ ! :-)
 
 
 > Il venait de se passer tant de choses bizarres, qu'elle en arrivait à penser que fort peu de choses étaient vraiment impossibles <br>
