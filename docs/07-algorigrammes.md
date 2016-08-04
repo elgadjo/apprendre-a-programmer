@@ -6,7 +6,7 @@ Super ! Quelle motivation ! Trop bien !
 
 Ok, cette fois on passe aux choses sérieuses ! La dernière fois je te disais vouloir commencer du _vrai code_ dans ce chapitre mais là je me rends compte qu'il nous manque encore une notion super importante avant de continuer... donc ça sera pour la prochaine fois ! Suspense :-)
 
-Tu as remarqué que nos algorigrammes prennent _beaucoup_ d'espace à dessiner ?  Juste avec deux ou trois conditions, ça devient déjà le bazar à lire et à écrire ! On va donc voir un _truc_ pour simplifier tout ça.
+Tu as remarqué que nos algorigrammes prennent _beaucoup_ d'espace à dessiner ?  Juste avec deux ou trois conditions, ça devient déjà le bazar à lire et à écrire ! Je vais donc te montrer un _truc_ pour simplifier tout ça.
 
 Sous-programmes, fonctions et procédures
 --------------------
