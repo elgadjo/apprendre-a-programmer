@@ -149,9 +149,16 @@ Faisons un parallèle science-fictionnesque : c'est comme si les deux programmes
 
 Du coup, pour communiquer entre ces deux programmes (appelant & appelé), il faut ouvrir une une brèche, mais elle ne dure pas longtemps ! 
 
-Alors un coup on ouvre la brèche et on envoie des choses (les paramètres) et un coup on ouvre la brèche et on reçoit (le résultat). Mais de part et d'autre de cette brèche, une fois celle-ci refermée, il n'y a plus aucun moyen de savoir ce qui se passe de l'autre coté ! 
+Alors un coup on ouvre la brèche et on envoie des choses (les paramètres) puis celle-ci se referme. Il n'y a plus aucun moyen de savoir ce qui se passe de l'autre coté ! Enfin la brèche s'ouvre à nouveau et on reçoit (le résultat).
 
-Pourquoi on fait tout ça ? Haha... patience ! C'est à cause du fonctionnement des processeurs et de la mémoire ! On reviendra là dessus un peu plus tard, en parlant des fonctions, de la _pile_ et du _tas_ ! :-)
+!!! note 
+    Pourquoi on fait tout ça ? Haha... patience ! C'est à cause du fonctionnement des processeurs et de la mémoire ! On reviendra là dessus un peu plus tard, en parlant des fonctions, de la _pile_ et du _tas_ ! :-)
+
+#### Exemple 7.3 : Videur sexiste, mais « 2.0 »
+
+Pour appliquer tout ce qu'on vient de dire, on pourrait ré-écrire l'algorigramme du [videur sexiste](/05-algorigrammes/#exemple-52-le-videur-sexiste) en séparant le traitement du client qui se présente de l'algorithme de décision (sexiste ou non) du videur :
+
+![x](algorigrammes/exemple-videur-ss-programmes.png)
 
 
 > Il venait de se passer tant de choses bizarres, qu'elle en arrivait à penser que fort peu de choses étaient vraiment impossibles <br>
