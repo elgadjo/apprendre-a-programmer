@@ -137,15 +137,17 @@ On parlera désormais de __programme appelant__ (le programme principal) et de _
 
 ### Utilisation et fonctionnement
 
-Que se passe-t-il lorsqu'un programme appelle un sous-programme ? En fait il y a 3 étapes : 
+Que se passe-t-il lorsqu'un programme appelle un sous-programme ? En fait il y a 3 moments clés : 
 
 * __Passage de paramètres :__ certaines données du programme appelant sont transférées au sous-programme appelé (ex: dans notre recette principale, on envoie une partie des ingrédients à la préparation de la sous-recette)
 * __Réalisation des étapes__ (ex: c'est la préparation de la sous-recette)
 * __La valeur de retour :__ lorsque la préparation est terminée c'est le résultat qui est transféré vers le programme appelant (ex: la béchamel, produite par la recette)
 
-Ces trois étapes sont importantes, parce que __le programme appelant et le programme appelé vivent dans des espaces mémoires différents__. Leurs variables sont comme dans des mondes parallèles : il peut y avoir une variable nommée ``age`` (par exemple) dans chacun de ces deux mondes, mais ces deux variables ``age`` ne désigneront pas la même case mémoire, elle n'auront pas la même vie (puisqu'elle suivront des programmes différents) et n'auront donc pas forcément les mêmes valeurs.
+C'est important de noter ces trois moments car __les deux programmes (appelant et appelé) vivent dans des espaces mémoires différents__. Ils ne peuvent communiquer qu'au tout début et à la toute fin.
 
-Du coup c'est un peu comme dans les films de science fiction : pour communiquer entre ces deux mondes parallèles (appelant & appelé), il faut ouvrir une une brèche, mais elle ne dure pas longtemps. 
+Faisons un parallèle science-fictionnesque : c'est comme si les deux programmes étaient des mondes parallèles : il pourrait y avoir une variable nommée ``age`` dans chacun de ces deux mondes, mais ces deux variables ``age`` ne désigneront pas la même case mémoire, elle n'auront pas la même vie (puisqu'elle suivront des programmes différents) et n'auront donc pas forcément les mêmes valeurs.
+
+Du coup, pour communiquer entre ces deux programmes (appelant & appelé), il faut ouvrir une une brèche, mais elle ne dure pas longtemps ! 
 
 Alors un coup on ouvre la brèche et on envoie des choses (les paramètres) et un coup on ouvre la brèche et on reçoit (le résultat). Mais de part et d'autre de cette brèche, une fois celle-ci refermée, il n'y a plus aucun moyen de savoir ce qui se passe de l'autre coté ! 
 
@@ -166,6 +168,7 @@ Il reste donc à voir comment on fait tout ça "en vrai" !
 Donc la prochaine fois... on reprends les exercices !
 
 * Tu en penses quoi jusque là ?
+* Si tu étais un personnage de SF, qui serais-tu ? (dans quel roman / film ?)
 * Tu veux la suite ?
 
 Si oui, envoie un e-mail et __demande tu-sais-quoi à tu-sais-qui__ :-)
