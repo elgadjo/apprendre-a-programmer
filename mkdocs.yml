@@ -1,9 +1,11 @@
 site_name: Apprendre à programmer
 theme: 'material'
+# theme_dir: 'themes/mkdocs-material/material'
+
 site_author: 'El Gadjo Ridículo'
 site_url: 'http://elgadjo.github.io/apprendre-a-programmer'
 
-copyright: 'Copyright (c) 2016 El Gadjo Ridículo'
+# copyright: 'Copyright (c) 2016 El Gadjo Ridículo'
 
 repo_name: 'GitHub'
 repo_url: 'https://github.com/elgadjo/apprendre-a-programmer'
