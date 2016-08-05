@@ -4,13 +4,15 @@ Pseudo-code I
 
 Je dois avouer que je suis content qu'on soit arrivés jusque là ! 
 
+FIXME: difficultés de la démarche, trop-fortitude.
+
+À ce rythme là on sera bientôt entrain de jouer (et gagner!) en Javascript sur [CodinGame](http://codingame.com/) ;-)
+
+
 > Il est actuellement 17h28 heure locale. 
 > La température extérieure est de 25°. <br/><br/>
 > Le commandant de bord et son équipage sont heureux d'avoir voyagé avec vous sur Algorigrammes Airlines.
 > Nous vous souhaitons un agréable séjour en pseudo-code et espèrons vous revoir bientôt sur nos lignes !
-
-
-Blabla codingame
 
 
 (Re-)présentation
@@ -202,3 +204,17 @@ D'ailleurs... lorsqu'on y réfléchit bien... un programme n'est rien de plus qu
     * __Explique comment tu ferais__ pour adapter cette fonction pour calculer le nombre de personnes dans la boite après le groupe de 1000 ?
 
     
+
+À suivre ?
+----------
+
+FIXME: Ouf, cette fois-ci c'était un peu plus costaud ! Nous allons donc prendre le temps de bien assimiler tout ça avant d'enchainer vers la derniere notion qui reste... puis vers du vrai code.
+
+FIXME: Pour le prochain numéro, je te propose de voir les solutions des exercices, et passer à Javascript.
+
+FIXME: En fait on ne vas pas utiliser le pseudocode tant que ça...
+
+Si le coeur t'en dis, j'attends impatiemment ton e-mail avec :
+
+* une __photo de tes exercices__ (à la main sur papier),
+* un __petit message qui m'incite à écrire la suite__ :-)
