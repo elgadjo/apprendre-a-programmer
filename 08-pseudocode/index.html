@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Pseudocode I - Apprendre à programmer</title>
+      
+      
+      
+        <link rel="canonical" href="http://elgadjo.github.io/apprendre-a-programmer/08-pseudocode/">
+      
+      
+        <meta name="author" content="El Gadjo Ridículo">
+      
+    
+    <meta property="og:url" content="http://elgadjo.github.io/apprendre-a-programmer/08-pseudocode/">
+    <meta property="og:title" content="Apprendre à programmer">
+    <meta property="og:image" content="http://elgadjo.github.io/apprendre-a-programmer/08-pseudocode//../">
+    <meta name="apple-mobile-web-app-title" content="Apprendre à programmer">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/stylesheets/application-0dac3e5884.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-deep-purple palette-accent-orange">
+    
+      
+      
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                Pseudocode <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        Pseudocode I
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="https://github.com/elgadjo/apprendre-a-programmer" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>
+          Apprendre à programmer
+          <span class="version">
+            
+          </span>
+        </strong>
+        
+          <br>
+          elgadjo/apprendre-a-programmer
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            
+            <a href="https://github.com/elgadjo/apprendre-a-programmer/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/elgadjo/apprendre-a-programmer/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Accueil" href="..">
+      Accueil
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Généralités</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Généralités I" href="../01-generalites/">
+      Généralités I
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Généralités II" href="../02-generalites/">
+      Généralités II
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Algorigrammes</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Algorigrammes I" href="../03-algorigrammes/">
+      Algorigrammes I
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Algorigrammes II" href="../04-algorigrammes/">
+      Algorigrammes II
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Algorigrammes III" href="../05-algorigrammes/">
+      Algorigrammes III
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Algorigrammes IV" href="../06-algorigrammes/">
+      Algorigrammes IV
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Algorigrammes V" href="../07-algorigrammes/">
+      Algorigrammes V
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Pseudocode</span>
+    <ul>
+      
+        
+  <li>
+    <a class="current" title="Pseudocode I" href="./">
+      Pseudocode I
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="(Re-)présentation" href="#re-presentation">
+                (Re-)présentation
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Des algorigrammes au pseudo-code" href="#des-algorigrammes-au-pseudo-code">
+                Des algorigrammes au pseudo-code
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="À suivre ?" href="#a-suivre">
+                À suivre ?
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="pseudo-code-i">Pseudo-code I<a class="headerlink" href="#pseudo-code-i" title="Permanent link">#</a></h1>
+<p>Excellent ! Je suis vraiment impressioné par ta motivation. </p>
+<p>Je profite du fait que cet épisode soit le plus long de la série à ce jour, pour te dire qu'en fait c'est la première fois que je fais ce genre de <em>truc</em>: je fais tout mon possible pour que tu trouves ça un peu intéressant, instructif, plaisant, voire divertissant...  (je me fais certainement des idées, mais on ne sait jamais !) :-)</p>
+<p>Le plus dur c'est que étant "en aveugle", je ne sais pas si pour toi c'est difficile ou facile, si le rythme traîne ou s'il  est bon, s'il y a assez d'exemples, s'ils sont parlants ? Pire que tout : je ne sais même pas si mes blagues tombent à plat de façon honteusement lamentable... ou te font sourire (même juste un tout petit peu) !</p>
+<p>Bref. Tu imagines l'angoisse ? :-]</p>
+<p>N'empêche, à continuer à ce rythme là tu maîtriseras bientôt JavaScript et tu seras bientôt en train de jouer (et gagner!) à <a href="http://codingame.com/">CodinGame</a>, débugguer du code les yeux fermés... ou développer <a href="http://www.mr-bin.fr">tes propres applications</a> !</p>
+<p>Alors... on reprend ?</p>
+<blockquote>
+<p>Il est actuellement 17h42 heure locale. 
+La température extérieure est de 19°. <br/><br/>
+Le commandant de bord et son équipage sont heureux d'avoir voyagé avec toi sur Algorigrammes Codinglines.
+Nous te souhaitons un agréable séjour en Pseudo-code  !</p>
+</blockquote>
+<h2 id="re-presentation">(Re-)présentation<a class="headerlink" href="#re-presentation" title="Permanent link">#</a></h2>
+<p>Dans le tout premier chapitre, je t'avais dit que le pseudo-code était une des nombreuses représentations possible d'un programme. Cette fois, avec le pseudo-code, on va exprimer nos programmes en langue quasi-naturelle, en français (mais c'est également possible en toutes les langues). Nous allons donc écrire des programmes sous forme de textes.</p>
+<p>Cette représentation a l'avantage d'être proche du résultat final tout en étant indépendante des difficultés ou bugs liées à la mise en place réelle sur un ordinateur ! C'est plutôt bien pour décrire ses idées avant de se confronter à la réalité technique avec un autre langage.</p>
+<p>Comme tu peux t'en douter, contrairement aux algorigrammes, il ne s'agit pas d'une représentation normalisée, mais juste d'une représentatation <em>pratique à griffoner</em> sur un bout de feuille, à penser, ou éventuellement à dire à l'oral (il te restera à trouver le bon interlocuteur ^_^) !  Au final, il y a certainement autant de variantes du pseudo-code que de développeurs...</p>
+<p>En pseudo-code nous chercherons encore à lever toutes les ambiguïtés et à préciser tous les concepts que l'on utilise, exactement comme dans les algorigrammes. Nous retrouverons aussi toutes les petites choses auxquelles nous nous sommes progressivement habituées lors des chapitres précédent : variables, instructions conditionnelles, boucles, fonctions... (et votre humble serviteur !) </p>
+<h2 id="des-algorigrammes-au-pseudo-code">Des algorigrammes au pseudo-code<a class="headerlink" href="#des-algorigrammes-au-pseudo-code" title="Permanent link">#</a></h2>
+<p>Attend un instant.. si le pseudo-code n'est qu'une <em>représentation</em> parmi d'autres... et si je te dis qu'on va faire comme dans les algorigrammes... Il y aurait donc des équivalences entre algorigrammes et pseudo-code ? </p>
+<p>Hé oui ! Voyons ça ...</p>
+<h3 id="instructions-et-structure-du-programme">Instructions et structure du programme<a class="headerlink" href="#instructions-et-structure-du-programme" title="Permanent link">#</a></h3>
+<p>Comme avec les algorigrammes, un programme est constitué d'un début, d'une suites d'instructions et d'une fin. Ces instructions peuvent prendre deux formes : <strong>instructions simples</strong> et <strong>blocs</strong> contenant plusieurs instructions.</p>
+<p>On lit les instructions dans l'ordre des lignes : pour les instructions simple c'est tout, mais pour les blocs d'instructions, il pourra y avoir des règles particulières pour savoir sur quelle ligne on continue à lire le programme.</p>
+<p><img alt="x" src="../pseudocode/equiv-debut-instruction-fin.png" /></p>
+<h3 id="commentaires">Commentaires<a class="headerlink" href="#commentaires" title="Permanent link">#</a></h3>
+<p>Les commentaires sont des lignes de texte qui n'ont pas de sens du point de vue du programme et qui ne doivent pas être prises en compte. C'est un peu comme des annotations qu'on aurait pu faire autour de nos algorigramme pour expliquer telle ou telle partie.</p>
+<p>Nous allons utiliser pour cela le symbole <code>//</code> . Tout ce qui sera à droite de ce symbole sera considéré comme un commentaire.</p>
+<div class="code"><pre><span></span>INSTRUCTION1
+INSTRUCTION2
+...
+
+// Quatre lignes explicatives qui ne sont pas des instructions
+// et qu&#39;il ne faut donc pas prendre en compte dans le code
+// mais qui peuvent être utiles pour comprendre ce qui 
+// s&#39;y passe !
+INSTRUCTION31
+INSTRUCTION32
+</pre></div>
+
+
+<h3 id="declaration-des-variables">Déclaration des variables<a class="headerlink" href="#declaration-des-variables" title="Permanent link">#</a></h3>
+<p>En pseudo-code et de nombreux langages de programmation on prendra l'habitude de déclarer les variables tout au début du programme. Cela permet au programmeur de savoir qui est chaque variable, et de <em>s'engager</em> à ne l'utiliser que pour la description qui en est faite.</p>
+<p>De plus, lorsqu'on utilisera des vrais langages informatiques, cela permettra de demander à l'ordinateur de préparer et donner des bouts de mémoire à notre programme : pour les étiquettes, pour les cases visées, etc.</p>
+<div class="code"><pre><span></span>PROGRAMME monprogramme(...)
+    VARIABLE variable1 : description
+    VARIABLE variable2 : description
+    VARIABLE variable3 : description
+    ...
+
+    INSTRUCTION1
+    INSTRUCTION2
+    ...
+
+FINPROGRAMME
+</pre></div>
+
+
+<h3 id="assignation-et-lecture-dune-variable">Assignation et lecture d'une variable<a class="headerlink" href="#assignation-et-lecture-dune-variable" title="Permanent link">#</a></h3>
+<p>L'utilisation des variables se fait <em>exactement</em> de la même manière en pseudo-code qu'en algorigrammes. La différence ? Pas besoin de mettre de rectangle autour !</p>
+<p><img alt="x" src="../pseudocode/equiv-variables.png" /></p>
+<h3 id="entrees-sorties">Entrées &amp; sorties<a class="headerlink" href="#entrees-sorties" title="Permanent link">#</a></h3>
+<p><img alt="x" src="../pseudocode/equiv-io.png" /></p>
+<h3 id="structure-conditionnelle">Structure conditionnelle<a class="headerlink" href="#structure-conditionnelle" title="Permanent link">#</a></h3>
+<p>La structure conditionnelle est notre premier bloc d'instructions.</p>
+<p>Autant dans les algorigrammes, on pouvait suivre les flèches pour choisir le "bon" coté du code à appliquer, autant en texte il va falloir ruser... puisqu'on ne peut écrire du code que de haut en bas ! </p>
+<p>L'astuce est simple : </p>
+<ul>
+<li>Si la valeur de <code>condition</code> est VRAI, alors on fait les lignes en rouges de la zone en haut (<code>INSTRUCTION26 ...</code>), </li>
+<li>Sinon c'est que <code>condition</code> est FAUX, on ignore la zone en haut pour passer directement aux lignes en rouges de la zone en bas (<code>INSTRUCTION26bis ...</code>). </li>
+<li>Quand on a fini les lignes en rouges de la zone choisie, on passe directement aux instructions en bleu qui suivent (<code>INSTRUCTION27 ...</code>)</li>
+</ul>
+<p><img alt="x" src="../pseudocode/equiv-if-then-else.png" /></p>
+<h3 id="boucles">Boucles<a class="headerlink" href="#boucles" title="Permanent link">#</a></h3>
+<p>Les boucles sont également représentées sous forme d'un bloc d'instructions. Là aussi il faut ruser pour distinguer ce qui est <em>dans</em> la boucle de ce qui est <em>à coté</em>.</p>
+<p>Dans les chapitres précédents nous avions défini une boucle comme une zone de code répétée tant qu'une condition valait VRAI, mais nous n'avions pas précisé ou était la zone de code par rapport à notre condition ! Nous aurons donc deux façon de représenter les boucles, selon l'organisation de notre programme.</p>
+<h4 id="boucles-tantque-ou-lon-teste-la-condition-avant-le-premier-tour">Boucles TANTQUE : où l'on teste la condition avant le premier tour<a class="headerlink" href="#boucles-tantque-ou-lon-teste-la-condition-avant-le-premier-tour" title="Permanent link">#</a></h4>
+<p>Dans cette version de la boucle, on choisit de tester la valeur de <code>condition</code> avant d'entrer dans la boucle.</p>
+<ul>
+<li>Si la valeur est VRAI, on passe aux instructions rouges <code>INSTRUCTION 26...</code> et suivantes. Quand c'est fait, on recommence à la ligne <code>TANTQUE (condition) FAIRE</code> et on se repose la question de la condition.</li>
+<li>Si la valeur est FAUX, on ignore les lignes en rouge et on passe directement aux instructions en bleu <code>INSTRUCTION27 ...</code> et suivantes.</li>
+</ul>
+<p><img alt="x" src="../pseudocode/equiv-while.png" /></p>
+<h4 id="boucles-faire-ou-lon-teste-la-condition-apres-un-premier-tour">Boucles FAIRE : où l'on teste la condition après un premier tour<a class="headerlink" href="#boucles-faire-ou-lon-teste-la-condition-apres-un-premier-tour" title="Permanent link">#</a></h4>
+<p>Dans cette autre version de la boucle, on rentre directement sur les instructions <code>INSTRUCTIONS26...</code>. Lorsque c'est fait on tombe sur la condition :</p>
+<p>Dans cette version de la boucle, on choisit de tester la valeur de <code>condition</code> avant d'entrer dans la boucle.</p>
+<ul>
+<li>Si la valeur est VRAI, on remonte et on repasse par les instructions rouges <code>INSTRUCTION 26...</code> et suivantes, autant que nécessaire.</li>
+<li>Si la valeur est FAUX, on passe directement aux instructions en bleu <code>INSTRUCTION27 ...</code> et suivantes.</li>
+</ul>
+<p><img alt="x" src="../pseudocode/equiv-do-while.png" /></p>
+<h3 id="fonctions">Fonctions<a class="headerlink" href="#fonctions" title="Permanent link">#</a></h3>
+<p>Les fonctions... sont aussi des blocs d'instructions ! </p>
+<p>On remarque que dans l'appel et dans définition d'une fonction, on note des paramètres à coté du nom, entre parenthèses. Par exemple : <code>afficher(mon_texte)</code>. </p>
+<p><img alt="x" src="../pseudocode/equiv-functions.png" /></p>
+<h4 id="comment-utiliser-les-parametres">Comment utiliser les paramètres ?<a class="headerlink" href="#comment-utiliser-les-parametres" title="Permanent link">#</a></h4>
+<p><strong>Au niveau de la fonction appelante, ce sont les différentes valeurs  que l'on souhaite transmettre</strong> à la fonction appelée. Cela peut être directement des valeurs textuelles, numériques, etc. (<code>afficher("Hello world")</code>) ou bien des valeurs lues depuis des variables (<code>afficher(salutations)</code>).</p>
+<p><strong>Au niveau de la fonction appelée, ces paramètres sont des variables</strong> que l'on a pas besoin de déclarer à l'intérieur de la fonction et qui seront initialisées à aux différentes valeurs que fournira l'appelant, au moment de l'appel et dans l'ordre des paramètres indiqués.</p>
+<p>Par exemple si j'ai la fonction suivante (parfaitement valide) : </p>
+<div class="code"><pre><span></span>FONCTION salutation(prenom, age)
+    afficher(&quot;Salut &quot; + prenom + &quot;, toi qui a &quot; + age + &quot;ans&quot;)
+FINFONCTION
+</pre></div>
+
+
+<ul>
+<li>Lorsque j'appelerai <code>salutation("Anatole", 52)</code>, cela affichera <code>Salut Anatole, toi qui a 40 ans</code></li>
+<li>Lorsque j'appelerai <code>salutation("Philemon", 16)</code>, cela affichera <code>Salut Philemon, toi qui a 16 ans</code></li>
+<li>Lorsque j'appelerai <code>salutation("Vendredi", 40)</code>, cela affichera <code>Salut Vendredi, toi qui a 40 ans</code></li>
+<li>Et ainsi de suite... les variables <code>prenom</code> et <code>age</code> changent de valeur à chaque appel, selon ce qui est passé en paramètres.</li>
+</ul>
+<h4 id="comment-utiliser-la-valeur-de-retour">Comment utiliser la valeur de retour<a class="headerlink" href="#comment-utiliser-la-valeur-de-retour" title="Permanent link">#</a></h4>
+<p><strong>La valeur de retour est la valeur que l'on souhaite transmettre de la fonction appelée vers la fonction appelante.</strong> Elle est désignée par le mot clef <code>RETOURNE</code>. </p>
+<p>Dans l'illustration ci-dessus, on voit que cette valeur est lue depuis la variable <code>calcul</code> du coté de <code>fonction1</code> et qu'elle est transmise à la fonction appelante <code>fonction2</code>. Du coté de la fonction appelante, la valeur reçue est alors stockée dans la variable <code>resultat</code>. On ne s'intéresse qu'à la valeur et on perd toute trace du fait que cette valeur était associée à une autre variable dans le <em>monde parallèle</em> de la fonction <code>fonction1</code>.</p>
+<h4 id="autres-details">Autres détails<a class="headerlink" href="#autres-details" title="Permanent link">#</a></h4>
+<p>Évidemment, l'exécution des instructions contenues dans une fonction appelée se fait <em>uniquement</em> au moment ou elle est mentionnée (avec ses paramètres) dans la fonction appelante.</p>
+<p>D'ailleurs... lorsqu'on y réfléchit bien... un programme n'est rien de plus qu'une fonction qui serait la première à être appelé pour l'exécution ! Il appelle lui-même d'autres fonctions (qui en appellent éventuellement d'autres, etc.) !</p>
+<blockquote>
+<p>&mdash; Et comment savez-vous que vous êtes fou ?<br/>
+&mdash;   Pour commencer, dit le Chat, est-ce que tu m’accordes qu’un chien n’est pas fou ?<br/>
+&mdash;   Sans doute.<br/>
+&mdash;   Eh bien, vois-tu, continua le Chat, tu remarqueras qu’un chien gronde lorsqu’il est en colère et remue la queue lorsqu’il est content. Or, moi je gronde quand je suis content, et je remue la queue quand je suis en colère. Donc, je suis fou.<br/>
+<em>Lewis Caroll, Alice au pays des merveilles</em></p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Exercices 8.1 : videur sexiste &amp; capacité maximum</p>
+<p>La boite de nuit a une capacité maximum de 300
+personnes par nuit. Le travail du videur
+s'arrête lorsque ce nombre d'entrées est
+atteint.</p>
+<p>Sur la base du videur sexiste   :</p>
+<ul>
+<li><strong>Écris en pseudo-code le programme du videur sexiste</strong> capable de capable de tenir compte de la capacité de la boite de nuit (reprise de l'exercice  5.d)</li>
+<li><strong>Décompose le programme</strong> en plusieurs fonctions si possible ;-)</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Exercices 8.2 :  videur qui s'ennuie</p>
+<p>Un soir, notre videur préféré s'ennuie. Pour s'amuser, il décide de faire rentrer 1 personne seule, puis un groupe de 2, puis un groupe de 3, puis de 4, puis de 5... et ainsi de suite.</p>
+<ul>
+<li><strong>Quelle serait ta démarche</strong> pour connaître pour le nombre de personnes entrées dans la boite de nuit lorsque le groupe de 5 sera passé ?</li>
+<li><strong>Écris une fonction en pseudo-code</strong> qui détermine combien de personnes seront dans la boite de nuit lorsque le groupe de 100 sera rentré ?</li>
+<li><strong>Explique comment tu ferais</strong> pour adapter cette fonction pour calculer le nombre de personnes dans la boite après le groupe de 1000 ?</li>
+</ul>
+</div>
+<h2 id="a-suivre">À suivre ?<a class="headerlink" href="#a-suivre" title="Permanent link">#</a></h2>
+<p>Voilà, c'est fait ! Les bases sont posées. Nous avons tous les éléments nécessaires pour faire du <em>vrai code</em> !</p>
+<p>Pour le prochain numéro, je te propose de ne pas trop nous attarder sur le pseudo-code et passer tout doucement vers JavaScript. Ce qui nous permettra en plus de voir notre code fonctionner !</p>
+<p>Nous verrons aussi les solutions des exercices, évidemment.</p>
+<p>Si le cœur t'en dis, j'attends impatiemment ton e-mail avec :</p>
+<ul>
+<li>un <strong>pièce jointe pour les exercices</strong> (photo d'un papier ou document texte),</li>
+<li>un <strong>petit message qui m'incite à écrire la suite</strong> :-)</li>
+</ul>
+          <aside class="copyright" role="note">
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../07-algorigrammes/" title="Algorigrammes V">
+          <span class="direction">
+            Chapitre précédent
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Algorigrammes V
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '..';
+      var repo_id  = 'elgadjo/apprendre-a-programmer';
+    </script>
+    <script src="../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>

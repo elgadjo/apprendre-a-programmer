@@ -56,3 +56,7 @@ blockquote:after {
 	display: block;
 	margin: 0 auto;
 }
+
+h4 {
+	text-decoration: underline;
+}
