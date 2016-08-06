@@ -2,33 +2,39 @@
 Pseudo-code I
 ==========
 
-Je dois avouer que je suis content qu'on soit arrivés jusque là ! 
+Excellent ! Je suis vraiment impressioné par ta motivation. 
 
-FIXME: difficultés de la démarche, trop-fortitude.
+Je profite du fait que cet épisode soit le plus long de la série à ce jour, pour te dire qu'en fait c'est la première fois que je fais ce genre de _truc_: je fais tout mon possible pour que tu trouves ça un peu intéressant, instructif, plaisant, voire divertissant...  (je me fais certainement des idées, mais on ne sait jamais !) :-)
 
-À ce rythme là on sera bientôt entrain de jouer (et gagner!) en Javascript sur [CodinGame](http://codingame.com/) ;-)
+Le plus dur c'est que étant "en aveugle", je ne sais pas si pour toi c'est difficile ou facile, si le rythme traîne ou s'il  est bon, s'il y a assez d'exemples, s'ils sont parlants ? Pire que tout : je ne sais même pas si mes blagues tombent à plat de façon honteusement lamentable... ou te font sourire (même juste un tout petit peu) !
 
+Bref. Tu imagines l'angoisse ? :-]
 
-> Il est actuellement 17h28 heure locale. 
-> La température extérieure est de 25°. <br/><br/>
-> Le commandant de bord et son équipage sont heureux d'avoir voyagé avec vous sur Algorigrammes Airlines.
-> Nous vous souhaitons un agréable séjour en pseudo-code et espèrons vous revoir bientôt sur nos lignes !
+N'empêche, à continuer à ce rythme là tu maîtriseras bientôt JavaScript et tu seras bientôt en train de jouer (et gagner!) à [CodinGame](http://codingame.com/), débugguer du code les yeux fermés... ou développer [tes propres applications](http://www.mr-bin.fr) !
 
+Alors... on reprend ?
+
+> Il est actuellement 17h42 heure locale. 
+> La température extérieure est de 19°. <br/><br/>
+> Le commandant de bord et son équipage sont heureux d'avoir voyagé avec toi sur Algorigrammes Codinglines.
+> Nous te souhaitons un agréable séjour en Pseudo-code  !
 
 (Re-)présentation
 ------------------
 
 Dans le tout premier chapitre, je t'avais dit que le pseudo-code était une des nombreuses représentations possible d'un programme. Cette fois, avec le pseudo-code, on va exprimer nos programmes en langue quasi-naturelle, en français (mais c'est également possible en toutes les langues). Nous allons donc écrire des programmes sous forme de textes.
 
-Comme tu peux t'en douter, contrairement aux algorigrammes, il ne s'agit pas d'une représentation normalisée, mais juste d'une représentatation _pratique_ à griffoner sur un bout de feuille ou éventuellement à dire à l'oral &mdash; il te restera à trouver le bon interlocuteur ^_^ !  Cette représentation a également l'avantage d'être indépendant de toute difficulté ou bugs spécifiques aux langages informatiques réels !
+Cette représentation a l'avantage d'être proche du résultat final tout en étant indépendante des difficultés ou bugs liées à la mise en place réelle sur un ordinateur ! C'est plutôt bien pour décrire ses idées avant de se confronter à la réalité technique avec un autre langage.
 
-En pseudo-code nous chercherons encore à lever toutes les ambiguïtés et à préciser tous les concepts que l'on utilise, exactement comme dans les algorigrammes. Nous retrouverons aussi toutes les petites choses auquelles nous nous sommes progressivement habituées lors des chapitres précédent : variables, instructions conditionnelles, boucles, fonctions... (sans parler du prof !) 
+Comme tu peux t'en douter, contrairement aux algorigrammes, il ne s'agit pas d'une représentation normalisée, mais juste d'une représentatation _pratique à griffoner_ sur un bout de feuille, à penser, ou éventuellement à dire à l'oral (il te restera à trouver le bon interlocuteur ^_^) !  Au final, il y a certainement autant de variantes du pseudo-code que de développeurs...
+
+En pseudo-code nous chercherons encore à lever toutes les ambiguïtés et à préciser tous les concepts que l'on utilise, exactement comme dans les algorigrammes. Nous retrouverons aussi toutes les petites choses auxquelles nous nous sommes progressivement habituées lors des chapitres précédent : variables, instructions conditionnelles, boucles, fonctions... (et votre humble serviteur !) 
 
 
 Des algorigrammes au pseudo-code
 ---------------------------------------------------
 
-Attend un instant.. si le pseudo-code n'est qu'une _représentation_ parmis d'autres... et si je te dis qu'on va faire comme dans les algorigrammes... Il y aurait donc des équivalences entre algorigrammes et pseudo-code ? 
+Attend un instant.. si le pseudo-code n'est qu'une _représentation_ parmi d'autres... et si je te dis qu'on va faire comme dans les algorigrammes... Il y aurait donc des équivalences entre algorigrammes et pseudo-code ? 
 
 Hé oui ! Voyons ça ...
 
@@ -39,7 +45,6 @@ Comme avec les algorigrammes, un programme est constitué d'un début, d'une sui
 
 On lit les instructions dans l'ordre des lignes : pour les instructions simple c'est tout, mais pour les blocs d'instructions, il pourra y avoir des règles particulières pour savoir sur quelle ligne on continue à lire le programme.
 
-On notera que dans un 
 ![x](pseudocode/equiv-debut-instruction-fin.png)
 
 
@@ -87,7 +92,7 @@ FINPROGRAMME
 
 ### Assignation et lecture d'une variable
 
-L'utiisation des variables se fait _exactement_ de la même manière en pseudo-code qu'en algorigrammes. La différence ? Pas besoin de mettre de rectangle autour !
+L'utilisation des variables se fait _exactement_ de la même manière en pseudo-code qu'en algorigrammes. La différence ? Pas besoin de mettre de rectangle autour !
 
 ![x](pseudocode/equiv-variables.png)
 
@@ -95,8 +100,6 @@ L'utiisation des variables se fait _exactement_ de la même manière en pseudo-c
 ### Entrées & sorties
 
 ![x](pseudocode/equiv-io.png)
- 
-
 
 ### Structure conditionnelle
 
@@ -107,7 +110,7 @@ Autant dans les algorigrammes, on pouvait suivre les flèches pour choisir le "b
 L'astuce est simple : 
 
 * Si la valeur de ``condition`` est VRAI, alors on fait les lignes en rouges de la zone en haut (``INSTRUCTION26 ...``), 
-* Sinon c'est que ``condition`` est FAUX, on ignoe la zone en haut pour passer directement aux lignes en rouges de la zone en bas (``INSTRUCTION26bis ...``). 
+* Sinon c'est que ``condition`` est FAUX, on ignore la zone en haut pour passer directement aux lignes en rouges de la zone en bas (``INSTRUCTION26bis ...``). 
 * Quand on a fini les lignes en rouges de la zone choisie, on passe directement aux instructions en bleu qui suivent (``INSTRUCTION27 ...``)
 
 ![x](pseudocode/equiv-if-then-else.png)
@@ -117,14 +120,14 @@ L'astuce est simple :
 
 Les boucles sont également représentées sous forme d'un bloc d'instructions. Là aussi il faut ruser pour distinguer ce qui est _dans_ la boucle de ce qui est _à coté_.
 
-Dans les chapitres précédents nous avions défini une boucle comme une zone de code répétée tant qu'une condition était VRAIE, mais nous n'avions pas précisé ou était la zone de code par rapport à notre condition ! Nous aurons donc deux façon de représenter les boucles, selon l'organisation de notre programme.
+Dans les chapitres précédents nous avions défini une boucle comme une zone de code répétée tant qu'une condition valait VRAI, mais nous n'avions pas précisé ou était la zone de code par rapport à notre condition ! Nous aurons donc deux façon de représenter les boucles, selon l'organisation de notre programme.
 
 #### Boucles TANTQUE : où l'on teste la condition avant le premier tour
 
 Dans cette version de la boucle, on choisit de tester la valeur de ``condition`` avant d'entrer dans la boucle.
 
-* Si la valeur est VRAIE, on passe aux instructions rouges ``INSTRUCTION 26...`` et suivantes. Quand c'est fait, on recommence à la ligne ``TANTQUE (condition) FAIRE`` et on se repose la question de la condition.
-* Si la valeur est FAUSSE, on ignore les lignes en rouge et on passe directement aux instructions en bleu ``INSTRUCTION27 ...`` et suivantes.
+* Si la valeur est VRAI, on passe aux instructions rouges ``INSTRUCTION 26...`` et suivantes. Quand c'est fait, on recommence à la ligne ``TANTQUE (condition) FAIRE`` et on se repose la question de la condition.
+* Si la valeur est FAUX, on ignore les lignes en rouge et on passe directement aux instructions en bleu ``INSTRUCTION27 ...`` et suivantes.
 
 ![x](pseudocode/equiv-while.png)
 
@@ -135,8 +138,8 @@ Dans cette autre version de la boucle, on rentre directement sur les instruction
 
 Dans cette version de la boucle, on choisit de tester la valeur de ``condition`` avant d'entrer dans la boucle.
 
-* Si la valeur est VRAIE, on remonte et on repasse par les instructions rouges ``INSTRUCTION 26...`` et suivantes, autant que nécessaire.
-* Si la valeur est FAUSSE, on passe directement aux instructions en bleu ``INSTRUCTION27 ...`` et suivantes.
+* Si la valeur est VRAI, on remonte et on repasse par les instructions rouges ``INSTRUCTION 26...`` et suivantes, autant que nécessaire.
+* Si la valeur est FAUX, on passe directement aux instructions en bleu ``INSTRUCTION27 ...`` et suivantes.
 
 ![x](pseudocode/equiv-do-while.png)
 
@@ -177,7 +180,7 @@ Dans l'illustration ci-dessus, on voit que cette valeur est lue depuis la variab
 
 Évidemment, l'exécution des instructions contenues dans une fonction appelée se fait _uniquement_ au moment ou elle est mentionnée (avec ses paramètres) dans la fonction appelante.
 
-D'ailleurs... lorsqu'on y réfléchit bien... un programme n'est rien de plus qu'une fonction qui serait la premiere à être appelé pour l'exécution ! Il appele lui-même d'autres fonctions (qui en appelent éventuellement d'autres, etc.) !
+D'ailleurs... lorsqu'on y réfléchit bien... un programme n'est rien de plus qu'une fonction qui serait la première à être appelé pour l'exécution ! Il appelle lui-même d'autres fonctions (qui en appellent éventuellement d'autres, etc.) !
 
 > &mdash; Et comment savez-vous que vous êtes fou ?<br/>
 > &mdash;	Pour commencer, dit le Chat, est-ce que tu m’accordes qu’un chien n’est pas fou ?<br/>
@@ -208,13 +211,14 @@ D'ailleurs... lorsqu'on y réfléchit bien... un programme n'est rien de plus qu
 À suivre ?
 ----------
 
-FIXME: Ouf, cette fois-ci c'était un peu plus costaud ! Nous allons donc prendre le temps de bien assimiler tout ça avant d'enchainer vers la derniere notion qui reste... puis vers du vrai code.
+Voilà, c'est fait ! Les bases sont posées. Nous avons tous les éléments nécessaires pour faire du _vrai code_ !
 
-FIXME: Pour le prochain numéro, je te propose de voir les solutions des exercices, et passer à Javascript.
+Pour le prochain numéro, je te propose de ne pas trop nous attarder sur le pseudo-code et passer tout doucement vers JavaScript. Ce qui nous permettra en plus de voir notre code fonctionner !
 
-FIXME: En fait on ne vas pas utiliser le pseudocode tant que ça...
+Nous verrons aussi les solutions des exercices, évidemment.
 
-Si le coeur t'en dis, j'attends impatiemment ton e-mail avec :
+Si le cœur t'en dis, j'attends impatiemment ton e-mail avec :
 
-* une __photo de tes exercices__ (à la main sur papier),
+* un __pièce jointe pour les exercices__ (photo d'un papier ou document texte),
 * un __petit message qui m'incite à écrire la suite__ :-)
+
