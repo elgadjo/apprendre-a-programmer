@@ -38,7 +38,7 @@ Sans le savoir tu en as déjà utilisé :
 - des planches et des vis pour monter une étagère BILLY&copy; IKEA&trade;
 - des ingrédients pour faire un gâteau
 
-Dans tout ces cas là, tu as suivi un plan, un guide de montage, une recette. Tu étais dans une posture d'exécution, qui t'a permis de "suivre" le travail imaginé par quelqu'un d'autre afin de le reproduire.
+Dans tous ces cas là, tu as suivi un plan, un guide de montage, une recette. Tu étais dans une posture d'exécution, qui t'a permis de "suivre" le travail imaginé par quelqu'un d'autre afin de le reproduire.
 
 Cependant, ceux qui ont conçu cette caserne de pompier, cette étagère BILLY&copy; IKEA&trade;, ce gâteau... comment ont-il procédé ? Quelle était la démarche qui leur a permis, tout d'abord _d'inventer_ un objet répondant à leur besoin, ensuite de _décomposer_ leur idée, et enfin _d'expliquer_ les étapes nécessaire à sa réalisation ?
 
