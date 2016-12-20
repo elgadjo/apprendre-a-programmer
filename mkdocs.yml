@@ -45,6 +45,7 @@ pages:
     - 'Algorigrammes III': 05-algorigrammes.md
     - 'Algorigrammes IV': 06-algorigrammes.md
     - 'Algorigrammes V': 07-algorigrammes.md
+    - 'Exercices': algorigrammes-exercices.md
 - 'Pseudocode':
     - 'Pseudocode I': 08-pseudocode.md
   #    - 'Pseudocode II': 09-pseudocode.md
