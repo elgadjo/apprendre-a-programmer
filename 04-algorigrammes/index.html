@@ -27,8 +27,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
     
-    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
-    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <style>
       @font-face {
       	font-family: 'Icon';
@@ -45,7 +45,7 @@
       	font-style: normal;
       }
     </style>
-    <link rel="stylesheet" href="../assets/stylesheets/application-0dac3e5884.css">
+    <link rel="stylesheet" href="../assets/stylesheets/application-a422ff04cc.css">
     
       <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
     
@@ -53,7 +53,7 @@
       
       
       
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
       <style>
         body, input {
           font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -277,6 +277,15 @@
   </li>
 
       
+        
+  <li>
+    <a class="" title="Exercices" href="../algorigrammes-exercices/">
+      Exercices
+    </a>
+    
+  </li>
+
+      
     </ul>
   </li>
 
@@ -343,46 +352,19 @@ Ensuite on suivra les flèches, dans l'ordre, pour passer d'une instruction à l
 <p>C'est le premier moyen qu'un programe peut utiliser pour interagir avec son environnement. Plus précisément un programme pourra utiliser une <strong>sortie</strong> pour <em>transmettre de l'information vers l'extérieur</em>. On pourra donc utiliser tout périphérique branché à notre ordinateur (écran, imprimante, réseau, enceintes, etc.)</p>
 <p>On dessine l'information que l'on souhaite transmettre dans la case inclinée <em>à gauche</em> et le support sur lequel on va la transmettre dans la bulle <em>à droite</em>.</p>
 <p>On remarque aussi que la flèche <em>va vers</em> la bulle.</p>
-<table>
-<thead>
-<tr>
-<th>Exemple 1. Afficher un texte à l'écran</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="début" src="../04-instructions/sortie-ecran.png" /></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Exemple 2. Envoyer un long texte sur l'imprimante</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="début" src="../04-instructions/sortie-imprimante.png" /></td>
-</tr>
-</tbody>
-</table>
+<p>| Exemple 1. Afficher un texte à l'écran     |
+|--------------------------------------------|
+| <img alt="début" src="../04-instructions/sortie-ecran.png" /> |</p>
+<p>| Exemple 2. Envoyer un long texte sur l'imprimante |
+|---------------------------------------------------|
+| <img alt="début" src="../04-instructions/sortie-imprimante.png" />   |</p>
 <h3 id="les-entrees">Les entrées<a class="headerlink" href="#les-entrees" title="Permanent link">#</a></h3>
 <p>C'est le second moyen de communiquer avec l'environnement extérieur à un programme. Avec une <strong>entrée</strong> on pourra <em>recevoir de l'information</em> provenant de l'extérieur.</p>
 <p>On dessine l'information que l'on souhaite recevoir dans la case inclinée <em>à gauche</em> et le support sur lequel on va la recevoir dans la bulle <em>à droite</em>. </p>
 <p>On remarque que la flèche <em>vient</em> de la bulle.</p>
-<table>
-<thead>
-<tr>
-<th>Exemple 3. Envoyer un long texte sur l'imprimante</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="début" src="../04-instructions/entree-clavier.png" /></td>
-</tr>
-</tbody>
-</table>
+<p>| Exemple 3. Envoyer un long texte sur l'imprimante |
+|---------------------------------------------------|
+| <img alt="début" src="../04-instructions/entree-clavier.png" />      |</p>
 <h3 id="les-variables">Les variables<a class="headerlink" href="#les-variables" title="Permanent link">#</a></h3>
 <p>Ce sont des petites cases mémoire dont le contenu peut <em>être modifié</em> (et donc varier). </p>
 <p>Plus précisément c'est le nom que l'on va donner à <em>une case</em> ou <em>un groupe de cases</em> dans la mémoire de l'ordinateur... C'est comme une étiquette sur un bagage.</p>
@@ -390,56 +372,20 @@ Ensuite on suivra les flèches, dans l'ordre, pour passer d'une instruction à l
 <p>Tout d'abord, pour une variable donnée, on pourra lui <strong>assigner une valeur</strong> : c'est à dire mettre une valeur dans la case désignée par l'étiquette. 
 Par exemple, dans l'illustration ci-dessus on voit le résultat en mémoire après l'assignation de la valeur <code>18</code> dans la variable <code>age</code>.</p>
 <p>Il est possible d'assigner des valeurs depuis le programme lui-même, ou bien depuis une source d'information extérieure ! C'est là qu'interviennent les <strong>entrées</strong> dont je te parlais plus haut.</p>
-<table>
-<thead>
-<tr>
-<th>Exemple 4. Assignation depuis le programme lui-même</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="x" src="../04-instructions/variable-depuis-programme.png" /></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Exemple 5. Assignation depuis une entrée</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="x" src="../04-instructions/variable-depuis-entree.png" /></td>
-</tr>
-</tbody>
-</table>
+<p>| Exemple 4. Assignation depuis le programme lui-même |
+|-----------------------------------------------------|
+| <img alt="x" src="../04-instructions/variable-depuis-programme.png" /> |</p>
+<p>| Exemple 5. Assignation depuis une entrée |
+|------------------------------------------|
+| <img alt="x" src="../04-instructions/variable-depuis-entree.png" /> |</p>
 <p>Ensuite, pour une variable donnée, on pourra aussi <strong>lire sa valeur</strong> : c'est à dire lire le contenu de la case mémoire désignée par l'étiquette. On pourra utiliser cette valeur pour l'envoyer vers une <strong>sortie</strong>, ou pour faire une opération utilisant la valeur et produire un résultat.</p>
-<table>
-<thead>
-<tr>
-<th>Exemple 6. Lecture d'une variable : on affiche son contenu à l'écran</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="exemple-6" src="../04-instructions/variable-vers-sortie.png" /></td>
-</tr>
-</tbody>
-</table>
+<p>| Exemple 6. Lecture d'une variable : on affiche son contenu à l'écran |
+|-----------------------------------------------------|
+| <img alt="exemple-6" src="../04-instructions/variable-vers-sortie.png" /> |</p>
 <p>On peut même utiliser cette variable, faire une opération et enfin stocker le résultat dans cette même variable ! Avec ce type d'instructions, on lit le coté droit de la flèche avant le coté gauche : on lit les valeurs et on fait le calcul, on bientient un résultat et la variable (l'étiquette) désigne ensuite ce résultat.</p>
-<table>
-<thead>
-<tr>
-<th>Exemple 7. Lecture d'une variable, on fait un calcul et on le stocke sous le même nom</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="exemple-6" src="../04-instructions/variable-vers-programme.png" /></td>
-</tr>
-</tbody>
-</table>
+<p>| Exemple 7. Lecture d'une variable, on fait un calcul et on le stocke sous le même nom |
+|-----------------------------------------------------|
+| <img alt="exemple-6" src="../04-instructions/variable-vers-programme.png" /> |</p>
 <blockquote>
 <p>Un gros rosier se dressait près de l'entrée du jardin.
 Les fleurs qu'il portait étaient blanches mais il y avait 
