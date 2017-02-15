@@ -16,3 +16,7 @@ build:
 
 install:
 	mkdocs gh-deploy
+
+install-dokku:
+	mkdocs gh-deploy -r dokku
+	git push -f dokku gh-pages:master
