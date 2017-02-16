@@ -1,3 +1,3 @@
-FROM nginx:alpine
-RUN rm -rf /usr/share/nginx/html
-COPY . /usr/share/nginx/html
+FROM thriqon/alpine-darkhttpd
+RUN rm -rf /www
+COPY . /www
