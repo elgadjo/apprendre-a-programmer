@@ -4,7 +4,7 @@
 
 T'ai-je dit que nous allons dessiner ? Oui ? Alors, viens dessiner ! Prépare un stylo, feutre, crayon... et des feuilles de papier !
 
-Dans les prochains chapitres, nous allons dessiner des petites briques : chacune d'entre elle servira à faire une petite chose simple (et un peu bête), mais en posant ces briques sur d'autres briques nous pourrons exprimer des choses de plus en plus malines et fantastiques ! (oui-oui !)
+Dans les prochains chapitres, nous allons dessiner des petites briques : chacune d'entre elle servira à faire une petite chose simple (et un peu bête), mais en posant ces briques sur d'autres briques nous pourrons exprimer des choses de plus en plus malines et fantastiques ! (oui-oui !)
 
 Mais dans un premier temps, je vais te présenter la vue d'ensemble !
 
@@ -12,13 +12,13 @@ Mais dans un premier temps, je vais te présenter la vue d'ensemble !
 Définition
 ----------
 
-__Algorigramme__ : Algori(thme) + (dia)gramme
+__Algorigramme__ : Algori(thme) + (dia)gramme
 
-Il s'agit du nom de ce genre de dessins : c'est la représentation graphique de l'enchaînement des _opérations_ et des _décisions_ effectuées par un programme d'ordinateur. C'est l'ensemble de ces enchainements qui donne une utilité et un sens au programme.
+Il s'agit du nom de ce genre de dessins : c'est la représentation graphique de l'enchaînement des _opérations_ et des _décisions_ effectuées par un programme d'ordinateur. C'est l'ensemble de ces enchainements qui donne une utilité et un sens au programme.
 
 Exemple d'algorigramme:
 
-![Algorigramme muet](03-algorigrammes/exemple-anonyme.png)
+![Algorigramme muet](images/exemple-anonyme.png)
 
 Dans cet algorigramme, j'ai volontairement masqué les intitulés des cases car c'est la forme dans son ensemble que je veux te montrer (mais sois rassurée, nous le retrouverons bientôt, car c'est l'un des prochains exercices).
 
@@ -35,7 +35,7 @@ Structure d'un programme
 Un programme informatique suit en général une structure calquée sur la suite des phases suivantes, dans l'ordre : __déclarations__, __initialisations__, __programme principal__, __gestion des erreurs__, __sortie__.
 
 
-### Phase 1 : Déclaration
+### Phase 1 : Déclaration
 
 Comme dans une recette de cuisine, il s'agit de l'endroit ou l'on va annoncer ce dont on a besoin. 
 
@@ -75,7 +75,7 @@ Bref. Il faut anticiper les cas d'erreurs et essayer des les gérer le mieux pos
 
 Dans une recette, cela correspond au moment ou l'on retire le plat du feu, que l'on nappe les sauces ou que l'on dresse le plat.
 
-En informatique, il s'agira de rentre présentable, agréable, claires et utiles les informations transformées : le plus souvent il s'agirant d'afficher quelque chose, de produire un fichier ou de transmettre une information.
+En informatique, il s'agira de rentre présentable, agréable, claires et utiles les informations transformées : le plus souvent il s'agirant d'afficher quelque chose, de produire un fichier ou de transmettre une information.
 
 
 
@@ -90,7 +90,4 @@ En informatique, il s'agira de rentre présentable, agréable, claires et utiles
 ----------
 
 Ça y est, on atteint le vif du sujet. Je viens bientôt te dévoiler l... ah non !... shuuut !... je ne peux rien dire jusqu'au prochain chapitre ! :-P
-
-Tu veux la suite ? Envoie-moi un e-mail avec le texte __"JE VEUX LA SUITE !"__ accompagné d'__UN DESSIN__ (fait main) :-)
-
 

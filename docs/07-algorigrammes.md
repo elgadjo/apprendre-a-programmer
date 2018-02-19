@@ -174,9 +174,3 @@ Les subtilités qui restent concernent l'écriture du code, les types de variabl
 Il reste donc à voir comment on fait tout ça "en vrai" !
 Donc la prochaine fois... on reprends les exercices !
 
-* Tu en penses quoi jusque là ?
-* Si tu étais un personnage de SF, qui serais-tu ? (dans quel roman / film ?)
-* Tu veux la suite ?
-
-Si oui, envoie un e-mail et __demande tu-sais-quoi à tu-sais-qui__ :-)
-

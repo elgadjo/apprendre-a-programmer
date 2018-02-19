@@ -37,7 +37,7 @@ Je sais que dit ainsi, c'est encore un peu abstrait. Il donc est temps de passer
 Comme son nom l'indique, c'est là où l'ordinateur va commencer l'exécution de notre programme.
 Ensuite on suivra les flèches, dans l'ordre, pour passer d'une instruction à l'autre.
 
-![début](04-instructions/debut.png)
+![début](images/debut.png)
 
 ### La fin du programme
 
@@ -46,7 +46,7 @@ C'est l'endroit ou se termine le programme. L'ordinateur ne fait plus rien dans 
 
 Pour des raisons de clarté, on essaiera d'avoir une seule fin représentée dans notre algorigramme. Cependant il pourra y avoir plusieurs flèches arrivant à la fin du programme.
 
-![début](04-instructions/fin.png)
+![début](images/fin.png)
 
 ### Les sorties
 
@@ -58,11 +58,11 @@ On remarque aussi que la flèche _va vers_ la bulle.
 
 | Exemple 1. Afficher un texte à l'écran     |
 |--------------------------------------------|
-| ![début](04-instructions/sortie-ecran.png) |
+| ![début](images/sortie-ecran.png) |
 
 | Exemple 2. Envoyer un long texte sur l'imprimante |
 |---------------------------------------------------|
-| ![début](04-instructions/sortie-imprimante.png)   |
+| ![début](images/sortie-imprimante.png)   |
 
 
 ### Les entrées
@@ -75,7 +75,7 @@ On remarque que la flèche _vient_ de la bulle.
 
 | Exemple 3. Envoyer un long texte sur l'imprimante |
 |---------------------------------------------------|
-| ![début](04-instructions/entree-clavier.png)      |
+| ![début](images/entree-clavier.png)      |
 
 
 ### Les variables
@@ -84,7 +84,7 @@ Ce sont des petites cases mémoire dont le contenu peut _être modifié_ (et don
 
 Plus précisément c'est le nom que l'on va donner à _une case_ ou _un groupe de cases_ dans la mémoire de l'ordinateur... C'est comme une étiquette sur un bagage.
 
-![une variable c'est une étiquette](04-instructions/variable-etiquette.png)
+![une variable c'est une étiquette](images/variable-etiquette.png)
 
 Tout d'abord, pour une variable donnée, on pourra lui __assigner une valeur__ : c'est à dire mettre une valeur dans la case désignée par l'étiquette. 
 Par exemple, dans l'illustration ci-dessus on voit le résultat en mémoire après l'assignation de la valeur ``18`` dans la variable ``age``.
@@ -93,24 +93,24 @@ Il est possible d'assigner des valeurs depuis le programme lui-même, ou bien de
 
 | Exemple 4. Assignation depuis le programme lui-même |
 |-----------------------------------------------------|
-| ![x](04-instructions/variable-depuis-programme.png) |
+| ![x](images/variable-depuis-programme.png) |
 
 | Exemple 5. Assignation depuis une entrée |
 |------------------------------------------|
-| ![x](04-instructions/variable-depuis-entree.png) |
+| ![x](images/variable-depuis-entree.png) |
 
 Ensuite, pour une variable donnée, on pourra aussi __lire sa valeur__ : c'est à dire lire le contenu de la case mémoire désignée par l'étiquette. On pourra utiliser cette valeur pour l'envoyer vers une __sortie__, ou pour faire une opération utilisant la valeur et produire un résultat.
 
 
 | Exemple 6. Lecture d'une variable : on affiche son contenu à l'écran |
 |-----------------------------------------------------|
-| ![exemple-6](04-instructions/variable-vers-sortie.png) |
+| ![exemple-6](images/variable-vers-sortie.png) |
 
 On peut même utiliser cette variable, faire une opération et enfin stocker le résultat dans cette même variable ! Avec ce type d'instructions, on lit le coté droit de la flèche avant le coté gauche : on lit les valeurs et on fait le calcul, on bientient un résultat et la variable (l'étiquette) désigne ensuite ce résultat.
 
 | Exemple 7. Lecture d'une variable, on fait un calcul et on le stocke sous le même nom |
 |-----------------------------------------------------|
-| ![exemple-6](04-instructions/variable-vers-programme.png) |
+| ![exemple-6](images/variable-vers-programme.png) |
 
 
 > Un gros rosier se dressait près de l'entrée du jardin.
@@ -125,13 +125,4 @@ On peut même utiliser cette variable, faire une opération et enfin stocker le 
 Nous avons posé les bases. Mais que va-t-on faire de ces quelques petites
 instructions de rien du tout ?  J'ai comme l'intuition qu'il nous manque un
 petit quelque chose... mais quoi ? Nous le saurons au prochain épisode !
-
-* Alors, quelles sont tes impressions jusque là ?
-* Le contenu commence à s'étoffer... est-ce que tu as des questions ?
-* Est-ce que ça fait écho à des choses que tu avais déjà vu ?
-* Est-ce que ça te plait ?
-* Est-ce que ça te dirais un pique-nique un de ces jours (oups, je m'égarre...)
-
-Bref. Si tel est ton désir, j'attends ton e-mail avec le texte __"JE VEUX LA SUITE !"__  :-)
-
 

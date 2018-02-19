@@ -217,8 +217,3 @@ Pour le prochain numéro, je te propose de ne pas trop nous attarder sur le pseu
 
 Nous verrons aussi les solutions des exercices, évidemment.
 
-Si le cœur t'en dis, j'attends impatiemment ton e-mail avec :
-
-* un __pièce jointe pour les exercices__ (photo d'un papier ou document texte),
-* un __petit message qui m'incite à écrire la suite__ :-)
-

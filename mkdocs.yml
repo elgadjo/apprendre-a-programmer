@@ -40,12 +40,13 @@ pages:
     - 'Généralités I': 01-generalites.md
     - 'Généralités II': 02-generalites.md
 - 'Algorigrammes':
-    - 'Algorigrammes I': 03-algorigrammes.md
-    - 'Algorigrammes II': 04-algorigrammes.md
-    - 'Algorigrammes III': 05-algorigrammes.md
+    - 'Principes de base': algorigrammes/01-definition-et-structure.md
+    - 'Instructions élémentaires': algorigrammes/02-instructions-elementaires.md
+    - 'Opérateurs conditionnels': algorigrammes/03-operateurs-conditionnels.md
     - 'Algorigrammes IV': 06-algorigrammes.md
     - 'Algorigrammes V': 07-algorigrammes.md
-    - 'Exercices': algorigrammes-exercices.md
+    - 'Exercices': algorigrammes/exercices.md
+    - 'Corrigés': algorigrammes/corriges.md
 - 'Pseudocode':
     - 'Pseudocode I': 08-pseudocode.md
   #    - 'Pseudocode II': 09-pseudocode.md

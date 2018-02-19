@@ -19,7 +19,7 @@ Dans le chapitre précédent, je te présentais les quelques  __instructions__ d
 Voyons un premier algorigramme qui assemble toutes ces briques vues jusque là :
 
 
-![x](05-instructions/exemple1-demande-nom-salutation.png)
+![x](exemple1-demande-nom-salutation.png)
 
 Alors, comment interpréter cela ? C'est très simple :
 
@@ -120,14 +120,14 @@ Même si ce n'est pas obligatoire sur le papier (puisqu'on peut dessiner comme o
 
 Remarque également qu'avec l'instruction de __test conditionnel__ les deux flèches de chemin partent _vers le bas_ du programme.
 
-![x](05-instructions/instruction-test.png)
+![x](instruction-test.png)
 
 
 #### Exemple 5.1. Le videur de base
 
 Pour illustrer mes propos sur les tests conditionnels, prenons un exemple que tu as sûrement déjà vécu : le videur à l'entrée de la boite de nuit. Son rôle est simple: il vérifie l'age de la personne qui se présente à l'entrée, et ne laisse passer que les adultes dans la boite de nuit. S'il était un programme, son travail ressemblerait à cela :
 
-![x](05-instructions/exemple-videur-base.png)
+![x](exemple-videur-base.png)
 
 #### Exemple 5.2. Le videur sexiste
 
@@ -135,7 +135,7 @@ Comme beaucoup de videurs, il arrive que celui-ci soit sexiste : après avoir v�
 
 Cela donnerait l'algorigramme suivant :
 
-![x](05-instructions/exemple-videur-sexiste.png)
+![x](exemple-videur-sexiste.png)
 
 !!! note "Exercice 5.a"
     __Dessine un programme__ qui demande à l'utilisateur de taper son nom et son mot de passe au clavier.
@@ -157,7 +157,7 @@ As-tu déjà vu un programme _freezer_ ? ou bien un logiciel dont la fenêtre n
 
 Lorsque tu feras des boucles, fais bien attention à ce que le __corps de la boucle__ contienne bien des instructions qui influent sur __la condition de continuation__, sinon c'est que la boucle n'est influencée qu'une fois pour toutes par quelque chose d'antérieur... et c'est une boucle infinie garantie.
 
-![x](05-instructions/instruction-boucle.png)
+![x](instruction-boucle.png)
 
 
 #### Exemple 5.3. Afficher les chiffres de 1 à 10
@@ -168,13 +168,13 @@ Pour cela, nous utilisons un ``compteur`` : c'est à dire une variable que nous
 
 Notre condition de boucle vérifie à chaque tour que le compteur  __ne dépasse pas 10__ et PAF (!), ça donne bien la suite des nombres de 1 à 10 !
 
-![x](05-instructions/exemple-compteur-1a10.png)
+![x](exemple-compteur-1a10.png)
 
 #### Exemple 5.4. Afficher les chiffres de 10 à 1 (à l'envers)
 
 Presque le même exemple qu'au dessus : on utilise également un compteur, sauf que cette fois-ci nous allons l'initialiser à la valeur la plus grande au début puis compter en arrière, en retirant 1 à la variable chaque tour !
 
-![x](05-instructions/exemple-compteur-10a1.png)
+![x](exemple-compteur-10a1.png)
 
 !!! note "Exercice 5.c"
     Sur la base de l'exemple 5.3, __dessiner un algorigramme__ qui compte de 0 à 10, de deux en deux (et qui affiche donc 0..2..4..6..8..10).
@@ -189,8 +189,3 @@ Presque le même exemple qu'au dessus : on utilise également un compteur, sauf 
 Ouf, cette fois-ci c'était un peu plus costaud ! Nous allons donc prendre le temps de bien assimiler tout ça avant d'enchainer vers la derniere notion qui reste... puis vers du vrai code.
 
 Pour le prochain numéro, je te propose de voir en détail les solutions des exercices, et je vais aussi en profiter pour te présenter une démarche d'analyse permettant de partir d'un problème (ou d'un énoncé) et de construire un programme.
-
-Si le coeur t'en dis, j'attends impatiemment ton e-mail avec :
-
-* une __photo de tes exercices__ (à la main sur papier),
-* un __petit message qui m'incite à écrire la suite__ :-)

@@ -4,7 +4,6 @@ Algorigrammes (partie 3)
 Les instructions (suite)
 ------------------------
 
-
 ### Test conditionnel
 
 < test > 

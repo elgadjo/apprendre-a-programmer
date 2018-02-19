@@ -55,20 +55,13 @@ Enfin la __correction__ c'est pouvoir prouver qu'un algorithme répondre bien au
 > &mdash; ... pourvu que j'arrive quelque part », ajouta Alice en guise d'explication. <br/>
 > &mdash; « Oh, tu ne manqueras pas d'arriver quelque part, si tu marches assez longtemps. »<br/>
 
+
 À suivre ?
 ----------
 
 Ouf. Jusque là j'ai essayé de poser le contexte, un peu de culture générale et du vocabulaire. Normalement on n'abordera plus ces sujets (à moins que ta curiosité ne prenne le dessus... et que je me laisse faire).
 
 Au prochain chapitre on plongera dans les algorigrammes et on commencera à dessiner nos idées.
-
-- Est-ce que ça va jusque là ? 
-- En terme de volume, est ce que c'est trop long ? Trop court ?
-- Est-ce que tu as des questions ou des trucs que tu as envie de dire ? :-P
-
-
-Ça te botte toujours ? Tu veux la suite ? Envoie-moi un e-mail avec le texte __"JE VEUX LA SUITE !"__ :-)
-
 
 
 !!! warning "Programmer peut entraîner de graves troubles de la vie sociale"
