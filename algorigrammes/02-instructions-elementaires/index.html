@@ -1,0 +1,843 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="http://elgadjo.github.io/apprendre-a-programmer/algorigrammes/02-instructions-elementaires/">
+      
+      
+        <meta name="author" content="El Gadjo Ridículo">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.2">
+    
+    
+      
+        <title>Instructions élémentaires - Apprendre à programmer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#algorigrammes-partie-2" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="http://elgadjo.github.io/apprendre-a-programmer" title="Apprendre à programmer" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Apprendre à programmer
+              </span>
+              <span class="md-header-nav__topic">
+                Instructions élémentaires
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/elgadjo/apprendre-a-programmer/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Apprendre à programmer
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/elgadjo/apprendre-a-programmer/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Accueil" class="md-nav__link">
+      Accueil
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Généralités
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Généralités
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generalites/01-generalites/" title="Généralités I" class="md-nav__link">
+      Généralités I
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generalites/02-generalites/" title="Généralités II" class="md-nav__link">
+      Généralités II
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Algorigrammes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Algorigrammes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../01-definition-et-structure/" title="Principes de base" class="md-nav__link">
+      Principes de base
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Instructions élémentaires
+      </label>
+    
+    <a href="./" title="Instructions élémentaires" class="md-nav__link md-nav__link--active">
+      Instructions élémentaires
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#les-instructions" title="Les instructions" class="md-nav__link">
+    Les instructions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-debut-du-programme" title="Le début du programme" class="md-nav__link">
+    Le début du programme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-fin-du-programme" title="La fin du programme" class="md-nav__link">
+    La fin du programme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-sorties" title="Les sorties" class="md-nav__link">
+    Les sorties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-entrees" title="Les entrées" class="md-nav__link">
+    Les entrées
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-variables" title="Les variables" class="md-nav__link">
+    Les variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" title="Conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03-operateurs-conditionnels/" title="Opérateurs conditionnels" class="md-nav__link">
+      Opérateurs conditionnels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-methode-d-analyse/" title="Méthode d'analyse" class="md-nav__link">
+      Méthode d'analyse
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05-sous-programmes-fonctions-procedures/" title="Sous-programmes, fonctions et procédures" class="md-nav__link">
+      Sous-programmes, fonctions et procédures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exercices/" title="Exercices" class="md-nav__link">
+      Exercices
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../corriges/" title="Corrigés" class="md-nav__link">
+      Corrigés
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Pseudocode
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Pseudocode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pseudocode/01-pseudocode/" title="Pseudocode I" class="md-nav__link">
+      Pseudocode I
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#les-instructions" title="Les instructions" class="md-nav__link">
+    Les instructions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-debut-du-programme" title="Le début du programme" class="md-nav__link">
+    Le début du programme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-fin-du-programme" title="La fin du programme" class="md-nav__link">
+    La fin du programme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-sorties" title="Les sorties" class="md-nav__link">
+    Les sorties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-entrees" title="Les entrées" class="md-nav__link">
+    Les entrées
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-variables" title="Les variables" class="md-nav__link">
+    Les variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" title="Conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/elgadjo/apprendre-a-programmer/edit/master/docs/algorigrammes/02-instructions-elementaires.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="algorigrammes-partie-2">Algorigrammes (partie 2)<a class="headerlink" href="#algorigrammes-partie-2" title="Permanent link">#</a></h1>
+<p>Est-tu bien reposée ? Prête à reprendre ? As tu bien ton stylo-feutre-licorne toujours à la main ? Et ta feuille impatiente ? </p>
+<p>C'est fois c'est la bonne, on dessine !</p>
+<h2 id="les-instructions">Les instructions<a class="headerlink" href="#les-instructions" title="Permanent link">#</a></h2>
+<p>Les <strong>instructions</strong> sont les briques élémentaires de tout programme. Elle représentent les actions que <em>sait faire</em> un ordinateur. Comme tu le constatera, il n'y en a pas beaucoup ! </p>
+<p>En fait les ordinateurs sont assez limités ! Programmer est un peu comme parler à un enfant de 8 ans atteint du <a href="https://fr.wikipedia.org/wiki/Trisomie_21">syndrome de Down</a>... ça nécessite de bien tout expliquer... et s'il arrive qu'il ne comprenne pas, ce n'est pas de sa faute puisque c'est sa condition, il est comme ça. Il n'y peut rien. L'erreur de communication viendra forcément du donneur d'explications qui aura été trop rapide ou trop imprécis dans sa demande par rapport aux capacités de l'enfant handicapé.</p>
+<p>Cela pourrait donner la situation imaginaire suivante : </p>
+<blockquote>
+<p>« Dis petit, tu peux m'aider à peindre ce mur ? <br/>
+&ndash; Moi aider ! Aider.. comment ? » demanda le petit trisomique, l'air perdu.<br/>
+&ndash; Mais avec un pinceau ! <br/>
+&ndash; Ah pinceau !... C'est quoi pinceau ? </br>
+« Cette chose là ! » dis-je en lui tendant l'objet <br/>
+Il prends le pinceau et reste immobile devant moi, l'air béat. <br/>
+« Hmm. Tu fais quoi là ? <br/>
+&ndash; Je peint, comme toi as dit... », me réponds-t-il. <br/>
+« Mais non ! » craquais-je, « il faut faire des mouvements de bas en haut, comme ça ! ». <br/>
+À peine eu-je fini ma phrase qu'il se mit à singer mes mouvements... <br/>
+&ndash; « Oui, bon, c'est mieux..., mais tu oublies la peinture là... »</p>
+</blockquote>
+<p>Tu verras que communiquer avec un ordinateur, c'est pareil : ça consiste essentiellement à décomposer tes idées en actions et en idées plus simples, puis à les décomposer encore et encore... jusqu'à les réduire à un ensemble de ces instructions toutes bêtes.</p>
+<p>Je sais que dit ainsi, c'est encore un peu abstrait. Il donc est temps de passer à des exemples concrets et te présenter enfin les <strong>instructions</strong> !</p>
+<h3 id="le-debut-du-programme">Le début du programme<a class="headerlink" href="#le-debut-du-programme" title="Permanent link">#</a></h3>
+<p>Comme son nom l'indique, c'est là où l'ordinateur va commencer l'exécution de notre programme.
+Ensuite on suivra les flèches, dans l'ordre, pour passer d'une instruction à l'autre.</p>
+<p><img alt="début" src="../images/debut.png" /></p>
+<h3 id="la-fin-du-programme">La fin du programme<a class="headerlink" href="#la-fin-du-programme" title="Permanent link">#</a></h3>
+<p>C'est l'endroit ou se termine le programme. L'ordinateur ne fait plus rien dans notre programme une fois arrivé à ce point. </p>
+<p>Pour des raisons de clarté, on essaiera d'avoir une seule fin représentée dans notre algorigramme. Cependant il pourra y avoir plusieurs flèches arrivant à la fin du programme.</p>
+<p><img alt="début" src="../images/fin.png" /></p>
+<h3 id="les-sorties">Les sorties<a class="headerlink" href="#les-sorties" title="Permanent link">#</a></h3>
+<p>C'est le premier moyen qu'un programe peut utiliser pour interagir avec son environnement. Plus précisément un programme pourra utiliser une <strong>sortie</strong> pour <em>transmettre de l'information vers l'extérieur</em>. On pourra donc utiliser tout périphérique branché à notre ordinateur (écran, imprimante, réseau, enceintes, etc.)</p>
+<p>On dessine l'information que l'on souhaite transmettre dans la case inclinée <em>à gauche</em> et le support sur lequel on va la transmettre dans la bulle <em>à droite</em>.</p>
+<p>On remarque aussi que la flèche <em>va vers</em> la bulle.</p>
+<table>
+<thead>
+<tr>
+<th>Exemple 1. Afficher un texte à l'écran</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="début" src="../images/sortie-ecran.png" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Exemple 2. Envoyer un long texte sur l'imprimante</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="début" src="../images/sortie-imprimante.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="les-entrees">Les entrées<a class="headerlink" href="#les-entrees" title="Permanent link">#</a></h3>
+<p>C'est le second moyen de communiquer avec l'environnement extérieur à un programme. Avec une <strong>entrée</strong> on pourra <em>recevoir de l'information</em> provenant de l'extérieur.</p>
+<p>On dessine l'information que l'on souhaite recevoir dans la case inclinée <em>à gauche</em> et le support sur lequel on va la recevoir dans la bulle <em>à droite</em>. </p>
+<p>On remarque que la flèche <em>vient</em> de la bulle.</p>
+<table>
+<thead>
+<tr>
+<th>Exemple 3. Envoyer un long texte sur l'imprimante</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="début" src="../images/entree-clavier.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="les-variables">Les variables<a class="headerlink" href="#les-variables" title="Permanent link">#</a></h3>
+<p>Ce sont des petites cases mémoire dont le contenu peut <em>être modifié</em> (et donc varier). </p>
+<p>Plus précisément c'est le nom que l'on va donner à <em>une case</em> ou <em>un groupe de cases</em> dans la mémoire de l'ordinateur... C'est comme une étiquette sur un bagage.</p>
+<p><img alt="une variable c'est une étiquette" src="../images/variable-etiquette.png" /></p>
+<p>Tout d'abord, pour une variable donnée, on pourra lui <strong>assigner une valeur</strong> : c'est à dire mettre une valeur dans la case désignée par l'étiquette. 
+Par exemple, dans l'illustration ci-dessus on voit le résultat en mémoire après l'assignation de la valeur <code>18</code> dans la variable <code>age</code>.</p>
+<p>Il est possible d'assigner des valeurs depuis le programme lui-même, ou bien depuis une source d'information extérieure ! C'est là qu'interviennent les <strong>entrées</strong> dont je te parlais plus haut.</p>
+<table>
+<thead>
+<tr>
+<th>Exemple 4. Assignation depuis le programme lui-même</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="x" src="../images/variable-depuis-programme.png" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Exemple 5. Assignation depuis une entrée</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="x" src="../images/variable-depuis-entree.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>Ensuite, pour une variable donnée, on pourra aussi <strong>lire sa valeur</strong> : c'est à dire lire le contenu de la case mémoire désignée par l'étiquette. On pourra utiliser cette valeur pour l'envoyer vers une <strong>sortie</strong>, ou pour faire une opération utilisant la valeur et produire un résultat.</p>
+<table>
+<thead>
+<tr>
+<th>Exemple 6. Lecture d'une variable : on affiche son contenu à l'écran</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="exemple-6" src="../images/variable-vers-sortie.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>On peut même utiliser cette variable, faire une opération et enfin stocker le résultat dans cette même variable ! Avec ce type d'instructions, on lit le coté droit de la flèche avant le coté gauche : on lit les valeurs et on fait le calcul, on bientient un résultat et la variable (l'étiquette) désigne ensuite ce résultat.</p>
+<table>
+<thead>
+<tr>
+<th>Exemple 7. Lecture d'une variable, on fait un calcul et on le stocke sous le même nom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="exemple-6" src="../images/variable-vers-programme.png" /></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Un gros rosier se dressait près de l'entrée du jardin.
+Les fleurs qu'il portait étaient blanches mais il y avait 
+trois jardiniers qui s'activaient à les peindre en rouge.
+Alice trouva cela très étrange et s'approcha pour les observer de plus près. <br/>
+<em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em></p>
+</blockquote>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">#</a></h2>
+<p>Nous avons posé les bases. Mais que va-t-on faire de ces quelques petites
+instructions de rien du tout ?  J'ai comme l'intuition qu'il nous manque un
+petit quelque chose... mais quoi ? Nous le saurons au prochain épisode !</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../01-definition-et-structure/" title="Principes de base" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Principes de base
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../03-operateurs-conditionnels/" title="Opérateurs conditionnels" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Opérateurs conditionnels
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

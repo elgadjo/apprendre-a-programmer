@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://elgadjo.github.io/apprendre-a-programmer/</loc>
-     <lastmod>2017-02-15</lastmod>
+     <lastmod>2018-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,54 +12,14 @@
     
         
     <url>
-     <loc>http://elgadjo.github.io/apprendre-a-programmer/01-generalites/</loc>
-     <lastmod>2017-02-15</lastmod>
+     <loc>http://elgadjo.github.io/apprendre-a-programmer/generalites/01-generalites/</loc>
+     <lastmod>2018-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://elgadjo.github.io/apprendre-a-programmer/02-generalites/</loc>
-     <lastmod>2017-02-15</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>http://elgadjo.github.io/apprendre-a-programmer/03-algorigrammes/</loc>
-     <lastmod>2017-02-15</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://elgadjo.github.io/apprendre-a-programmer/04-algorigrammes/</loc>
-     <lastmod>2017-02-15</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://elgadjo.github.io/apprendre-a-programmer/05-algorigrammes/</loc>
-     <lastmod>2017-02-15</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://elgadjo.github.io/apprendre-a-programmer/06-algorigrammes/</loc>
-     <lastmod>2017-02-15</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://elgadjo.github.io/apprendre-a-programmer/07-algorigrammes/</loc>
-     <lastmod>2017-02-15</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://elgadjo.github.io/apprendre-a-programmer/algorigrammes-exercices/</loc>
-     <lastmod>2017-02-15</lastmod>
+     <loc>http://elgadjo.github.io/apprendre-a-programmer/generalites/02-generalites/</loc>
+     <lastmod>2018-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -68,8 +28,54 @@
     
         
     <url>
-     <loc>http://elgadjo.github.io/apprendre-a-programmer/08-pseudocode/</loc>
-     <lastmod>2017-02-15</lastmod>
+     <loc>http://elgadjo.github.io/apprendre-a-programmer/algorigrammes/01-definition-et-structure/</loc>
+     <lastmod>2018-04-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://elgadjo.github.io/apprendre-a-programmer/algorigrammes/02-instructions-elementaires/</loc>
+     <lastmod>2018-04-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://elgadjo.github.io/apprendre-a-programmer/algorigrammes/03-operateurs-conditionnels/</loc>
+     <lastmod>2018-04-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://elgadjo.github.io/apprendre-a-programmer/algorigrammes/04-methode-d-analyse/</loc>
+     <lastmod>2018-04-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://elgadjo.github.io/apprendre-a-programmer/algorigrammes/05-sous-programmes-fonctions-procedures/</loc>
+     <lastmod>2018-04-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://elgadjo.github.io/apprendre-a-programmer/algorigrammes/exercices/</loc>
+     <lastmod>2018-04-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://elgadjo.github.io/apprendre-a-programmer/algorigrammes/corriges/</loc>
+     <lastmod>2018-04-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://elgadjo.github.io/apprendre-a-programmer/pseudocode/01-pseudocode/</loc>
+     <lastmod>2018-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

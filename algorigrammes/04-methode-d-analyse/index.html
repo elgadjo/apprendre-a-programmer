@@ -1,0 +1,808 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="http://elgadjo.github.io/apprendre-a-programmer/algorigrammes/04-methode-d-analyse/">
+      
+      
+        <meta name="author" content="El Gadjo Ridículo">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.2">
+    
+    
+      
+        <title>Méthode d'analyse - Apprendre à programmer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#algorigrammes-partie-4" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="http://elgadjo.github.io/apprendre-a-programmer" title="Apprendre à programmer" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Apprendre à programmer
+              </span>
+              <span class="md-header-nav__topic">
+                Méthode d'analyse
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/elgadjo/apprendre-a-programmer/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Apprendre à programmer
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/elgadjo/apprendre-a-programmer/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Accueil" class="md-nav__link">
+      Accueil
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Généralités
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Généralités
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generalites/01-generalites/" title="Généralités I" class="md-nav__link">
+      Généralités I
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generalites/02-generalites/" title="Généralités II" class="md-nav__link">
+      Généralités II
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Algorigrammes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Algorigrammes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../01-definition-et-structure/" title="Principes de base" class="md-nav__link">
+      Principes de base
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02-instructions-elementaires/" title="Instructions élémentaires" class="md-nav__link">
+      Instructions élémentaires
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03-operateurs-conditionnels/" title="Opérateurs conditionnels" class="md-nav__link">
+      Opérateurs conditionnels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Méthode d'analyse
+      </label>
+    
+    <a href="./" title="Méthode d'analyse" class="md-nav__link md-nav__link--active">
+      Méthode d'analyse
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#demarche-generale-pour-analyser-un-enonce" title="Démarche générale pour analyser un énoncé" class="md-nav__link">
+    Démarche générale pour analyser un énoncé
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#question-de-quoi-a-t-on-besoin-comme-variables" title="Question : De quoi a-t-on besoin comme variables ?" class="md-nav__link">
+    Question : De quoi a-t-on besoin comme variables ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-a-quelle-valeur-ces-variables-sont-elles-initialisees" title="Question : À quelle valeur ces variables sont-elles initialisées ?" class="md-nav__link">
+    Question : À quelle valeur ces variables sont-elles initialisées ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-quel-est-le-role-et-le-sens-de-chaque-variable" title="Question : Quel est le rôle et le sens de chaque variable ?" class="md-nav__link">
+    Question : Quel est le rôle et le sens de chaque variable ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-est-ce-que-certaines-parties-dependent-dun-choix" title="Question : Est-ce que certaines parties dépendent d'un choix ?" class="md-nav__link">
+    Question : Est-ce que certaines parties dépendent d'un choix ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-est-ce-que-certaines-parties-doivent-etre-repetees" title="Question : Est-ce que certaines parties doivent être répétées ?" class="md-nav__link">
+    Question : Est-ce que certaines parties doivent être répétées ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-si-on-a-une-boucle-quest-ce-qui-doit-etre-repete" title="Question : Si on a une boucle, qu'est ce qui doit etre répété ?" class="md-nav__link">
+    Question : Si on a une boucle, qu'est ce qui doit etre répété ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-si-on-a-une-boucle-quand-est-ce-que-ma-boucle-sarrete" title="Question : Si on a une boucle, quand est-ce que ma boucle s'arrête ?" class="md-nav__link">
+    Question : Si on a une boucle, quand est-ce que ma boucle s'arrête ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions-et-ensuite" title="Questions : Et ensuite ?" class="md-nav__link">
+    Questions : Et ensuite ?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" title="Conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05-sous-programmes-fonctions-procedures/" title="Sous-programmes, fonctions et procédures" class="md-nav__link">
+      Sous-programmes, fonctions et procédures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exercices/" title="Exercices" class="md-nav__link">
+      Exercices
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../corriges/" title="Corrigés" class="md-nav__link">
+      Corrigés
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Pseudocode
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Pseudocode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pseudocode/01-pseudocode/" title="Pseudocode I" class="md-nav__link">
+      Pseudocode I
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#demarche-generale-pour-analyser-un-enonce" title="Démarche générale pour analyser un énoncé" class="md-nav__link">
+    Démarche générale pour analyser un énoncé
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#question-de-quoi-a-t-on-besoin-comme-variables" title="Question : De quoi a-t-on besoin comme variables ?" class="md-nav__link">
+    Question : De quoi a-t-on besoin comme variables ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-a-quelle-valeur-ces-variables-sont-elles-initialisees" title="Question : À quelle valeur ces variables sont-elles initialisées ?" class="md-nav__link">
+    Question : À quelle valeur ces variables sont-elles initialisées ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-quel-est-le-role-et-le-sens-de-chaque-variable" title="Question : Quel est le rôle et le sens de chaque variable ?" class="md-nav__link">
+    Question : Quel est le rôle et le sens de chaque variable ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-est-ce-que-certaines-parties-dependent-dun-choix" title="Question : Est-ce que certaines parties dépendent d'un choix ?" class="md-nav__link">
+    Question : Est-ce que certaines parties dépendent d'un choix ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-est-ce-que-certaines-parties-doivent-etre-repetees" title="Question : Est-ce que certaines parties doivent être répétées ?" class="md-nav__link">
+    Question : Est-ce que certaines parties doivent être répétées ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-si-on-a-une-boucle-quest-ce-qui-doit-etre-repete" title="Question : Si on a une boucle, qu'est ce qui doit etre répété ?" class="md-nav__link">
+    Question : Si on a une boucle, qu'est ce qui doit etre répété ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-si-on-a-une-boucle-quand-est-ce-que-ma-boucle-sarrete" title="Question : Si on a une boucle, quand est-ce que ma boucle s'arrête ?" class="md-nav__link">
+    Question : Si on a une boucle, quand est-ce que ma boucle s'arrête ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions-et-ensuite" title="Questions : Et ensuite ?" class="md-nav__link">
+    Questions : Et ensuite ?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" title="Conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/elgadjo/apprendre-a-programmer/edit/master/docs/algorigrammes/04-methode-d-analyse.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="algorigrammes-partie-4">Algorigrammes (partie 4)<a class="headerlink" href="#algorigrammes-partie-4" title="Permanent link">#</a></h1>
+<!--
+Oh ! Que j'étais impatient de les recevoir tes feuilles crayonnées ! J'ai cru qu'elles n'arriveraient jamais ! J'ai même cru que le facteur avait décidé de changer de vie après le dernier évènement sur le gaspillage !... ou qu'il avait recyclé tout le papier avant de le porter à destination !
+
+__Eh bien bravo ! C'était très bien !__ Bon, j'ai tout de même quelques petits commentaires, parce que oui mademoiselle... le prof a forcément le dernier mot, c'est le jeu ! (nananèreu) :-)
+-->
+
+<p>Voyons d'abord comment décortiquer un énoncé dans le cas général et appliquons ensuite cela à nos quelques exercices. </p>
+<p>Tu me suis ?</p>
+<h2 id="demarche-generale-pour-analyser-un-enonce">Démarche générale pour analyser un énoncé<a class="headerlink" href="#demarche-generale-pour-analyser-un-enonce" title="Permanent link">#</a></h2>
+<p>Quand on est sur le point d'écrire un programme, c'est souvent le syndrome de la page blanche : quoi écrire ? par où commencer ? En fait il y a un méthode toute simple pour nous aider : il suffit de répondre à une courte série de questions qui vont nous aider décomposer le besoin, étape par étape. </p>
+<h3 id="question-de-quoi-a-t-on-besoin-comme-variables">Question : De quoi a-t-on besoin comme variables ?<a class="headerlink" href="#question-de-quoi-a-t-on-besoin-comme-variables" title="Permanent link">#</a></h3>
+<p>C'est très facile, il suffit de repérer les différents <em>concepts</em> évoqués dans l'énoncé. Chacun de ces concepts peut donner lieu a une variable.</p>
+<p><strong>Exemple :</strong> « Faire un programme qui compte de 1 à 10. »</p>
+<ul>
+<li>Variables : <code>compteur</code>.</li>
+</ul>
+<p><strong>Exemple :</strong> « Demander un nom et un mot de passe à l'utilisateur, si le nom est XXX et que le mot de passe est YYY, alors il passe, sinon il ne passe pas. »</p>
+<ul>
+<li>Variables : <code>nom</code>, <code>mot_de_passe</code>,  à <code>utilisateur</code>, <code>passe</code>.</li>
+</ul>
+<p>Dans ce dernier exemple, on remarque que : </p>
+<ul>
+<li>
+<p><code>utilisateur</code> représente un acteur, pas une donnée à manipuler. Donc on ne l'utilisera pas comme variable.</p>
+</li>
+<li>
+<p><code>passe</code> représente une décision, il faudra donc utiliser un test conditionnel. Pour améliorer la lisibilité des programme, on stocke parfois la valeur de cette décision (vrai/faux) dans une variable avant de l'utiliser dans le test conditionnel. Cela permet notamment de "construire" la prise de décision petit à petit si celle-ci dépend de nombreux paramètres.</p>
+</li>
+</ul>
+<h3 id="question-a-quelle-valeur-ces-variables-sont-elles-initialisees">Question : À quelle valeur ces variables sont-elles initialisées ?<a class="headerlink" href="#question-a-quelle-valeur-ces-variables-sont-elles-initialisees" title="Permanent link">#</a></h3>
+<p>Quel est le contenu d'une variable lorsqu’on a rien mis dedans nous-même : du vide ? autre chose ?</p>
+<p>En fait la mémoire est un composant électronique (donc électrique). À l'allumage du matériel elle contient... des états électriques résiduels dû aux aux variations de tension. Si on lisait les cases de la mémoire, les valeurs que l'on obtiendrait seraient totalement aléatoires ! Donc absolument rien d'intéressant !</p>
+<p>En cours de fonctionnement, lorsqu'un programme déclare avoir besoin de mémoire pour ses variables, le système lui "donne" des cases. Soit ce sont des cases jamais utilisées depuis l'allumage, soit des cases qui ont été libérées (<a href="https://www.youtube.com/watch?v=wQP9XZc2Y_c">... ♫ délivrées.. ♪</a>) par d'autres programmes.</p>
+<p>Une case libérée n'est pas "vidée" de son contenu... pour des questions de rapidité. Elle contient donc encore la dernière valeur qu'un programme y a mise (et c'est très pratique pour le <em>hacking</em>). Pour palier à ce gros danger, certains langages initialisent la case à une valeur prédéfinie (<code>undefined</code> en Javascript, <code>nil</code> en Ruby, etc.)</p>
+<div class="admonition warning">
+<p class="admonition-title">Ce qu'il faut retenir</p>
+<p>Lorsqu'on demande de la mémoire au système, la case obtenue n'est <em>jamais</em> vide. On ne peut pas l'utiliser pour <em>lire</em> des données ! Il est donc essentiel de <strong>prévoir une valeur à mettre dedans</strong> tout au début du programme. C'est ce qu'on appelle <strong>l'initialisation</strong>.</p>
+</div>
+<h3 id="question-quel-est-le-role-et-le-sens-de-chaque-variable">Question : Quel est le rôle et le sens de chaque variable ?<a class="headerlink" href="#question-quel-est-le-role-et-le-sens-de-chaque-variable" title="Permanent link">#</a></h3>
+<p>Quand on choisit d'utiliser une variable et qu'on lui donne nom, on lui donne un sens. En soit, on pourrait donner n'importe quel nom pour désigner cette même case... mais quelque part, en choisissant un nom, nous passons un contrat avec nous-même, un engagement à utiliser cette variable pour un certain but, avec un certain sens. </p>
+<p>On fera donc en sorte de respecter cet engagement pris lors du choix des variables tout au long du programme : <strong>une variable = un concept</strong> donné. Si on souhaite manipuler une autre concept, alors on utilisera une autre variable. </p>
+<p>Pour garder cette cohérence tout au long du programme (le d'invariants) on prendra l'habitude de déclarer les variables que l'on utilisera et d'expliquer en commentaire son rôle.</p>
+<h3 id="question-est-ce-que-certaines-parties-dependent-dun-choix">Question : Est-ce que certaines parties dépendent d'un choix ?<a class="headerlink" href="#question-est-ce-que-certaines-parties-dependent-dun-choix" title="Permanent link">#</a></h3>
+<p>Si c'est le cas, on utilisera <strong>un test conditionnel</strong> ! On dessine un losange et deux fleches (dont une avec un point).</p>
+<p>On s'intéresse successivement aux différentes parties qui le composent : le <strong>corps</strong>, la <strong>condition</strong> (pour la bifurcation), <strong>avant</strong> le test, <strong>apres</strong> le test.</p>
+<h3 id="question-est-ce-que-certaines-parties-doivent-etre-repetees">Question : Est-ce que certaines parties doivent être répétées ?<a class="headerlink" href="#question-est-ce-que-certaines-parties-doivent-etre-repetees" title="Permanent link">#</a></h3>
+<p>Si c'est le cas, c'est qu'il y aura <strong>une boucle</strong> ! On dessine un grand cercle avec un losange dessus (pour la condition)</p>
+<p>On s'intéresse successivement aux différentes parties qui composent la boucle : 
+le <strong>corps</strong>, la <strong>condition d'arrêt</strong>, <strong>avant</strong> la boucle, <strong>apres</strong> la boucle.</p>
+<h3 id="question-si-on-a-une-boucle-quest-ce-qui-doit-etre-repete">Question : Si on a une boucle, qu'est ce qui doit etre répété ?<a class="headerlink" href="#question-si-on-a-une-boucle-quest-ce-qui-doit-etre-repete" title="Permanent link">#</a></h3>
+<p>Ce seront les condition du corps de la boucle, c'est à dire les instructions à mettre le long du cercle.</p>
+<h3 id="question-si-on-a-une-boucle-quand-est-ce-que-ma-boucle-sarrete">Question : Si on a une boucle, quand est-ce que ma boucle s'arrête ?<a class="headerlink" href="#question-si-on-a-une-boucle-quand-est-ce-que-ma-boucle-sarrete" title="Permanent link">#</a></h3>
+<p>Ce sera la <strong>condition d’arrêt</strong>, c'est l'inverse de la condition qui fait qu'on continue la boucle. 
+On écrit cette condition dans le losange de la boucle.</p>
+<p>Attention : la condition d’arrêt (ou de continuation) peut nécessiter des variables, et donc des initialisations !</p>
+<h3 id="questions-et-ensuite">Questions : Et ensuite ?<a class="headerlink" href="#questions-et-ensuite" title="Permanent link">#</a></h3>
+<p>S'il reste des choses que l'on a pas traitées, ou des points qui nécessitent plus de précisions : on réapplique la série de questions depuis le début, et on case les réponses dans la zone adéquate de l'algorithme.</p>
+<blockquote>
+<p>« Eh bien, ça veut dire à peu près la même chose », dit la Duchesse [...]. <br/>
+« Et la morale de ceci est : prenez soin du sens, les sons prendront soin d'eux-mêmes. » <br/>
+<em>Lewis Caroll, Alice au pays des merveilles</em></p>
+</blockquote>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">#</a></h2>
+<p>La prochaine fois, on reprends le cours ! Et on remarquera que les algorigrammes nécessitent énormément de place sur le papier (même pour des programmes simples), on va commencer à voir du vrai code...  </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../03-operateurs-conditionnels/" title="Opérateurs conditionnels" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Opérateurs conditionnels
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../05-sous-programmes-fonctions-procedures/" title="Sous-programmes, fonctions et procédures" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Sous-programmes, fonctions et procédures
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

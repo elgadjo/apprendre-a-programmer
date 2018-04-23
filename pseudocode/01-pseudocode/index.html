@@ -1,0 +1,970 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="http://elgadjo.github.io/apprendre-a-programmer/pseudocode/01-pseudocode/">
+      
+      
+        <meta name="author" content="El Gadjo Ridículo">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.2">
+    
+    
+      
+        <title>Pseudocode I - Apprendre à programmer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#pseudo-code-i" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="http://elgadjo.github.io/apprendre-a-programmer" title="Apprendre à programmer" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Apprendre à programmer
+              </span>
+              <span class="md-header-nav__topic">
+                Pseudocode I
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/elgadjo/apprendre-a-programmer/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Apprendre à programmer
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/elgadjo/apprendre-a-programmer/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Accueil" class="md-nav__link">
+      Accueil
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Généralités
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Généralités
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generalites/01-generalites/" title="Généralités I" class="md-nav__link">
+      Généralités I
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generalites/02-generalites/" title="Généralités II" class="md-nav__link">
+      Généralités II
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Algorigrammes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Algorigrammes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../algorigrammes/01-definition-et-structure/" title="Principes de base" class="md-nav__link">
+      Principes de base
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../algorigrammes/02-instructions-elementaires/" title="Instructions élémentaires" class="md-nav__link">
+      Instructions élémentaires
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../algorigrammes/03-operateurs-conditionnels/" title="Opérateurs conditionnels" class="md-nav__link">
+      Opérateurs conditionnels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../algorigrammes/04-methode-d-analyse/" title="Méthode d'analyse" class="md-nav__link">
+      Méthode d'analyse
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../algorigrammes/05-sous-programmes-fonctions-procedures/" title="Sous-programmes, fonctions et procédures" class="md-nav__link">
+      Sous-programmes, fonctions et procédures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../algorigrammes/exercices/" title="Exercices" class="md-nav__link">
+      Exercices
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../algorigrammes/corriges/" title="Corrigés" class="md-nav__link">
+      Corrigés
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Pseudocode
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Pseudocode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Pseudocode I
+      </label>
+    
+    <a href="./" title="Pseudocode I" class="md-nav__link md-nav__link--active">
+      Pseudocode I
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#re-presentation" title="(Re-)présentation" class="md-nav__link">
+    (Re-)présentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#des-algorigrammes-au-pseudo-code" title="Des algorigrammes au pseudo-code" class="md-nav__link">
+    Des algorigrammes au pseudo-code
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instructions-et-structure-du-programme" title="Instructions et structure du programme" class="md-nav__link">
+    Instructions et structure du programme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commentaires" title="Commentaires" class="md-nav__link">
+    Commentaires
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#declaration-des-variables" title="Déclaration des variables" class="md-nav__link">
+    Déclaration des variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assignation-et-lecture-dune-variable" title="Assignation et lecture d'une variable" class="md-nav__link">
+    Assignation et lecture d'une variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrees-sorties" title="Entrées &amp; sorties" class="md-nav__link">
+    Entrées &amp; sorties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-conditionnelle" title="Structure conditionnelle" class="md-nav__link">
+    Structure conditionnelle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boucles" title="Boucles" class="md-nav__link">
+    Boucles
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boucles-tantque-ou-lon-teste-la-condition-avant-le-premier-tour" title="Boucles TANTQUE : où l'on teste la condition avant le premier tour" class="md-nav__link">
+    Boucles TANTQUE : où l'on teste la condition avant le premier tour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boucles-faire-ou-lon-teste-la-condition-apres-un-premier-tour" title="Boucles FAIRE : où l'on teste la condition après un premier tour" class="md-nav__link">
+    Boucles FAIRE : où l'on teste la condition après un premier tour
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fonctions" title="Fonctions" class="md-nav__link">
+    Fonctions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comment-utiliser-les-parametres" title="Comment utiliser les paramètres ?" class="md-nav__link">
+    Comment utiliser les paramètres ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-utiliser-la-valeur-de-retour" title="Comment utiliser la valeur de retour" class="md-nav__link">
+    Comment utiliser la valeur de retour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autres-details" title="Autres détails" class="md-nav__link">
+    Autres détails
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" title="Conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#re-presentation" title="(Re-)présentation" class="md-nav__link">
+    (Re-)présentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#des-algorigrammes-au-pseudo-code" title="Des algorigrammes au pseudo-code" class="md-nav__link">
+    Des algorigrammes au pseudo-code
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instructions-et-structure-du-programme" title="Instructions et structure du programme" class="md-nav__link">
+    Instructions et structure du programme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commentaires" title="Commentaires" class="md-nav__link">
+    Commentaires
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#declaration-des-variables" title="Déclaration des variables" class="md-nav__link">
+    Déclaration des variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assignation-et-lecture-dune-variable" title="Assignation et lecture d'une variable" class="md-nav__link">
+    Assignation et lecture d'une variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrees-sorties" title="Entrées &amp; sorties" class="md-nav__link">
+    Entrées &amp; sorties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-conditionnelle" title="Structure conditionnelle" class="md-nav__link">
+    Structure conditionnelle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boucles" title="Boucles" class="md-nav__link">
+    Boucles
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boucles-tantque-ou-lon-teste-la-condition-avant-le-premier-tour" title="Boucles TANTQUE : où l'on teste la condition avant le premier tour" class="md-nav__link">
+    Boucles TANTQUE : où l'on teste la condition avant le premier tour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boucles-faire-ou-lon-teste-la-condition-apres-un-premier-tour" title="Boucles FAIRE : où l'on teste la condition après un premier tour" class="md-nav__link">
+    Boucles FAIRE : où l'on teste la condition après un premier tour
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fonctions" title="Fonctions" class="md-nav__link">
+    Fonctions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comment-utiliser-les-parametres" title="Comment utiliser les paramètres ?" class="md-nav__link">
+    Comment utiliser les paramètres ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-utiliser-la-valeur-de-retour" title="Comment utiliser la valeur de retour" class="md-nav__link">
+    Comment utiliser la valeur de retour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autres-details" title="Autres détails" class="md-nav__link">
+    Autres détails
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" title="Conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/elgadjo/apprendre-a-programmer/edit/master/docs/pseudocode/01-pseudocode.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="pseudo-code-i">Pseudo-code I<a class="headerlink" href="#pseudo-code-i" title="Permanent link">#</a></h1>
+<p>Excellent ! Je suis vraiment impressionné par ta motivation. </p>
+<!--
+Je profite du fait que cet épisode soit le plus long de la série à ce jour, pour te dire qu'en fait c'est la première fois que je fais ce genre de _truc_: je fais tout mon possible pour que tu trouves ça un peu intéressant, instructif, plaisant, voire divertissant...  (je me fais certainement des idées, mais on ne sait jamais !) :-)
+
+Le plus dur c'est que étant "en aveugle", je ne sais pas si pour toi c'est difficile ou facile, si le rythme traîne ou s'il  est bon, s'il y a assez d'exemples, s'ils sont parlants ? Pire que tout : je ne sais même pas si mes blagues tombent à plat de façon honteusement lamentable... ou te font sourire (même juste un tout petit peu) ?
+
+Bref. Tu imagines l'angoisse ? :-]
+-->
+
+<p>N'empêche, à continuer à ce rythme là, tu maîtriseras bientôt JavaScript ! ...et tu seras certainement en train de jouer (et gagner!) à <a href="http://codingame.com/">CodinGame</a>, débugguer du code les yeux fermés... ou développer <a href="http://www.mr-bin.fr">tes propres applications</a> !</p>
+<p>Alors... on reprend ?</p>
+<blockquote>
+<p>Il est actuellement 17h42 heure locale. 
+La température extérieure est de 19°. <br/><br/>
+Le commandant de bord et son équipage sont heureux d'avoir voyagé avec toi sur Algorigrammes CodingLines.
+Nous te souhaitons un agréable séjour en Pseudo-code  !</p>
+</blockquote>
+<h2 id="re-presentation">(Re-)présentation<a class="headerlink" href="#re-presentation" title="Permanent link">#</a></h2>
+<p>Dans le tout premier chapitre, je t'avais dit que le pseudo-code était une des nombreuses représentations possible d'un programme. Cette fois, avec le pseudo-code, on va exprimer nos programmes en langue quasi-naturelle, en français (mais c'est également possible en toutes les langues). Nous allons donc écrire des programmes sous forme de textes.</p>
+<p>Cette représentation a l'avantage d'être proche du résultat final tout en étant indépendante des difficultés ou bugs liées à la mise en place réelle sur un ordinateur ! C'est plutôt bien pour décrire ses idées avant de les confronter à la réalité technique avec un autre langage.</p>
+<p>Comme tu peux t'en douter, contrairement aux algorigrammes, il ne s'agit pas d'une représentation normalisée, mais juste d'une représentation <em>pratique à griffonner</em> sur un bout de feuille, à penser, ou éventuellement à dire à l'oral (il te restera à trouver le bon interlocuteur ^_^) !  Au final, il y a certainement autant de variantes du pseudo-code que de développeurs...</p>
+<p>En pseudo-code nous chercherons encore à lever toutes les ambiguïtés et à préciser tous les concepts que l'on utilise, exactement comme dans les algorigrammes. Nous retrouverons aussi toutes les petites choses auxquelles nous nous sommes progressivement habituées lors des chapitres précédent : variables, instructions conditionnelles, boucles, fonctions... (et votre humble serviteur !) </p>
+<h2 id="des-algorigrammes-au-pseudo-code">Des algorigrammes au pseudo-code<a class="headerlink" href="#des-algorigrammes-au-pseudo-code" title="Permanent link">#</a></h2>
+<p>Attend un instant.. si le pseudo-code n'est qu'une <em>représentation</em> parmi d'autres... et si je te dis qu'on va faire comme dans les algorigrammes... Il y aurait donc des équivalences entre algorigrammes et pseudo-code ? </p>
+<p>Hé oui ! Voyons ça ...</p>
+<h3 id="instructions-et-structure-du-programme">Instructions et structure du programme<a class="headerlink" href="#instructions-et-structure-du-programme" title="Permanent link">#</a></h3>
+<p>Comme avec les algorigrammes, un programme est constitué d'un début, d'une suites d'instructions et d'une fin. Ces instructions peuvent prendre deux formes : <strong>instructions simples</strong> et <strong>blocs</strong> contenant plusieurs instructions.</p>
+<p>On lit les instructions dans l'ordre des lignes : pour les instructions simple c'est tout, mais pour les blocs d'instructions, il pourra y avoir des règles particulières pour savoir sur quelle ligne on continue à lire le programme.</p>
+<p><img alt="x" src="../images/equiv-debut-instruction-fin.png" /></p>
+<h3 id="commentaires">Commentaires<a class="headerlink" href="#commentaires" title="Permanent link">#</a></h3>
+<p>Les commentaires sont des lignes de texte qui n'ont pas de sens du point de vue du programme et qui ne doivent pas être prises en compte. C'est un peu comme des annotations qu'on aurait pu faire autour de nos algorigramme pour expliquer telle ou telle partie.</p>
+<p>Nous allons utiliser pour cela le symbole <code>//</code> . Tout ce qui sera à droite de ce symbole sera considéré comme un commentaire.</p>
+<div class="code"><pre><span></span>INSTRUCTION1
+INSTRUCTION2
+...
+
+// Quatre lignes explicatives qui ne sont pas des instructions
+// et qu&#39;il ne faut donc pas prendre en compte dans le code
+// mais qui peuvent être utiles pour comprendre ce qui 
+// s&#39;y passe !
+INSTRUCTION31
+INSTRUCTION32
+</pre></div>
+
+
+<h3 id="declaration-des-variables">Déclaration des variables<a class="headerlink" href="#declaration-des-variables" title="Permanent link">#</a></h3>
+<p>En pseudo-code et de nombreux langages de programmation on prendra l'habitude de déclarer les variables tout au début du programme. Cela permet au programmeur de savoir qui est chaque variable, et de <em>s'engager</em> à ne l'utiliser que pour la description qui en est faite.</p>
+<p>De plus, lorsqu'on utilisera des vrais langages informatiques, cela permettra de demander à l'ordinateur de préparer et donner des bouts de mémoire à notre programme : pour les étiquettes, pour les cases visées, etc.</p>
+<div class="code"><pre><span></span>PROGRAMME monprogramme(...)
+    VARIABLE variable1 : description
+    VARIABLE variable2 : description
+    VARIABLE variable3 : description
+    ...
+
+    INSTRUCTION1
+    INSTRUCTION2
+    ...
+
+FINPROGRAMME
+</pre></div>
+
+
+<h3 id="assignation-et-lecture-dune-variable">Assignation et lecture d'une variable<a class="headerlink" href="#assignation-et-lecture-dune-variable" title="Permanent link">#</a></h3>
+<p>L'utilisation des variables se fait <em>exactement</em> de la même manière en pseudo-code qu'en algorigrammes. La différence ? Pas besoin de mettre de rectangle autour !</p>
+<p><img alt="x" src="../images/equiv-variables.png" /></p>
+<h3 id="entrees-sorties">Entrées &amp; sorties<a class="headerlink" href="#entrees-sorties" title="Permanent link">#</a></h3>
+<p><img alt="x" src="../images/equiv-io.png" /></p>
+<h3 id="structure-conditionnelle">Structure conditionnelle<a class="headerlink" href="#structure-conditionnelle" title="Permanent link">#</a></h3>
+<p>La structure conditionnelle est notre premier bloc d'instructions.</p>
+<p>Autant dans les algorigrammes, on pouvait suivre les flèches pour choisir le "bon" coté du code à appliquer, autant en texte il va falloir ruser... puisqu'on ne peut écrire du code que de haut en bas ! </p>
+<p>L'astuce est simple : </p>
+<ul>
+<li>Si la valeur de <code>condition</code> est VRAI, alors on fait les lignes en rouges de la zone en haut (<code>INSTRUCTION26 ...</code>), </li>
+<li>Sinon c'est que <code>condition</code> est FAUX, on ignore la zone en haut pour passer directement aux lignes en rouges de la zone en bas (<code>INSTRUCTION26bis ...</code>). </li>
+<li>Quand on a fini les lignes en rouges de la zone choisie, on passe directement aux instructions en bleu qui suivent (<code>INSTRUCTION27 ...</code>)</li>
+</ul>
+<p><img alt="x" src="../images/equiv-if-then-else.png" /></p>
+<h3 id="boucles">Boucles<a class="headerlink" href="#boucles" title="Permanent link">#</a></h3>
+<p>Les boucles sont également représentées sous forme d'un bloc d'instructions. Là aussi il faut ruser pour distinguer ce qui est <em>dans</em> la boucle de ce qui est <em>à coté</em>.</p>
+<p>Dans les chapitres précédents nous avions défini une boucle comme une zone de code répétée tant qu'une condition valait VRAI, mais nous n'avions pas précisé ou était la zone de code par rapport à notre condition ! Nous aurons donc deux façon de représenter les boucles, selon l'organisation de notre programme.</p>
+<h4 id="boucles-tantque-ou-lon-teste-la-condition-avant-le-premier-tour">Boucles TANTQUE : où l'on teste la condition avant le premier tour<a class="headerlink" href="#boucles-tantque-ou-lon-teste-la-condition-avant-le-premier-tour" title="Permanent link">#</a></h4>
+<p>Dans cette version de la boucle, on choisit de tester la valeur de <code>condition</code> avant d'entrer dans la boucle.</p>
+<ul>
+<li>Si la valeur est VRAI, on passe aux instructions rouges <code>INSTRUCTION 26...</code> et suivantes. Quand c'est fait, on recommence à la ligne <code>TANTQUE (condition) FAIRE</code> et on se repose la question de la condition.</li>
+<li>Si la valeur est FAUX, on ignore les lignes en rouge et on passe directement aux instructions en bleu <code>INSTRUCTION27 ...</code> et suivantes.</li>
+</ul>
+<p><img alt="x" src="../images/equiv-while.png" /></p>
+<h4 id="boucles-faire-ou-lon-teste-la-condition-apres-un-premier-tour">Boucles FAIRE : où l'on teste la condition après un premier tour<a class="headerlink" href="#boucles-faire-ou-lon-teste-la-condition-apres-un-premier-tour" title="Permanent link">#</a></h4>
+<p>Dans cette autre version de la boucle, on rentre directement sur les instructions <code>INSTRUCTIONS26...</code>. Lorsque c'est fait on tombe sur la condition :</p>
+<p>Dans cette version de la boucle, on choisit de tester la valeur de <code>condition</code> avant d'entrer dans la boucle.</p>
+<ul>
+<li>Si la valeur est VRAI, on remonte et on repasse par les instructions rouges <code>INSTRUCTION 26...</code> et suivantes, autant que nécessaire.</li>
+<li>Si la valeur est FAUX, on passe directement aux instructions en bleu <code>INSTRUCTION27 ...</code> et suivantes.</li>
+</ul>
+<p><img alt="x" src="../images/equiv-do-while.png" /></p>
+<h3 id="fonctions">Fonctions<a class="headerlink" href="#fonctions" title="Permanent link">#</a></h3>
+<p>Les fonctions... sont aussi des blocs d'instructions ! </p>
+<p>On remarque que dans l'appel et dans définition d'une fonction, on note des paramètres à coté du nom, entre parenthèses. Par exemple : <code>afficher(mon_texte)</code>. </p>
+<p><img alt="x" src="../images/equiv-functions.png" /></p>
+<h4 id="comment-utiliser-les-parametres">Comment utiliser les paramètres ?<a class="headerlink" href="#comment-utiliser-les-parametres" title="Permanent link">#</a></h4>
+<p><strong>Au niveau de la fonction appelante, ce sont les différentes valeurs  que l'on souhaite transmettre</strong> à la fonction appelée. Cela peut être directement des valeurs textuelles, numériques, etc. (<code>afficher("Hello world")</code>) ou bien des valeurs lues depuis des variables (<code>afficher(salutations)</code>).</p>
+<p><strong>Au niveau de la fonction appelée, ces paramètres sont des variables</strong> que l'on a pas besoin de déclarer à l'intérieur de la fonction et qui seront initialisées à aux différentes valeurs que fournira l'appelant, au moment de l'appel et dans l'ordre des paramètres indiqués.</p>
+<p>Par exemple si j'ai la fonction suivante (parfaitement valide) : </p>
+<div class="code"><pre><span></span>FONCTION salutation(prenom, age)
+    afficher(&quot;Salut &quot; + prenom + &quot;, toi qui a &quot; + age + &quot;ans&quot;)
+FINFONCTION
+</pre></div>
+
+
+<ul>
+<li>Lorsque j'appelerai <code>salutation("Anatole", 52)</code>, cela affichera <code>Salut Anatole, toi qui a 40 ans</code></li>
+<li>Lorsque j'appelerai <code>salutation("Philemon", 16)</code>, cela affichera <code>Salut Philemon, toi qui a 16 ans</code></li>
+<li>Lorsque j'appelerai <code>salutation("Vendredi", 40)</code>, cela affichera <code>Salut Vendredi, toi qui a 40 ans</code></li>
+<li>Et ainsi de suite... les variables <code>prenom</code> et <code>age</code> changent de valeur à chaque appel, selon ce qui est passé en paramètres.</li>
+</ul>
+<h4 id="comment-utiliser-la-valeur-de-retour">Comment utiliser la valeur de retour<a class="headerlink" href="#comment-utiliser-la-valeur-de-retour" title="Permanent link">#</a></h4>
+<p><strong>La valeur de retour est la valeur que l'on souhaite transmettre de la fonction appelée vers la fonction appelante.</strong> Elle est désignée par le mot clef <code>RETOURNE</code>. </p>
+<p>Dans l'illustration ci-dessus, on voit que cette valeur est lue depuis la variable <code>calcul</code> du coté de <code>fonction1</code> et qu'elle est transmise à la fonction appelante <code>fonction2</code>. Du coté de la fonction appelante, la valeur reçue est alors stockée dans la variable <code>resultat</code>. On ne s'intéresse qu'à la valeur et on perd toute trace du fait que cette valeur était associée à une autre variable dans le <em>monde parallèle</em> de la fonction <code>fonction1</code>.</p>
+<h4 id="autres-details">Autres détails<a class="headerlink" href="#autres-details" title="Permanent link">#</a></h4>
+<p>Évidemment, l'exécution des instructions contenues dans une fonction appelée se fait <em>uniquement</em> au moment ou elle est mentionnée (avec ses paramètres) dans la fonction appelante.</p>
+<p>D'ailleurs... lorsqu'on y réfléchit bien... un programme n'est rien de plus qu'une fonction qui serait la première à être appelé pour l'exécution ! Il appelle lui-même d'autres fonctions (qui en appellent éventuellement d'autres, etc.) !</p>
+<blockquote>
+<p>&mdash; Et comment savez-vous que vous êtes fou ?<br/>
+&mdash;   Pour commencer, dit le Chat, est-ce que tu m’accordes qu’un chien n’est pas fou ?<br/>
+&mdash;   Sans doute.<br/>
+&mdash;   Eh bien, vois-tu, continua le Chat, tu remarqueras qu’un chien gronde lorsqu’il est en colère et remue la queue lorsqu’il est content. Or, moi je gronde quand je suis content, et je remue la queue quand je suis en colère. Donc, je suis fou.<br/>
+<em>Lewis Caroll, Alice au pays des merveilles</em></p>
+</blockquote>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">#</a></h2>
+<p>Voilà, c'est fait ! Les bases sont posées. Nous avons tous les éléments nécessaires pour faire du <em>vrai code</em> !</p>
+<p>Pour le prochain numéro, je te propose de ne pas trop nous attarder sur le pseudo-code et passer tout doucement vers JavaScript. Ce qui nous permettra en plus de voir notre code fonctionner !</p>
+<p>Nous verrons aussi les solutions des exercices, évidemment.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../algorigrammes/corriges/" title="Corrigés" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Corrigés
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
