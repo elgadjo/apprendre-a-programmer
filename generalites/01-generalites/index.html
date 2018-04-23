@@ -571,7 +571,7 @@
 <strong>l'algorithmique</strong> et les <strong>langages</strong> de programmation. </p>
 <p><strong>L'algorithmique</strong> est un peu l'équivalent de la logique pour formuler des idées là ou les <strong>langages</strong> se basent chacun sur une syntaxe et une grammaire permettant de les véhiculer et se faire comprendre. 
 Évidemment, on ne peut pas formuler d'idées sans mots, et utiliser des mots sans idées ne fonctionne pas très bien non plus...</p>
-<p>Re-situons tout ça dans le contexte : l'objectif de l'informatique, c'est obtenir de la machine qu'elle effectue un travail à notre place (pour le meilleur et pour le pire...). Mais alors, comment lui expliquer comment elle doit s'y prendre ? Comment lui dire ? Comment lui apprendre ? Comment s'assurer qu'elle fait ce travail ? Et si on y arrive... fera-t-elle ce travail aussi bien que nous ? Mieux que nous ?</p>
+<p>Resituons tout ça dans le contexte : l'objectif de l'informatique, c'est obtenir de la machine qu'elle effectue un travail à notre place (pour le meilleur et pour le pire...). Mais alors, comment lui expliquer comment elle doit s'y prendre ? Comment lui dire ? Comment lui apprendre ? Comment s'assurer qu'elle fait ce travail ? Et si on y arrive... Fera-t-elle ce travail aussi bien que nous ? Mieux que nous ?</p>
 <p>Bref. Dans ce qui suit, je vais donc te faire une introduction à la programmation en plusieurs étapes : </p>
 <ul>
 <li>d'abord nous ferons des dessins, </li>
@@ -581,19 +581,19 @@
 <p>Pourquoi Javascript ? Parce que : </p>
 <ul>
 <li>c'est un langage que l'on retrouve partout : front-end web, applications mobiles traitements métier sur les serveurs et depuis peu dans l'embarqué !</li>
-<li>c'est un langage à la mode : il y a de la demande pour du web et des app mobiles, les gens paient pour ça, la technologie évolue et se bonnifie,</li>
+<li>c'est un langage à la mode : il y a de la demande pour du web et des applications mobiles, les gens paient pour ça, la technologie évolue et se bonifie,</li>
 <li>c'est un langage facile à apprendre !</li>
 </ul>
 <h2 id="algoriquoi">Algori...quoi ?<a class="headerlink" href="#algoriquoi" title="Permanent link">#</a></h2>
-<p>Algorithmes. Algorithmique. Algorithmie.</p>
-<p>Sans le savoir tu en as déjà utilisé :</p>
+<p>Algorithmes. Algorithmique. Algorithmie. Attention, il n'y a pas de y-grec car ça vient de l'arabe : du nom du mathématicien Al-Khwârizmî (الخوارزمي) !</p>
+<p>Sans le savoir tu en as déjà utilisés :</p>
 <ul>
 <li>des briques de LEGO&trade; pour faire une caserne de pompiers</li>
 <li>des planches et des vis pour monter une étagère BILLY&copy; IKEA&trade;</li>
 <li>des ingrédients pour faire un gâteau</li>
 </ul>
 <p>Dans tous ces cas là, tu as suivi un plan, un guide de montage, une recette. Tu étais dans une posture d'exécution, qui t'a permis de "suivre" le travail imaginé par quelqu'un d'autre afin de le reproduire.</p>
-<p>Cependant, ceux qui ont conçu cette caserne de pompier, cette étagère BILLY&copy; IKEA&trade;, ce gâteau... comment ont-il procédé ? Quelle était la démarche qui leur a permis, tout d'abord <em>d'inventer</em> un objet répondant à leur besoin, ensuite de <em>décomposer</em> leur idée, et enfin <em>d'expliquer</em> les étapes nécessaire à sa réalisation ?</p>
+<p>Cependant, ceux qui ont conçu cette caserne de pompier, cette étagère BILLY&copy; IKEA&trade;, ce gâteau... comment ont-ils procédé ? Quelle était la démarche qui leur a permis, tout d'abord <em>d'inventer</em> un objet répondant à leur besoin, ensuite de <em>décomposer</em> leur idée, et enfin <em>d'expliquer</em> les étapes nécessaires à sa réalisation ?</p>
 <p>Au départ on avait des composants ou des ingrédients éparses,  ils ont été assemblés dans un certain ordre et d'une certaine façon, afin d'obtenir un résultat souhaité. Cette démarche de résolution de problèmes et cette méthodologie pour les décomposer en étapes simples, c'est ce qu'en informatique on appelle l'algorithmique. Évidemment ça peut s'appliquer à bien d'autres sujets !</p>
 <blockquote>
 <p>Le lapin Blanc mit ses lunettes. <br/>
@@ -611,17 +611,17 @@
 <li>du <strong>code machine</strong> : suite d'instructions binaires envoyées au processeur et à la mémoire.</li>
 </ul>
 <p><strong>L'algorigramme</strong> et le <strong>pseudo-code</strong> sont là essentiellement pour des besoins éducatifs, mais il existe d'autres formes de diagrammes qui sont "normalisés" et permettent également de représenter des programmes. On parlera alors de représentation UML, Merise, SDL, etc. Ces différents langages graphiques  permettent d'avoir une description et d'organiser un projet informatique entre plusieurs intervenants de métiers différents et leur permettre de communiquer.</p>
-<p>Le <strong>code machine</strong> (ou binaire exécutable) c'est ce que la machine comprends "en vrai": c'est la suite d'opérations que le processeur doit faire, et les différents états de la mémoire à lui faire manipuler.<br />
-Ce code machine est spécifique à un modèle de processeur donné. Il est donc incompatible avec un autre modèle de processeur!</p>
-<p>Assez vite on se rend compte que c'est assez ingrat d'écrire un programme de cette façon là ! C'est pourtant comme cela qu'il faut écrire le premier programme sur un processeur donné, afin qu'il s'allume et serve à quelque chose. </p>
-<p>Pour éviter d'avoir à faire cela pour tout le reste des programmes, on inventé les <strong>compilateurs</strong> : c'est à dire des outils capables de prendre un autre programme, écrit dans un langage de programmation par un humain, et de les transcrire automatiquement en code machine, pour obtenir des binaires exécutables sans avoir à les écrire soi-même en code machine. On a donc dû fabriquer un compilateur par langage de programmation... et par type de machine.</p>
-<p>Il faut savoir que lorsqu'on a du code machine entre les mains, c'est très compliqué (voire impossible) de revenir au code source de départ... c'est comme essayer de retrouver les ingrédients et le dosage précis d'un plat rien qu'en le goûtant ! Il faut être expert goûteur, expert cuisinier... et là encore, c'est dur ! Cette propriété du code machine est évidemment une aubaine pour les gens qui veulent diffuser leur programme sans montrer son fonctionnement.</p>
-<p>Malgré cela, il y a un hic ! L'auteur (ou l'éditeur) doivent compiler leur code source en binaire exécutable pour chaque nouvelle plate-forme matérielle qui voit le jour, sous peine de voit leur programme être incompatible chez les usagers des nouvelles plates-formes ! Et ça nécessite donc beaucoup de travail (et donc des coûts) !</p>
-<p>Là encore, des petits malins se sont dit qu'il était peut-être plus pratique d'avoir un "interprète" ou <strong>interpréteur</strong>, c'est à dire un programme binaire spécifique à chaque machine, capable de lire du code source et de le transformer au fur et à mesure en instructions pour le processeur. Ainsi, plus besoin de compilation, et le programme est compatible avec toutes les machines où se trouve un interpréteur pour le langage dans lequel il est écrit ! </p>
+<p>Le <strong>code machine</strong> (ou binaire exécutable) c'est ce que la machine comprend "en vrai": c'est la suite d'opérations que le processeur doit faire, et les différents états de la mémoire à lui faire manipuler.<br />
+Ce code machine est spécifique à un modèle de processeur donné. Il est donc incompatible avec un autre modèle de processeur !</p>
+<p>Assez vite on se rend compte que c'est assez ingrat d'écrire un programme de cette façon-là ! C'est pourtant comme cela qu'il faut écrire le premier programme sur un processeur donné, afin qu'il s'allume et serve à quelque chose. </p>
+<p>Pour éviter d'avoir à faire cela pour tout le reste des programmes, on a inventé les <strong>compilateurs</strong> : c'est-à-dire des outils capables de prendre un autre programme, écrit dans un langage de programmation par un humain, et de les transcrire automatiquement en code machine, pour obtenir des binaires exécutables sans avoir à les écrire soi-même en code machine. On a donc dû fabriquer un compilateur par langage de programmation... Et par type de machine.</p>
+<p>Il faut savoir que lorsqu'on a du code machine entre les mains, c'est très compliqué (voire impossible) de revenir au code source de départ... C'est comme essayer de retrouver les ingrédients et le dosage précis d'un plat rien qu'en le goûtant ! Il faut être expert goûteur, expert cuisinier... Et là encore, c'est dur ! Cette propriété du code machine est évidemment une aubaine pour les gens qui veulent diffuser leur programme sans montrer son fonctionnement.</p>
+<p>Malgré cela, il y a un hic ! L'auteur (ou l'éditeur) doivent compiler leur code source en binaire exécutable pour chaque nouvelle plate-forme matérielle qui voit le jour, sous peine de voir leur programme être incompatible chez les usagers des nouvelles plates-formes ! Et ça nécessite donc beaucoup de travail (et donc des coûts) !</p>
+<p>Là encore, des petits malins se sont dit qu'il était peut-être plus pratique d'avoir un "interprète" ou <strong>interpréteur</strong>, c'est-à-dire un programme binaire spécifique à chaque machine, capable de lire du code source et de le transformer au fur et à mesure en instructions pour le processeur. Ainsi, plus besoin de compilation, et le programme est compatible avec toutes les machines où se trouve un interpréteur pour le langage dans lequel il est écrit !</p>
 <p>Malheureusement, il y a deux soucis avec les interpréteurs : transcrire "à la volée" du code source, cela nécessite du temps... Par conséquent un interprète sera donc toujours plus lent qu'un programme binaire exécutable. En plus, pour utiliser un programme avec un interpréteur il faut diffuser le code source du programme ! Autant ça ne gène pas les adeptes du partage, autant les gens voulant garder secrets leurs algorithmes n'ont pas trouvé cela génial...</p>
-<p>C'est là qu'est apparu le <strong>byte-code</strong>. Le byte-code, c'est du code machine pour une machine "virtuelle", c'est à dire une machine qui n'existe pas. Son code machine hypothétique serait minimaliste et transposable facilement sur n'importe quel processeur, avec moins d'efforts que pour un langage de programmation. L'idée est ici de compiler quand le code source en du byte-code, et d'avoir un interpréteur de byte-code sur chaque plate-forme. </p>
-<p>Avec cette technique, on obtient une vitesse de fonctionnement raisonnable, une compatibilité avec toutes les machines qui possèdent un interpréteur bytecode et aucune façon de remonter au code source de départ ! C'est la stratégie utilisée par Java ou .NET . </p>
-<p>Bref. Lorsque l'on programme, on écrit donc en général du <strong>code source</strong>, dans un langage de programmation. Mais rien n'empêche de faire un diagramme pour se fixer les idées ! Ça arrive même aux meilleurs professionnels après plusieurs décénies de pratique.</p>
+<p>C'est là qu'est apparu le <strong>byte-code</strong>. Le byte-code, c'est du code machine pour une machine "virtuelle", c'est-à-dire une machine qui n'existe pas. Son code machine hypothétique serait minimaliste et transposable facilement sur n'importe quel processeur, avec moins d'efforts que pour un langage de programmation. L'idée est ici de compiler quand le code source en du byte-code, et d'avoir un interpréteur de byte-code sur chaque plate-forme.</p>
+<p>Avec cette technique, on obtient une vitesse de fonctionnement raisonnable, une compatibilité avec toutes les machines qui possèdent un interpréteur byte-code et aucune façon de remonter au code source de départ ! C'est la stratégie utilisée par Java ou .NET . </p>
+<p>Bref. Lorsque l'on programme, on écrit donc en général du <strong>code source</strong>, dans un langage de programmation. Mais rien n'empêche de faire un diagramme pour se fixer les idées ! Ça arrive même aux meilleurs professionnels après plusieurs décennies de pratique.</p>
 <blockquote>
 <p>« Je crains bien de ne pouvoir m'expliquer moi-même... car je ne suis pas moi-même, vous comprenez. » <br/>
 <em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em></p>
