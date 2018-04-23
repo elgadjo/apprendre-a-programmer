@@ -88,3 +88,6 @@ Bref. Lorsque l'on programme, on écrit donc en général du __code source__, da
 
 Conclusion
 ----
+
+Wow. Ça c'était l'introduction ! Aller, il nous reste encore 2-3 éléments de
+contexte à poser et on démarre pour de vrai !
