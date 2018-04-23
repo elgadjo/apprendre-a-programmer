@@ -67,7 +67,7 @@ Ce code machine est spécifique à un modèle de processeur donné. Il est donc 
 
 Assez vite on se rend compte que c'est assez ingrat d'écrire un programme de cette façon là ! C'est pourtant comme cela qu'il faut écrire le premier programme sur un processeur donné, afin qu'il s'allume et serve à quelque chose. 
 
-Pour éviter d'avoir à faire cela pour tout le reste des programmes, on inventé les __compilateurs__ : c'est à dire des outils capables de prendre un autre programme, écrit dans un langage de programmation par un humain, et de les transcrire automatiquement en code machine, pour obtenir des binaires exécutables sans avoir à les écrire soi-même en code machine. On a donc du fabriquer un compilateur par langage de programmation... et par type de machine.
+Pour éviter d'avoir à faire cela pour tout le reste des programmes, on inventé les __compilateurs__ : c'est à dire des outils capables de prendre un autre programme, écrit dans un langage de programmation par un humain, et de les transcrire automatiquement en code machine, pour obtenir des binaires exécutables sans avoir à les écrire soi-même en code machine. On a donc dû fabriquer un compilateur par langage de programmation... et par type de machine.
 
 Il faut savoir que lorsqu'on a du code machine entre les mains, c'est très compliqué (voire impossible) de revenir au code source de départ... c'est comme essayer de retrouver les ingrédients et le dosage précis d'un plat rien qu'en le goûtant ! Il faut être expert goûteur, expert cuisinier... et là encore, c'est dur ! Cette propriété du code machine est évidemment une aubaine pour les gens qui veulent diffuser leur programme sans montrer son fonctionnement.
 
