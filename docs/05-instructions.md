@@ -27,8 +27,8 @@ Comme les tests, mais l'une des flèches revient vers une instruction antérieur
 Simulation d'exécution
 ----------------------
 
-- Suivre les instructions unes à unes, dans l'ordre des fleches
+- Suivre les instructions unes à unes, dans l'ordre des flèches
 
 - Remplacer par la nouvelle valeur quand une instruction modifie une variable
 - Suivre la flèche 
-- Et on continue ainsi de suite... on continu
+- Et on continue ainsi de suite... on continue

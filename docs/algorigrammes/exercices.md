@@ -1,7 +1,6 @@
 
 # Exercices sur les algorigrammes
 
-
 ## 5.a - Tester une valeur
 
 __Dessine un programme__ qui demande à l'utilisateur de taper son nom et son mot de passe au clavier.

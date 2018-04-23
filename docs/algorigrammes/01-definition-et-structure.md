@@ -1,10 +1,10 @@
-﻿Algorigrammes
+Algorigrammes
 =============
 
 
 T'ai-je dit que nous allons dessiner ? Oui ? Alors, viens dessiner ! Prépare un stylo, feutre, crayon... et des feuilles de papier !
 
-Dans les prochains chapitres, nous allons dessiner des petites briques : chacune d'entre elle servira à faire une petite chose simple (et un peu bête), mais en posant ces briques sur d'autres briques nous pourrons exprimer des choses de plus en plus malines et fantastiques ! (oui-oui !)
+Dans les prochains chapitres, nous allons dessiner des petites briques : chacune d'entre elle servira à faire une petite chose simple (et un peu bête), mais en posant ces briques sur d'autres briques nous pourrons exprimer des choses de plus en plus malines et fantastiques ! (oui-oui !)
 
 Mais dans un premier temps, je vais te présenter la vue d'ensemble !
 
@@ -12,9 +12,9 @@ Mais dans un premier temps, je vais te présenter la vue d'ensemble !
 Définition
 ----------
 
-__Algorigramme__ : Algori(thme) + (dia)gramme
+__Algorigramme__ : Algori(thme) + (dia)gramme
 
-Il s'agit du nom de ce genre de dessins : c'est la représentation graphique de l'enchaînement des _opérations_ et des _décisions_ effectuées par un programme d'ordinateur. C'est l'ensemble de ces enchainements qui donne une utilité et un sens au programme.
+Il s'agit du nom de ce genre de dessins : c'est la représentation graphique de l'enchaînement des _opérations_ et des _décisions_ effectuées par un programme d'ordinateur. C'est l'ensemble de ces enchainements qui donne une utilité et un sens au programme.
 
 Exemple d'algorigramme:
 
@@ -24,7 +24,7 @@ Dans cet algorigramme, j'ai volontairement masqué les intitulés des cases car 
 
 Comme tu peux le voir ici, il y a un début, puis des étapes qui se suivent sans choix, des étapes qui se suivent avec des choix, des étapes qui inter-agissent avec des patates sur les cotés, et aussi une fin.
 
-> « Mais alors, dit Alice, si le monde n'a absolument aucun sens, qui nous empêche d'en inventer un ? » <br/>
+> « Mais alors, dit Alice, si le monde n'a absolument aucun sens, qui nous empêche d'en inventer un ? » <br/>
 > <em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em>
 
 
@@ -32,10 +32,10 @@ Comme tu peux le voir ici, il y a un début, puis des étapes qui se suivent san
 Structure d'un programme
 ------------------------
 
-Un programme informatique suit en général une structure calquée sur la suite des phases suivantes, dans l'ordre : __déclarations__, __initialisations__, __programme principal__, __gestion des erreurs__, __sortie__.
+Un programme informatique suit en général une structure calquée sur la suite des phases suivantes, dans l'ordre : __déclarations__, __initialisations__, __programme principal__, __gestion des erreurs__, __sortie__.
 
 
-### Phase 1 : Déclaration
+### Phase 1 : Déclaration
 
 Comme dans une recette de cuisine, il s'agit de l'endroit ou l'on va annoncer ce dont on a besoin. 
 
@@ -66,7 +66,7 @@ Dans un programme informatique, c'est là que l'on organisera les données entre
 
 En cuisine, il arrive qu'il y ait des ratés. Parfois il suffit d'un instant d'inattention et c'est trop cuit, parfois c'est mal exécuté, parfois c'est les ingrédients...
 
-Dans un ordinateur aussi, ça arrive. Au début ce sera souvent la faute d'un programme mal conçu. On verra aussi que les interractions avec les données ne se passent pas toujours comme prévu... et parfois c'est aussi l'utilisateur qui ne se comporte pas comme prévu (ou il le fait exprès le fourbe !). 
+Dans un ordinateur aussi, ça arrive. Au début ce sera souvent la faute d'un programme mal conçu. On verra aussi que les interractions avec les données ne se passent pas toujours comme prévu... et parfois c'est aussi l'utilisateur qui ne se comporte pas comme prévu (ou il le fait exprès le fourbe !). 
 
 Bref. Il faut anticiper les cas d'erreurs et essayer des les gérer le mieux possible. À minima, dire à l'utilisateur (ou aux autres programmes) qu'il y a une probleme... l'important c'est de communiquer ;-)
 
@@ -75,7 +75,7 @@ Bref. Il faut anticiper les cas d'erreurs et essayer des les gérer le mieux pos
 
 Dans une recette, cela correspond au moment ou l'on retire le plat du feu, que l'on nappe les sauces ou que l'on dresse le plat.
 
-En informatique, il s'agira de rentre présentable, agréable, claires et utiles les informations transformées : le plus souvent il s'agirant d'afficher quelque chose, de produire un fichier ou de transmettre une information.
+En informatique, il s'agira de rentre présentable, agréable, claires et utiles les informations transformées : le plus souvent il s'agirant d'afficher quelque chose, de produire un fichier ou de transmettre une information.
 
 
 
@@ -86,8 +86,8 @@ En informatique, il s'agira de rentre présentable, agréable, claires et utiles
 
 
 
-À suivre ?
+Conclusion
 ----------
 
-Ça y est, on atteint le vif du sujet. Je viens bientôt te dévoiler l... ah non !... shuuut !... je ne peux rien dire jusqu'au prochain chapitre ! :-P
+Ça y est, on atteint le vif du sujet. Je viens bientôt te dévoiler l... ah non !... shuuut !... je ne peux rien dire jusqu'au prochain chapitre ! :-P
 

@@ -55,12 +55,13 @@
     z-index: -1;
 }
 
-.wrapper img {
-	display: block;
-	margin: 0 auto;
-}
-
 h4 {
 	text-decoration: underline;
 }
 */
+
+
+article img {
+	display: block;
+	margin: 0 auto;
+}

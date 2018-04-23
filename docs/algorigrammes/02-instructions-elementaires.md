@@ -3,7 +3,7 @@ Algorigrammes (partie 2)
 
 Est-tu bien reposée ? Prête à reprendre ? As tu bien ton stylo-feutre-licorne toujours à la main ? Et ta feuille impatiente ? 
 
-C'est fois c'est la bonne, on dessine !
+C'est fois c'est la bonne, on dessine !
 
 Les instructions
 ----------------
@@ -14,19 +14,19 @@ En fait les ordinateurs sont assez limités ! Programmer est un peu comme parler
 
 Cela pourrait donner la situation imaginaire suivante : 
 
-> « Dis petit, tu peux m'aider à peindre ce mur ? <br/>
-> &ndash; Moi aider ! Aider.. comment ? » demanda le petit trisomique, l'air perdu.<br/>
-> &ndash; Mais avec un pinceau ! <br/>
-> &ndash; Ah pinceau !... C'est quoi pinceau ? </br>
-> « Cette chose là ! » dis-je en lui tendant l'objet <br/>
+> « Dis petit, tu peux m'aider à peindre ce mur ? <br/>
+> &ndash; Moi aider ! Aider.. comment ? » demanda le petit trisomique, l'air perdu.<br/>
+> &ndash; Mais avec un pinceau ! <br/>
+> &ndash; Ah pinceau !... C'est quoi pinceau ? </br>
+> « Cette chose là ! » dis-je en lui tendant l'objet <br/>
 > Il prends le pinceau et reste immobile devant moi, l'air béat. <br/>
-> « Hmm. Tu fais quoi là ? <br/>
-> &ndash; Je peint, comme toi as dit... », me réponds-t-il. <br/>
-> « Mais non ! » craquais-je, « il faut faire des mouvements de bas en haut, comme ça ! ». <br/>
+> « Hmm. Tu fais quoi là ? <br/>
+> &ndash; Je peint, comme toi as dit... », me réponds-t-il. <br/>
+> « Mais non ! » craquais-je, « il faut faire des mouvements de bas en haut, comme ça ! ». <br/>
 > À peine eu-je fini ma phrase qu'il se mit à singer mes mouvements... <br/>
-> &ndash; « Oui, bon, c'est mieux..., mais tu oublies la peinture là... »
+> &ndash; « Oui, bon, c'est mieux..., mais tu oublies la peinture là... »
 
-Tu verras que communiquer avec un ordinateur, c'est pareil : ça consiste essentiellement à décomposer tes idées en actions et en idées plus simples, puis à les décomposer encore et encore... jusqu'à les réduire à un ensemble de ces instructions toutes bêtes.
+Tu verras que communiquer avec un ordinateur, c'est pareil : ça consiste essentiellement à décomposer tes idées en actions et en idées plus simples, puis à les décomposer encore et encore... jusqu'à les réduire à un ensemble de ces instructions toutes bêtes.
 
 Je sais que dit ainsi, c'est encore un peu abstrait. Il donc est temps de passer à des exemples concrets et te présenter enfin les __instructions__ !
 
@@ -119,7 +119,8 @@ On peut même utiliser cette variable, faire une opération et enfin stocker le 
 > Alice trouva cela très étrange et s'approcha pour les observer de plus près. <br/>
 > <em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em>
 
-À suivre ?
+
+Conclusion
 ----------
 
 Nous avons posé les bases. Mais que va-t-on faire de ces quelques petites

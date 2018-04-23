@@ -11,7 +11,7 @@ Tu as remarqué que nos algorigrammes prennent _beaucoup_ d'espace à dessiner ?
 Sous-programmes, fonctions et procédures
 --------------------
 
-### La métaphore de la recette (encore !)
+### La métaphore de la recette (encore !)
 
 Il y a quelques pages, nous avions défini un programme comme un ensemble d'ingrédients et d'étapes nécessaires pour réaliser un objectif. Un peu comme une recette de cuisine finalement. 
 
@@ -20,7 +20,7 @@ Avec cette définition, nous pouvons dire qu'un sous-programme est une deuxième
 
 #### Exemple 7.1. Le gratin et la béchamel
 
-Voyons les deux recettes suivantes : d'abord la béchamel...
+Voyons les deux recettes suivantes : d'abord la béchamel...
 
 ~~~
 Recette de la béchamel
@@ -46,7 +46,7 @@ Préparation :
    Mélangez puis retirez du feu.
 ~~~
 
-En supposant toutes les actions correctement menées, on peut dire que cette recette produit un résultat : la béchamel (sans blague !)
+En supposant toutes les actions correctement menées, on peut dire que cette recette produit un résultat : la béchamel (sans blague !)
 et ce résultat dépend uniquement des ingrédients de départ.
 
 C'est ok jusque là ? On continue avec l'autre recette :
@@ -72,7 +72,7 @@ Ingrédients (pour 4 personnes) :  1 kg de pommes
    la béchamel et lissez-la de façon à ce 
    qu'elle se répartisse partout. 
 4 Parsemez le fromage râpé, et enfournez pour
-   20 min. Servez bien chaud, décoré de brins de
+   20 min. Servez bien chaud, décoré de brins de
    persil et accompagné d'une grosse salade verte.
 ~~~
 
@@ -93,7 +93,7 @@ quelques pages de notre livre pour aller à la recette ̀``Béchamel``.
 
 À partir de là nous aurions suivi les ingrédients et les instructions de cette nouvelle page comme s'il s'agissait de notre recette principale.
 
-On peut en déduire que : 
+On peut en déduire que : 
 
 * "Recette de la Béchamel" est un __sous-programme__ du programme 
     principal "Gratin" 
@@ -113,7 +113,7 @@ Dans un algorigramme, __un instruction rectangulaire avec deux barres de chaque 
 
 On peut décrire la préparation d'un dîner comme un programme avec des instructions où chacune de ces instructions correspond en fait à un sous-programme ! Il suffit de zoomer... pour découvrir d'autres instructions, et ainsi de suite.
 
-![x](algorigrammes/exemple-sous-programme.png)
+![x](images/exemple-sous-programme.png)
 
 
 ### Vocabulaire et définitions
@@ -130,18 +130,18 @@ Dans ces sous-programmes, il faut distinguer deux moments importants : leur __d�
 
 * __L'appel__ , c'est lorsqu'on fait référence à un programme existant à partir d'un autre, pour l'utiliser.
 
-On ne peut _appeller_ un sous-programme que s'il a été préalablement défini  &mdash; évidemment !
+On ne peut _appeller_ un sous-programme que s'il a été préalablement défini  &mdash; évidemment !
 
 On parlera désormais de __programme appelant__ (le programme principal) et de __programme appelé__ (le sous-programme), puisqu'un sous-programme peut lui-même appeler un autre sous-sous-programme.
 
 
 ### Utilisation et fonctionnement
 
-Que se passe-t-il lorsqu'un programme appelle un sous-programme ? En fait il y a 3 moments clés : 
+Que se passe-t-il lorsqu'un programme appelle un sous-programme ? En fait il y a 3 moments clés : 
 
-* __Passage de paramètres :__ certaines données du programme appelant sont transférées au sous-programme appelé (ex: dans notre recette principale, on envoie une partie des ingrédients à la préparation de la sous-recette)
+* __Passage de paramètres :__ certaines données du programme appelant sont transférées au sous-programme appelé (ex: dans notre recette principale, on envoie une partie des ingrédients à la préparation de la sous-recette)
 * __Réalisation des étapes__ (ex: c'est la préparation de la sous-recette)
-* __La valeur de retour :__ lorsque la préparation est terminée c'est le résultat qui est transféré vers le programme appelant (ex: la béchamel, produite par la recette)
+* __La valeur de retour :__ lorsque la préparation est terminée c'est le résultat qui est transféré vers le programme appelant (ex: la béchamel, produite par la recette)
 
 C'est important de noter ces trois moments car __les deux programmes (appelant et appelé) vivent dans des espaces mémoires différents__. Ils ne peuvent communiquer qu'au tout début et à la toute fin.
 
@@ -158,7 +158,7 @@ Alors un coup on ouvre la brèche et on envoie des choses (les paramètres) puis
 
 Pour appliquer tout ce qu'on vient de dire, on pourrait ré-écrire l'algorigramme du [videur sexiste](/05-algorigrammes/#exemple-52-le-videur-sexiste) en séparant le traitement du client qui se présente de l'algorithme de décision (sexiste ou non) du videur :
 
-![x](algorigrammes/exemple-videur-ss-programmes.png)
+![x](images/exemple-videur-ss-programmes.png)
 
 
 > Il venait de se passer tant de choses bizarres, qu'elle en arrivait à penser que fort peu de choses étaient vraiment impossibles <br>

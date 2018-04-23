@@ -37,17 +37,17 @@ markdown_extensions:
 pages: 
 - 'Accueil': index.md
 - 'Généralités':
-    - 'Généralités I': 01-generalites.md
-    - 'Généralités II': 02-generalites.md
+    - 'Généralités I': generalites/01-generalites.md
+    - 'Généralités II': generalites/02-generalites.md
 - 'Algorigrammes':
     - 'Principes de base': algorigrammes/01-definition-et-structure.md
     - 'Instructions élémentaires': algorigrammes/02-instructions-elementaires.md
     - 'Opérateurs conditionnels': algorigrammes/03-operateurs-conditionnels.md
-    - 'Algorigrammes IV': 06-algorigrammes.md
-    - 'Algorigrammes V': 07-algorigrammes.md
+    - "Méthode d'analyse": algorigrammes/04-methode-d-analyse.md
+    - "Sous-programmes, fonctions et procédures": algorigrammes/05-sous-programmes-fonctions-procedures.md
     - 'Exercices': algorigrammes/exercices.md
     - 'Corrigés': algorigrammes/corriges.md
 - 'Pseudocode':
-    - 'Pseudocode I': 08-pseudocode.md
+    - 'Pseudocode I': pseudocode/01-pseudocode.md
   #    - 'Pseudocode II': 09-pseudocode.md
 

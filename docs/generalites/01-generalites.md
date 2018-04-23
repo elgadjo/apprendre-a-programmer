@@ -1,4 +1,5 @@
-# Généralités
+Généralités
+===========
 
 Quelques définitions
 --------------------
