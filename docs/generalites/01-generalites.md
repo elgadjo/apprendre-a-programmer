@@ -1,8 +1,7 @@
-Généralités
-===========
 
-Quelques définitions
---------------------
+# Généralités
+
+## Quelques définitions
 
 Bon, donc tu veux _vraiment_ apprendre à programmer ?
 
@@ -12,13 +11,13 @@ __l'algorithmique__ et les __langages__ de programmation.
 __L'algorithmique__ est un peu l'équivalent de la logique pour formuler des idées là ou les __langages__ se basent chacun sur une syntaxe et une grammaire permettant de les véhiculer et se faire comprendre. 
 Évidemment, on ne peut pas formuler d'idées sans mots, et utiliser des mots sans idées ne fonctionne pas très bien non plus...
 
-Resituons tout ça dans le contexte : l'objectif de l'informatique, c'est obtenir de la machine qu'elle effectue un travail à notre place (pour le meilleur et pour le pire...). Mais alors, comment lui expliquer comment elle doit s'y prendre ? Comment lui dire ? Comment lui apprendre ? Comment s'assurer qu'elle fait ce travail ? Et si on y arrive... Fera-t-elle ce travail aussi bien que nous ? Mieux que nous ?
+Ressituons tout ça dans le contexte : l'objectif de l'informatique, c'est obtenir de la machine qu'elle effectue un travail à notre place (pour le meilleur et pour le pire...). Mais alors, comment lui expliquer comment elle doit s'y prendre ? Comment lui dire ? Comment lui apprendre ? Comment s'assurer qu'elle fait ce travail ? Et si on y arrive... Fera-t-elle ce travail aussi bien que nous ? Mieux que nous ?
 
 Bref. Dans ce qui suit, je vais donc te faire une introduction à la programmation en plusieurs étapes : 
 
 - d'abord nous ferons des dessins, 
 - ensuite nous utiliserons une forme de français minimaliste pour décrire nos idées,
-- ensuite nous utiliserons JavaScript pour communiquer ces idées à l'ordinateur.
+- ensuite nous utiliserons Javascript pour communiquer ces idées à l'ordinateur.
 
 Pourquoi Javascript ? Parce que : 
 
@@ -27,10 +26,9 @@ Pourquoi Javascript ? Parce que :
 - c'est un langage facile à apprendre !
 
 
-Algori...quoi ?
----------------
+## Algori...quoi ?
 
-Algorithmes. Algorithmique. Algorithmie. Attention, il n'y a pas de y-grec car ça vient de l'arabe : du nom du mathématicien Al-Khwârizmî (الخوارزمي) !
+Algorithmes. Algorithmique. Algorithmie. Attention, il n'y a pas de i-grec car ça vient de l'arabe : du nom du mathématicien Al-Khwârizmî (الخوارزمي) !
 
 Sans le savoir tu en as déjà utilisés :
  
@@ -49,8 +47,8 @@ Au départ on avait des composants ou des ingrédients éparses,  ils ont été 
 > &mdash; « Commencez par le commencement, dit d'un ton emprunt de gravité, le Roi. » <br/>
 > <em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em>
 
-Une question d'écriture et de représentations
----------------------------------------------
+
+## Une question d'écriture et de représentations
 
 Puisque dans un algorithme on trouve simplement des étapes et des actions, il peut avoir plusieurs représentations  : 
 
@@ -65,7 +63,7 @@ __L'algorigramme__ et le __pseudo-code__ sont là essentiellement pour des besoi
 Le __code machine__ (ou binaire exécutable) c'est ce que la machine comprend "en vrai": c'est la suite d'opérations que le processeur doit faire, et les différents états de la mémoire à lui faire manipuler.  
 Ce code machine est spécifique à un modèle de processeur donné. Il est donc incompatible avec un autre modèle de processeur !
 
-Assez vite on se rend compte que c'est assez ingrat d'écrire un programme de cette façon-là ! C'est pourtant comme cela qu'il faut écrire le premier programme sur un processeur donné, afin qu'il s'allume et serve à quelque chose. 
+Assez vite on se rend compte que c'est assez ingrat d'écrire un programme de cette façon là ! C'est pourtant comme cela qu'il faut écrire le premier programme sur un processeur donné, afin qu'il s'allume et serve à quelque chose. 
 
 Pour éviter d'avoir à faire cela pour tout le reste des programmes, on a inventé les __compilateurs__ : c'est-à-dire des outils capables de prendre un autre programme, écrit dans un langage de programmation par un humain, et de les transcrire automatiquement en code machine, pour obtenir des binaires exécutables sans avoir à les écrire soi-même en code machine. On a donc dû fabriquer un compilateur par langage de programmation... Et par type de machine.
 
@@ -86,8 +84,8 @@ Bref. Lorsque l'on programme, on écrit donc en général du __code source__, da
 > « Je crains bien de ne pouvoir m'expliquer moi-même... car je ne suis pas moi-même, vous comprenez. » <br/>
 > <em>Lewis Carroll, Les aventures d'Alice au pays des merveilles</em>
 
-Conclusion
-----
 
-Wow. Ça c'était l'introduction ! Aller, il nous reste encore 2-3 éléments de
-contexte à poser et on démarre pour de vrai !
+## Conclusion
+
+Wow. Ça c'était l'introduction ! Aller, il nous reste encore deux ou trois éléments de contexte à poser et puis on démarre pour de vrai !
+

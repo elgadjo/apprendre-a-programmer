@@ -1,5 +1,7 @@
 site_name: Apprendre à programmer
-theme: 'material'
+theme:
+  name: 'material'
+  favicon: favicon.ico
 # theme_dir: 'themes/mkdocs-material/material'
 
 site_author: 'El Gadjo Ridículo'
@@ -9,7 +11,6 @@ site_url: 'http://elgadjo.github.io/apprendre-a-programmer'
 
 repo_name: 'GitHub'
 repo_url: 'https://github.com/elgadjo/apprendre-a-programmer'
-site_favicon: favicon.ico
 
 extra:
   palette:
@@ -26,28 +27,29 @@ extra_css: [extra.css]
 #  github: 'elgadjo'
 #  twitter: 'elgadjo'
 
+    #(css_class=code)
 # Extensions
 markdown_extensions:
   - footnotes
-  - codehilite(css_class=code)
+  - codehilite 
   - admonition
   - toc:
       permalink: '#'
 
-pages: 
-- 'Accueil': index.md
-- 'Généralités':
-    - 'Généralités I': generalites/01-generalites.md
-    - 'Généralités II': generalites/02-generalites.md
-- 'Algorigrammes':
-    - 'Principes de base': algorigrammes/01-definition-et-structure.md
-    - 'Instructions élémentaires': algorigrammes/02-instructions-elementaires.md
-    - 'Opérateurs conditionnels': algorigrammes/03-operateurs-conditionnels.md
-    - "Méthode d'analyse": algorigrammes/04-methode-d-analyse.md
-    - "Sous-programmes, fonctions et procédures": algorigrammes/05-sous-programmes-fonctions-procedures.md
-    - 'Exercices': algorigrammes/exercices.md
-    - 'Corrigés': algorigrammes/corriges.md
-- 'Pseudocode':
-    - 'Pseudocode I': pseudocode/01-pseudocode.md
-  #    - 'Pseudocode II': 09-pseudocode.md
+pages:
+  - 'Accueil': index.md
+  - 'Généralités':
+      - 'Généralités I': generalites/01-generalites.md
+      - 'Généralités II': generalites/02-generalites.md
+  - 'Algorigrammes':
+      - 'Principes de base': algorigrammes/01-definition-et-structure.md
+      - 'Instructions élémentaires': algorigrammes/02-instructions-elementaires.md
+      - 'Opérateurs conditionnels': algorigrammes/03-operateurs-conditionnels.md
+      - "Méthode d'analyse": algorigrammes/04-methode-d-analyse.md
+      - "Sous-programmes, fonctions et procédures": algorigrammes/05-sous-programmes-fonctions-procedures.md
+      - 'Exercices': algorigrammes/exercices.md
+      - 'Corrigés': algorigrammes/corriges.md
+  - 'Pseudocode':
+      - 'Pseudocode I': pseudocode/01-pseudocode.md
+      #    - 'Pseudocode II': 09-pseudocode.md
 

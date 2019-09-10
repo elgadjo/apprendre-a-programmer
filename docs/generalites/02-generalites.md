@@ -1,10 +1,9 @@
-﻿Généralités (suite)
-===================
+﻿# Généralités 
 
 Tu es toujours là ? Toujours motivée ? Trop bien ! Reprenons ! 
 
-Un travail à vocation universelle
----------------------------------
+
+## Un travail à vocation universelle
 
 Tu as vu dans le chapitre précédent que la programmation est l'art de mêler l'algorithmique à un ou plusieurs langages.
 
@@ -24,8 +23,7 @@ En général, les langages de bas niveau sont des langages compilés &mdash; car
 > <em>Lewis Caroll, Alice au pays des merveilles</em>
 
 
-Problèmes fondamentaux en algorithmique
----------------------------------------
+## Problèmes fondamentaux en algorithmique
 
 Programmer, c'est comme résoudre un casse tête. C'est un peu un défi qui nécessite d'inventer une solution face à un problème ou une situation donnée. Reste à le faire bien. Lorsqu'on programme, à un moment ou un autre, on se posera des questions sur la __calculabilité__, la __complexité__ ou la __correction__ de l'algorithme que l'on est en train de concevoir.
 
@@ -56,14 +54,9 @@ Enfin la __correction__ c'est pouvoir prouver qu'un algorithme répondre bien au
 > &mdash; « Oh, tu ne manqueras pas d'arriver quelque part, si tu marches assez longtemps. »<br/>
 
 
-À suivre ?
-----------
+## À suivre ?
 
-Ouf. Jusque là j'ai essayé de poser le contexte, un peu de culture générale et du vocabulaire. Normalement on n'abordera plus ces sujets (à moins que ta curiosité ne prenne le dessus... et que je me laisse faire).
+Ouf. Jusque là on a posé le contexte, un peu de culture générale et du vocabulaire. Normalement on n'abordera plus ces sujets.
 
 Au prochain chapitre on plongera dans les algorigrammes et on commencera à dessiner nos idées.
-
-
-!!! warning "Programmer peut entraîner de graves troubles de la vie sociale"
-    __En cas d'apparition des symptômes suivants :__ impossibilité de résister aux défis logiques, envie de dialoguer avec son programme, veillée tardive devant son écran, recherche compulsive sur StackOverflow, réflexions nocturne sur un bug, parler d'un bug à ses proches, dire à quelqu'un qu'on arrive et arriver 1h après, essayer d'automatiser la moindre tâche... n'essaye _pas_ de consulter un spécialiste, il est trop tard, tu êtes foutue ! ;-)
 
